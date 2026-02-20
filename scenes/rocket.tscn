@@ -4,12 +4,12 @@
 [ext_resource type="Theme" uid="uid://c0es2kte6qmmp" path="res://scripts/normal.tres" id="3_agf72"]
 [ext_resource type="Script" uid="uid://cxdo610c8we7b" path="res://scripts/display_1.gd" id="4_y2y7n"]
 [ext_resource type="Texture2D" uid="uid://corhksc3axq45" path="res://assets/rockcoin.png" id="6_g6bar"]
-[ext_resource type="Texture2D" uid="uid://8we810a6fxly" path="res://assets/steelplate.png" id="6_hhimn"]
+[ext_resource type="Texture2D" uid="uid://d2qi2axjgqpaq" path="res://assets/steelplate.png" id="6_hhimn"]
 [ext_resource type="Texture2D" uid="uid://r3a3lvr8h25f" path="res://assets/space3.jpg" id="7_fa8w1"]
 [ext_resource type="Script" uid="uid://dg2yw3k74hrpy" path="res://scripts/coin_label.gd" id="7_qolsk"]
-[ext_resource type="Texture2D" uid="uid://c87jaiganj6cp" path="res://assets/steelengine.png" id="7_t2h4l"]
-[ext_resource type="Texture2D" uid="uid://ctkorshjsddf2" path="res://assets/steelfin.png" id="8_ctxcg"]
-[ext_resource type="Texture2D" uid="uid://cvo2initupppu" path="res://assets/steeltank.png" id="9_fv27l"]
+[ext_resource type="Texture2D" uid="uid://b6anvo71a4mhd" path="res://assets/steelengine.png" id="7_t2h4l"]
+[ext_resource type="Texture2D" uid="uid://kh5t2f4mntfn" path="res://assets/steelfin.png" id="8_ctxcg"]
+[ext_resource type="Texture2D" uid="uid://cjs1hr4o5nhmw" path="res://assets/steeltank.png" id="9_fv27l"]
 
 [sub_resource type="Animation" id="Animation_1nvrn"]
 length = 0.001
@@ -779,8 +779,8 @@ text = "Upgrade"
 texture_filter = 1
 offset_left = 60.0
 offset_top = 332.0
-offset_right = 277.99963
-offset_bottom = 550.00024
+offset_right = 277.99704
+offset_bottom = 550.0165
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_hhimn")
 
@@ -788,8 +788,8 @@ texture = ExtResource("6_hhimn")
 texture_filter = 1
 offset_left = 330.0
 offset_top = 332.0
-offset_right = 548.00024
-offset_bottom = 550.0004
+offset_right = 548.0
+offset_bottom = 550.0005
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_hhimn")
 
@@ -797,8 +797,8 @@ texture = ExtResource("6_hhimn")
 texture_filter = 1
 offset_left = 200.0
 offset_top = 482.0
-offset_right = 417.99963
-offset_bottom = 700.0001
+offset_right = 417.99948
+offset_bottom = 700.00006
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_t2h4l")
 
@@ -806,26 +806,72 @@ texture = ExtResource("7_t2h4l")
 texture_filter = 1
 offset_left = 330.0
 offset_top = 182.0
-offset_right = 548.0001
-offset_bottom = 399.9994
+offset_right = 548.0039
+offset_bottom = 400.00433
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("8_ctxcg")
+metadata/_aseprite_wizard_interface_config_ = {
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"convert_fps_field": 60.0,
+"convert_ms_field": 16.0,
+"convert_to_fps": false,
+"embed_tex": true,
+"i_mode": 0,
+"keep_anim_length": false,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"player": "AnimationPlayer",
+"scale": "1.0",
+"slice": "",
+"source": "res://assets/steeltocopperfin.ase",
+"source_uid": 3801657103824645031
+}
 
 [node name="Fins2" type="TextureRect" parent="." unique_id=1984154982]
 texture_filter = 1
 offset_left = 60.0
 offset_top = 182.0
-offset_right = 278.00064
-offset_bottom = 400.0015
+offset_right = 277.9991
+offset_bottom = 400.0016
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("8_ctxcg")
+metadata/_aseprite_wizard_interface_config_ = {
+"animation_section": false,
+"layer_section": false,
+"output_section": false,
+"pending_changes": {}
+}
+metadata/_aseprite_wizard_config_ = {
+"convert_fps_field": 60.0,
+"convert_ms_field": 16.0,
+"convert_to_fps": false,
+"embed_tex": true,
+"i_mode": 0,
+"keep_anim_length": false,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"player": "AnimationPlayer",
+"scale": "1.0",
+"slice": "",
+"source": "res://assets/steeltocopper.ase",
+"source_uid": -1
+}
+metadata/_aseprite_wizard_source_file_hash_ = "0d850f80efcb855bfa7a743edd0d2ac5"
 
 [node name="Tank1" type="TextureRect" parent="." unique_id=1850739971]
 texture_filter = 1
 offset_left = 60.0
 offset_top = 482.0
-offset_right = 278.0003
-offset_bottom = 699.9996
+offset_right = 278.00027
+offset_bottom = 699.9999
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("9_fv27l")
 
@@ -833,8 +879,8 @@ texture = ExtResource("9_fv27l")
 texture_filter = 1
 offset_left = 330.0
 offset_top = 482.0
-offset_right = 548.00006
-offset_bottom = 699.9999
+offset_right = 548.00024
+offset_bottom = 699.99945
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("9_fv27l")
 
@@ -842,8 +888,8 @@ texture = ExtResource("9_fv27l")
 texture_filter = 1
 offset_left = 200.0
 offset_top = 182.0
-offset_right = 417.99945
-offset_bottom = 399.99976
+offset_right = 418.00003
+offset_bottom = 399.99536
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_t2h4l")
 
@@ -852,8 +898,8 @@ modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 198.0
 offset_top = 329.0
-offset_right = 416.00003
-offset_bottom = 547.0
+offset_right = 416.00403
+offset_bottom = 546.9951
 scale = Vector2(0.5, 0.5)
 stretch_mode = 5
 

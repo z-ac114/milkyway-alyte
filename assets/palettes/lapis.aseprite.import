@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://b324dg4gkp2p8"
+path="res://.godot/imported/lapis.aseprite-5e97437604e35e0e4f0eaf24d87f714f.res"
+
+[deps]
+
+source_file="res://assets/palettes/lapis.aseprite"
+dest_files=["res://.godot/imported/lapis.aseprite-5e97437604e35e0e4f0eaf24d87f714f.res"]
+
+[params]
+

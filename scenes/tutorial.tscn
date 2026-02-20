@@ -1,4 +1,4 @@
-[gd_scene load_steps=67 format=3 uid="uid://c4c1f8uqmcord"]
+[gd_scene format=3 uid="uid://c4c1f8uqmcord"]
 
 [ext_resource type="Script" uid="uid://8fnnt8pc7jnq" path="res://scripts/tutorial.gd" id="1_c13y7"]
 [ext_resource type="Texture2D" uid="uid://c5wi0p73vu3qy" path="res://assets/space4.jpg" id="2_ph3nu"]
@@ -12,43 +12,43 @@
 [ext_resource type="Script" uid="uid://larxvedrappu" path="res://scripts/rock_2.gd" id="10_g2equ"]
 [ext_resource type="Texture2D" uid="uid://cisndv6t1obs8" path="res://assets/rock.png" id="11_tbcdj"]
 [ext_resource type="Texture2D" uid="uid://cgpff2l1q1swg" path="res://assets/rockk.png" id="12_0hilk"]
-[ext_resource type="Texture2D" uid="uid://d3wa3u2qsal04" path="res://assets/goldingot.png" id="13_wr8iv"]
-[ext_resource type="Texture2D" uid="uid://cpr66ri6d3c1n" path="res://assets/ironingot.png" id="14_e13mp"]
-[ext_resource type="Texture2D" uid="uid://dnrdq26wdnbcp" path="res://assets/iron.png" id="15_e13mp"]
-[ext_resource type="Texture2D" uid="uid://cbkpsl2g2hml7" path="res://assets/gold.png" id="16_vrdqu"]
-[ext_resource type="Texture2D" uid="uid://dn335gjm8ja7t" path="res://assets/zinc.png" id="17_2urjh"]
-[ext_resource type="Texture2D" uid="uid://drsh7oq0un8bs" path="res://assets/copperingot.png" id="17_ikfo1"]
-[ext_resource type="Texture2D" uid="uid://ctkorshjsddf2" path="res://assets/steelfin.png" id="18_dwom6"]
-[ext_resource type="Texture2D" uid="uid://cwhxpnml32e65" path="res://assets/copperfin.png" id="19_bl2xa"]
-[ext_resource type="Texture2D" uid="uid://b4pbqa5eujjbw" path="res://assets/ironfin.png" id="20_bl2xa"]
-[ext_resource type="Texture2D" uid="uid://dx3k2vxd88ssu" path="res://assets/emerald.png" id="20_x6vwi"]
-[ext_resource type="Texture2D" uid="uid://bk2p6rng07gue" path="res://assets/goldfin.png" id="21_15kfc"]
-[ext_resource type="Texture2D" uid="uid://c87jaiganj6cp" path="res://assets/steelengine.png" id="22_15kfc"]
-[ext_resource type="Texture2D" uid="uid://6dw7482jgmh4" path="res://assets/copperengine.png" id="23_sbw1o"]
-[ext_resource type="Texture2D" uid="uid://cak3gq0a5pucy" path="res://assets/ironengine.png" id="24_06rsu"]
-[ext_resource type="Texture2D" uid="uid://1igr1e84y2hp" path="res://assets/goldengine.png" id="25_4gq6d"]
-[ext_resource type="Texture2D" uid="uid://cqqgyfsjvi08h" path="res://assets/zincengine.png" id="26_mjrbb"]
-[ext_resource type="Texture2D" uid="uid://dol1a3khtv56h" path="res://assets/emeraldengine.png" id="27_7kfc1"]
-[ext_resource type="Texture2D" uid="uid://j0bv32qnk6k2" path="res://assets/lapisengine.png" id="28_jne3d"]
-[ext_resource type="Texture2D" uid="uid://dqlth2yl3trf3" path="res://assets/diamondengine.png" id="29_nr1vm"]
-[ext_resource type="Texture2D" uid="uid://b6vbjeb0t3mgv" path="res://assets/zincingot.png" id="30_06rsu"]
-[ext_resource type="Texture2D" uid="uid://buowq2l5di8eb" path="res://assets/emeraldd.png" id="31_mjrbb"]
-[ext_resource type="Texture2D" uid="uid://d0mouduc5o6c" path="res://assets/lapislazuli.png" id="32_7kfc1"]
-[ext_resource type="Texture2D" uid="uid://c820osdvc54si" path="res://assets/diamondd.png" id="33_7kfc1"]
-[ext_resource type="Texture2D" uid="uid://8we810a6fxly" path="res://assets/steelplate.png" id="34_jne3d"]
-[ext_resource type="Texture2D" uid="uid://d0gd671ucsjth" path="res://assets/copperplate.png" id="35_nr1vm"]
-[ext_resource type="Texture2D" uid="uid://bpel2cy2hwhan" path="res://assets/steeltopcone.png" id="36_i8gw2"]
-[ext_resource type="Texture2D" uid="uid://dc8fx6okuljvr" path="res://assets/coppertopcone.png" id="37_4exn6"]
-[ext_resource type="Texture2D" uid="uid://cvo2initupppu" path="res://assets/steeltank.png" id="38_liift"]
-[ext_resource type="Texture2D" uid="uid://okwfw020402" path="res://assets/coppertank.png" id="39_2urjh"]
+[ext_resource type="Texture2D" uid="uid://cl68u4wk0fspq" path="res://assets/goldparts/goldingot.png" id="13_wr8iv"]
+[ext_resource type="Texture2D" uid="uid://ehyxdd242tc1" path="res://assets/ironparts/ironingot.png" id="14_e13mp"]
+[ext_resource type="Texture2D" uid="uid://bh41vvccoxwkr" path="res://assets/iron.png" id="15_e13mp"]
+[ext_resource type="Texture2D" uid="uid://ccjiauk3tto1w" path="res://assets/gold.png" id="16_vrdqu"]
+[ext_resource type="Texture2D" uid="uid://ctifj2irojbci" path="res://assets/zinc.png" id="17_2urjh"]
+[ext_resource type="Texture2D" uid="uid://cyniev2uut56s" path="res://assets/copperparts/copperingot.png" id="17_ikfo1"]
+[ext_resource type="Texture2D" uid="uid://kh5t2f4mntfn" path="res://assets/steelfin.png" id="18_dwom6"]
+[ext_resource type="Texture2D" uid="uid://o5illu6ai7x5" path="res://assets/copperparts/copperfin.png" id="19_bl2xa"]
+[ext_resource type="Texture2D" uid="uid://cesbnqmap5tlq" path="res://assets/ironparts/ironfin.png" id="20_bl2xa"]
+[ext_resource type="Texture2D" uid="uid://ds0fi4s6ftn0f" path="res://assets/emerald.png" id="20_x6vwi"]
+[ext_resource type="Texture2D" uid="uid://bkd4jv477pr75" path="res://assets/goldparts/goldfin.png" id="21_15kfc"]
+[ext_resource type="Texture2D" uid="uid://b6anvo71a4mhd" path="res://assets/steelengine.png" id="22_15kfc"]
+[ext_resource type="Texture2D" uid="uid://n0jeojghjcnv" path="res://assets/copperparts/copperengine.png" id="23_sbw1o"]
+[ext_resource type="Texture2D" uid="uid://cw0s7g8g6gk7s" path="res://assets/ironparts/ironengine.png" id="24_06rsu"]
+[ext_resource type="Texture2D" uid="uid://ba7ggslldn1r3" path="res://assets/goldparts/goldengine.png" id="25_4gq6d"]
+[ext_resource type="Texture2D" uid="uid://cpg5ed3oh3qt7" path="res://assets/zincparts/zincengine.png" id="26_mjrbb"]
+[ext_resource type="Texture2D" uid="uid://c25tfiw4drlei" path="res://assets/emeraldparts/emeraldengine.png" id="27_7kfc1"]
+[ext_resource type="Texture2D" uid="uid://d34ibft13lkyw" path="res://assets/lapisparts/lapisengine.png" id="28_jne3d"]
+[ext_resource type="Texture2D" uid="uid://p3ioakfgx3m1" path="res://assets/diamondparts/diamondengine.png" id="29_nr1vm"]
+[ext_resource type="Texture2D" uid="uid://cybew5huokyw2" path="res://assets/zincparts/zincingot.png" id="30_06rsu"]
+[ext_resource type="Texture2D" uid="uid://ckfxqm3t0okr6" path="res://assets/emeraldparts/emeraldd.png" id="31_mjrbb"]
+[ext_resource type="Texture2D" uid="uid://dy801cl8tswjv" path="res://assets/lapisparts/lapislazuli.png" id="32_7kfc1"]
+[ext_resource type="Texture2D" uid="uid://cqc1klmkgxhsy" path="res://assets/diamondparts/diamondd.png" id="33_7kfc1"]
+[ext_resource type="Texture2D" uid="uid://d2qi2axjgqpaq" path="res://assets/steelplate.png" id="34_jne3d"]
+[ext_resource type="Texture2D" uid="uid://bglb54wk2086w" path="res://assets/copperparts/copperplate.png" id="35_nr1vm"]
+[ext_resource type="Texture2D" uid="uid://c8mwtfh6oenwi" path="res://assets/steeltopcone.png" id="36_i8gw2"]
+[ext_resource type="Texture2D" uid="uid://dh6aixsdlfsbm" path="res://assets/Checkbox.png" id="37_4exn6"]
+[ext_resource type="Texture2D" uid="uid://cjs1hr4o5nhmw" path="res://assets/steeltank.png" id="38_liift"]
+[ext_resource type="Texture2D" uid="uid://c8q75tbap0dp" path="res://assets/copperparts/coppertank.png" id="39_2urjh"]
 [ext_resource type="Texture2D" uid="uid://bub705xu15msm" path="res://assets/rocket.png" id="40_x6vwi"]
-[ext_resource type="Texture2D" uid="uid://del1kxqgq8uvo" path="res://assets/copperrocket.png" id="41_coeiu"]
-[ext_resource type="Texture2D" uid="uid://dp55ice5quv46" path="res://assets/zincrocket.png" id="44_qxc7v"]
-[ext_resource type="Texture2D" uid="uid://dijsis1vjyesf" path="res://assets/goldrocket.png" id="45_626aq"]
-[ext_resource type="Texture2D" uid="uid://dya4bguesbnbl" path="res://assets/ironrocket.png" id="46_jfjt2"]
-[ext_resource type="Texture2D" uid="uid://d0isqa3tyhlw6" path="res://assets/emeraldrocket.png" id="47_rdgrk"]
-[ext_resource type="Texture2D" uid="uid://ds1j46gam63q7" path="res://assets/lapisrocket.png" id="48_r4014"]
-[ext_resource type="Texture2D" uid="uid://c7mcxyc5oogrd" path="res://assets/diamondrocket.png" id="49_r4014"]
+[ext_resource type="Texture2D" uid="uid://vdr2fjoyk0ce" path="res://assets/copperparts/copperrocket.png" id="41_coeiu"]
+[ext_resource type="Texture2D" uid="uid://dy5gns5dm88iu" path="res://assets/zincparts/zincrocket.png" id="44_qxc7v"]
+[ext_resource type="Texture2D" uid="uid://sg4iivykx4pc" path="res://assets/goldparts/goldrocket.png" id="45_626aq"]
+[ext_resource type="Texture2D" uid="uid://swfmidlv2gkg" path="res://assets/ironparts/ironrocket.png" id="46_jfjt2"]
+[ext_resource type="Texture2D" uid="uid://dgl3hosyp0ohf" path="res://assets/emeraldparts/emeraldrocket.png" id="47_rdgrk"]
+[ext_resource type="Texture2D" uid="uid://cb71wnrteiv8n" path="res://assets/lapisparts/lapisrocket.png" id="48_r4014"]
+[ext_resource type="Texture2D" uid="uid://bjaawt2yy6a4d" path="res://assets/diamondparts/diamondrocket.png" id="49_r4014"]
 [ext_resource type="Texture2D" uid="uid://bptdjasmmlivo" path="res://assets/saturn.png" id="50_txxdm"]
 [ext_resource type="Texture2D" uid="uid://ju484wqd3l2o" path="res://assets/uranus.png" id="51_mldml"]
 [ext_resource type="Texture2D" uid="uid://dqbt14eroye68" path="res://assets/neptune.png" id="52_ni4f6"]
@@ -5332,12 +5332,12 @@ _data = {
 &"rocket_craft": SubResource("Animation_7kfc1")
 }
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" unique_id=1465908552]
 script = ExtResource("1_c13y7")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1457733199]
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1578960835]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -5348,7 +5348,7 @@ grow_vertical = 2
 texture = ExtResource("2_ph3nu")
 expand_mode = 3
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/TextureRect"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer/TextureRect" unique_id=286041391]
 texture_filter = 1
 position = Vector2(558.99994, 310.00003)
 scale = Vector2(8.562499, 8.562499)
@@ -5356,7 +5356,7 @@ sprite_frames = SubResource("SpriteFrames_6yjpi")
 autoplay = "default"
 frame_progress = 0.6339542
 
-[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="CanvasLayer/TextureRect"]
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="CanvasLayer/TextureRect" unique_id=1656597433]
 texture_filter = 1
 position = Vector2(1014.99994, 310.00003)
 scale = Vector2(8.562499, 8.562499)
@@ -5365,7 +5365,7 @@ autoplay = "default"
 frame_progress = 0.95279586
 flip_h = true
 
-[node name="Panel" type="Panel" parent="CanvasLayer"]
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=846454955]
 anchors_preset = 12
 anchor_top = 1.0
 anchor_right = 1.0
@@ -5374,7 +5374,7 @@ offset_top = -142.0
 grow_horizontal = 2
 grow_vertical = 0
 
-[node name="Label" type="Label" parent="CanvasLayer/Panel"]
+[node name="Label" type="Label" parent="CanvasLayer/Panel" unique_id=199236560]
 layout_mode = 0
 offset_top = -12.0
 offset_right = 1151.0
@@ -5382,7 +5382,7 @@ offset_bottom = 129.0
 theme = ExtResource("3_4kmhl")
 autowrap_mode = 3
 
-[node name="ContinueLabel" type="Label" parent="CanvasLayer/Panel"]
+[node name="ContinueLabel" type="Label" parent="CanvasLayer/Panel" unique_id=1705641772]
 z_index = 2
 layout_mode = 0
 offset_left = 764.6471
@@ -5395,9 +5395,9 @@ text = "Press Space to continue"
 horizontal_alignment = 2
 vertical_alignment = 1
 
-[node name="Planets" type="Node2D" parent="CanvasLayer"]
+[node name="Planets" type="Node2D" parent="CanvasLayer" unique_id=665532711]
 
-[node name="Earth" type="TextureRect" parent="CanvasLayer/Planets"]
+[node name="Earth" type="TextureRect" parent="CanvasLayer/Planets" unique_id=887943842]
 texture_filter = 1
 offset_left = 176.0
 offset_top = 225.0
@@ -5405,7 +5405,7 @@ offset_right = 324.0
 offset_bottom = 373.0
 texture = ExtResource("5_ckvwl")
 
-[node name="Venus" type="TextureRect" parent="CanvasLayer/Planets"]
+[node name="Venus" type="TextureRect" parent="CanvasLayer/Planets" unique_id=2126206152]
 texture_filter = 1
 offset_left = 313.0
 offset_top = 101.0
@@ -5413,7 +5413,7 @@ offset_right = 420.0
 offset_bottom = 208.0
 texture = ExtResource("6_nlqja")
 
-[node name="Mercury" type="TextureRect" parent="CanvasLayer/Planets"]
+[node name="Mercury" type="TextureRect" parent="CanvasLayer/Planets" unique_id=1326854016]
 texture_filter = 1
 offset_left = 456.0
 offset_top = 55.0
@@ -5421,7 +5421,7 @@ offset_right = 526.0
 offset_bottom = 125.0
 texture = ExtResource("7_0epgs")
 
-[node name="Jupiter" type="TextureRect" parent="CanvasLayer/Planets"]
+[node name="Jupiter" type="TextureRect" parent="CanvasLayer/Planets" unique_id=1908932105]
 texture_filter = 1
 offset_left = 736.0
 offset_top = 117.0
@@ -5429,7 +5429,7 @@ offset_right = 945.0
 offset_bottom = 326.0
 texture = ExtResource("8_nlqja")
 
-[node name="Mars" type="TextureRect" parent="CanvasLayer/Planets"]
+[node name="Mars" type="TextureRect" parent="CanvasLayer/Planets" unique_id=292149675]
 texture_filter = 1
 offset_left = 592.0
 offset_top = 115.0
@@ -5437,21 +5437,21 @@ offset_right = 684.0
 offset_bottom = 207.0
 texture = ExtResource("8_g2equ")
 
-[node name="Rock2" type="Area2D" parent="CanvasLayer"]
+[node name="Rock2" type="Area2D" parent="CanvasLayer" unique_id=891499765]
 position = Vector2(367.99997, 309)
 scale = Vector2(10, 10)
 script = ExtResource("10_g2equ")
 
-[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Rock2"]
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Rock2" unique_id=164790932]
 texture_filter = 1
 texture = ExtResource("11_tbcdj")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Rock2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Rock2" unique_id=1770456525]
 shape = SubResource("RectangleShape2D_ej4tf")
 
-[node name="MiningStuff" type="Node2D" parent="CanvasLayer"]
+[node name="MiningStuff" type="Node2D" parent="CanvasLayer" unique_id=814975426]
 
-[node name="Rock" type="TextureRect" parent="CanvasLayer/MiningStuff"]
+[node name="Rock" type="TextureRect" parent="CanvasLayer/MiningStuff" unique_id=334662580]
 texture_filter = 1
 offset_left = 223.0
 offset_top = 58.0
@@ -5459,7 +5459,7 @@ offset_right = 315.0
 offset_bottom = 150.0
 texture = ExtResource("12_0hilk")
 
-[node name="goldingot" type="TextureRect" parent="CanvasLayer/MiningStuff"]
+[node name="goldingot" type="TextureRect" parent="CanvasLayer/MiningStuff" unique_id=1634307436]
 texture_filter = 1
 offset_left = 635.0
 offset_top = 53.0
@@ -5467,7 +5467,7 @@ offset_right = 727.0
 offset_bottom = 145.0
 texture = ExtResource("13_wr8iv")
 
-[node name="ironingot" type="TextureRect" parent="CanvasLayer/MiningStuff"]
+[node name="ironingot" type="TextureRect" parent="CanvasLayer/MiningStuff" unique_id=1122997045]
 texture_filter = 1
 offset_left = 229.0
 offset_top = 261.0
@@ -5475,7 +5475,7 @@ offset_right = 321.0
 offset_bottom = 353.0
 texture = ExtResource("14_e13mp")
 
-[node name="Zincingot" type="TextureRect" parent="CanvasLayer/MiningStuff"]
+[node name="Zincingot" type="TextureRect" parent="CanvasLayer/MiningStuff" unique_id=493082436]
 texture_filter = 1
 offset_left = 988.0
 offset_top = 52.0
@@ -5483,7 +5483,7 @@ offset_right = 1080.0
 offset_bottom = 144.0
 texture = ExtResource("30_06rsu")
 
-[node name="Emerald" type="TextureRect" parent="CanvasLayer/MiningStuff"]
+[node name="Emerald" type="TextureRect" parent="CanvasLayer/MiningStuff" unique_id=164178881]
 texture_filter = 1
 offset_left = 991.0
 offset_top = 239.0
@@ -5491,69 +5491,69 @@ offset_right = 1083.0
 offset_bottom = 331.0
 texture = ExtResource("31_mjrbb")
 
-[node name="Rock2" type="Area2D" parent="CanvasLayer/MiningStuff"]
+[node name="Rock2" type="Area2D" parent="CanvasLayer/MiningStuff" unique_id=1913890785]
 position = Vector2(92.00006, 105.00003)
 scale = Vector2(10, 10)
 script = ExtResource("10_g2equ")
 
-[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/MiningStuff/Rock2"]
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/MiningStuff/Rock2" unique_id=1613696628]
 texture_filter = 1
 texture = ExtResource("11_tbcdj")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/MiningStuff/Rock2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/MiningStuff/Rock2" unique_id=112511971]
 shape = SubResource("RectangleShape2D_ej4tf")
 
-[node name="Ironore" type="Area2D" parent="CanvasLayer/MiningStuff"]
+[node name="Ironore" type="Area2D" parent="CanvasLayer/MiningStuff" unique_id=770857964]
 position = Vector2(93.000015, 295.00003)
 scale = Vector2(10, 10)
 script = ExtResource("10_g2equ")
 
-[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/MiningStuff/Ironore"]
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/MiningStuff/Ironore" unique_id=894869338]
 texture_filter = 1
 texture = ExtResource("15_e13mp")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/MiningStuff/Ironore"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/MiningStuff/Ironore" unique_id=629975810]
 shape = SubResource("RectangleShape2D_ej4tf")
 
-[node name="Goldore" type="Area2D" parent="CanvasLayer/MiningStuff"]
+[node name="Goldore" type="Area2D" parent="CanvasLayer/MiningStuff" unique_id=2110277466]
 position = Vector2(500.99997, 100.000046)
 scale = Vector2(10, 10)
 script = ExtResource("10_g2equ")
 
-[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/MiningStuff/Goldore"]
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/MiningStuff/Goldore" unique_id=27385214]
 texture_filter = 1
 texture = ExtResource("16_vrdqu")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/MiningStuff/Goldore"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/MiningStuff/Goldore" unique_id=1720541041]
 shape = SubResource("RectangleShape2D_ej4tf")
 
-[node name="Zincore" type="Area2D" parent="CanvasLayer/MiningStuff"]
+[node name="Zincore" type="Area2D" parent="CanvasLayer/MiningStuff" unique_id=50765613]
 position = Vector2(857, 99)
 scale = Vector2(10, 10)
 script = ExtResource("10_g2equ")
 
-[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/MiningStuff/Zincore"]
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/MiningStuff/Zincore" unique_id=2029985729]
 texture_filter = 1
 texture = ExtResource("17_2urjh")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/MiningStuff/Zincore"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/MiningStuff/Zincore" unique_id=834902430]
 shape = SubResource("RectangleShape2D_ej4tf")
 
-[node name="Emeraldore" type="Area2D" parent="CanvasLayer/MiningStuff"]
+[node name="Emeraldore" type="Area2D" parent="CanvasLayer/MiningStuff" unique_id=1510502152]
 position = Vector2(855.00006, 292)
 scale = Vector2(10, 10)
 script = ExtResource("10_g2equ")
 
-[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/MiningStuff/Emeraldore"]
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/MiningStuff/Emeraldore" unique_id=97469356]
 texture_filter = 1
 texture = ExtResource("20_x6vwi")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/MiningStuff/Emeraldore"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/MiningStuff/Emeraldore" unique_id=1631522076]
 shape = SubResource("RectangleShape2D_ej4tf")
 
-[node name="UpgradePart1" type="Node2D" parent="CanvasLayer"]
+[node name="UpgradePart1" type="Node2D" parent="CanvasLayer" unique_id=2082044244]
 
-[node name="Gold4" type="TextureRect" parent="CanvasLayer/UpgradePart1"]
+[node name="Gold4" type="TextureRect" parent="CanvasLayer/UpgradePart1" unique_id=1659502687]
 texture_filter = 1
 offset_left = 365.0
 offset_top = 134.0
@@ -5562,7 +5562,7 @@ offset_bottom = 219.99878
 texture = ExtResource("13_wr8iv")
 stretch_mode = 5
 
-[node name="Gold3" type="TextureRect" parent="CanvasLayer/UpgradePart1"]
+[node name="Gold3" type="TextureRect" parent="CanvasLayer/UpgradePart1" unique_id=177469074]
 texture_filter = 1
 offset_left = 420.0
 offset_top = 188.0
@@ -5571,7 +5571,7 @@ offset_bottom = 273.9992
 texture = ExtResource("13_wr8iv")
 stretch_mode = 5
 
-[node name="Gold2" type="TextureRect" parent="CanvasLayer/UpgradePart1"]
+[node name="Gold2" type="TextureRect" parent="CanvasLayer/UpgradePart1" unique_id=199422233]
 texture_filter = 1
 offset_left = 366.0
 offset_top = 261.0
@@ -5580,7 +5580,7 @@ offset_bottom = 346.99957
 texture = ExtResource("13_wr8iv")
 stretch_mode = 5
 
-[node name="Gold1" type="TextureRect" parent="CanvasLayer/UpgradePart1"]
+[node name="Gold1" type="TextureRect" parent="CanvasLayer/UpgradePart1" unique_id=772720942]
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 328.0
@@ -5590,7 +5590,7 @@ offset_bottom = 279.9994
 texture = ExtResource("13_wr8iv")
 stretch_mode = 5
 
-[node name="Iron3" type="TextureRect" parent="CanvasLayer/UpgradePart1"]
+[node name="Iron3" type="TextureRect" parent="CanvasLayer/UpgradePart1" unique_id=204087080]
 texture_filter = 1
 offset_left = 140.0
 offset_top = 151.0
@@ -5599,7 +5599,7 @@ offset_bottom = 233.99875
 texture = ExtResource("14_e13mp")
 stretch_mode = 5
 
-[node name="Iron2" type="TextureRect" parent="CanvasLayer/UpgradePart1"]
+[node name="Iron2" type="TextureRect" parent="CanvasLayer/UpgradePart1" unique_id=474662737]
 texture_filter = 1
 offset_left = 200.0
 offset_top = 144.00012
@@ -5608,7 +5608,7 @@ offset_bottom = 226.99902
 texture = ExtResource("14_e13mp")
 stretch_mode = 5
 
-[node name="Iron1" type="TextureRect" parent="CanvasLayer/UpgradePart1"]
+[node name="Iron1" type="TextureRect" parent="CanvasLayer/UpgradePart1" unique_id=1909219359]
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 190.0
@@ -5618,7 +5618,7 @@ offset_bottom = 163.99872
 texture = ExtResource("14_e13mp")
 stretch_mode = 5
 
-[node name="Copper2" type="TextureRect" parent="CanvasLayer/UpgradePart1"]
+[node name="Copper2" type="TextureRect" parent="CanvasLayer/UpgradePart1" unique_id=1624567200]
 texture_filter = 1
 offset_left = 9.0
 offset_top = 179.0
@@ -5627,7 +5627,7 @@ offset_bottom = 286.9999
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Copper1" type="TextureRect" parent="CanvasLayer/UpgradePart1"]
+[node name="Copper1" type="TextureRect" parent="CanvasLayer/UpgradePart1" unique_id=1788881431]
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 3.0
@@ -5637,7 +5637,7 @@ offset_bottom = 217.00032
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Part1" type="TextureRect" parent="CanvasLayer/UpgradePart1"]
+[node name="Part1" type="TextureRect" parent="CanvasLayer/UpgradePart1" unique_id=878121688]
 texture_filter = 1
 offset_left = 139.0
 offset_top = 229.0
@@ -5645,15 +5645,13 @@ offset_right = 287.0
 offset_bottom = 377.0
 texture = ExtResource("18_dwom6")
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/UpgradePart1"]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer/UpgradePart1" unique_id=2027774934]
 root_node = NodePath("../../..")
-libraries = {
-&"": SubResource("AnimationLibrary_feaue")
-}
+libraries/ = SubResource("AnimationLibrary_feaue")
 
-[node name="UpgradePart2" type="Node2D" parent="CanvasLayer"]
+[node name="UpgradePart2" type="Node2D" parent="CanvasLayer" unique_id=91947232]
 
-[node name="Part2" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Part2" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=731672856]
 texture_filter = 1
 offset_left = 803.0
 offset_top = 229.0
@@ -5661,7 +5659,7 @@ offset_right = 951.0
 offset_bottom = 377.0
 texture = ExtResource("22_15kfc")
 
-[node name="Copper3" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Copper3" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=866032676]
 texture_filter = 1
 offset_left = 713.0
 offset_top = 188.00012
@@ -5670,7 +5668,7 @@ offset_bottom = 252.0003
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Copper4" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Copper4" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=446349031]
 texture_filter = 1
 offset_left = 732.0
 offset_top = 228.0
@@ -5679,12 +5677,10 @@ offset_bottom = 291.9996
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="AnimationPlayer2" type="AnimationPlayer" parent="CanvasLayer/UpgradePart2"]
-libraries = {
-&"": SubResource("AnimationLibrary_4exn6")
-}
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="CanvasLayer/UpgradePart2" unique_id=714176204]
+libraries/ = SubResource("AnimationLibrary_4exn6")
 
-[node name="Iron4" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Iron4" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=483843502]
 texture_filter = 1
 offset_left = 762.0
 offset_top = 117.0
@@ -5693,7 +5689,7 @@ offset_bottom = 181.00043
 texture = ExtResource("14_e13mp")
 stretch_mode = 5
 
-[node name="Iron5" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Iron5" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=874493797]
 texture_filter = 1
 offset_left = 787.0
 offset_top = 156.0
@@ -5702,7 +5698,7 @@ offset_bottom = 220.00061
 texture = ExtResource("14_e13mp")
 stretch_mode = 5
 
-[node name="Iron6" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Iron6" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1254756274]
 texture_filter = 1
 offset_left = 827.0
 offset_top = 107.0
@@ -5711,7 +5707,7 @@ offset_bottom = 171.00018
 texture = ExtResource("14_e13mp")
 stretch_mode = 5
 
-[node name="Gold5" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Gold5" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=900341934]
 texture_filter = 1
 offset_left = 932.0
 offset_top = 128.0
@@ -5720,7 +5716,7 @@ offset_bottom = 192.00034
 texture = ExtResource("13_wr8iv")
 stretch_mode = 5
 
-[node name="Gold6" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Gold6" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1372122880]
 texture_filter = 1
 offset_left = 968.0
 offset_top = 204.0
@@ -5729,7 +5725,7 @@ offset_bottom = 267.99997
 texture = ExtResource("13_wr8iv")
 stretch_mode = 5
 
-[node name="Gold7" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Gold7" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1294492551]
 texture_filter = 1
 offset_left = 982.0
 offset_top = 155.0
@@ -5738,7 +5734,7 @@ offset_bottom = 219.0004
 texture = ExtResource("13_wr8iv")
 stretch_mode = 5
 
-[node name="Gold8" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Gold8" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=744207244]
 texture_filter = 1
 offset_left = 918.0
 offset_top = 178.0
@@ -5747,7 +5743,7 @@ offset_bottom = 242.00095
 texture = ExtResource("13_wr8iv")
 stretch_mode = 5
 
-[node name="Zinc1" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Zinc1" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1380014026]
 texture_filter = 1
 offset_left = 968.0
 offset_top = 274.0
@@ -5756,7 +5752,7 @@ offset_bottom = 337.99954
 texture = ExtResource("30_06rsu")
 stretch_mode = 5
 
-[node name="Zinc2" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Zinc2" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=125389061]
 texture_filter = 1
 offset_left = 937.0
 offset_top = 323.0
@@ -5765,7 +5761,7 @@ offset_bottom = 386.99954
 texture = ExtResource("30_06rsu")
 stretch_mode = 5
 
-[node name="Zinc3" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Zinc3" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1706932230]
 texture_filter = 1
 offset_left = 1036.0
 offset_top = 310.0
@@ -5774,7 +5770,7 @@ offset_bottom = 373.99954
 texture = ExtResource("30_06rsu")
 stretch_mode = 5
 
-[node name="Zinc4" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Zinc4" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=469835582]
 texture_filter = 1
 offset_left = 1020.0
 offset_top = 268.0
@@ -5783,7 +5779,7 @@ offset_bottom = 331.99954
 texture = ExtResource("30_06rsu")
 stretch_mode = 5
 
-[node name="Zinc5" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Zinc5" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1345044945]
 texture_filter = 1
 offset_left = 988.0
 offset_top = 316.0
@@ -5792,7 +5788,7 @@ offset_bottom = 379.99954
 texture = ExtResource("30_06rsu")
 stretch_mode = 5
 
-[node name="Emerald1" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Emerald1" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1755851229]
 texture_filter = 1
 offset_left = 900.0
 offset_top = 389.0
@@ -5801,7 +5797,7 @@ offset_bottom = 430.99945
 texture = ExtResource("31_mjrbb")
 stretch_mode = 5
 
-[node name="Emerald2" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Emerald2" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=942578413]
 texture_filter = 1
 offset_left = 885.0
 offset_top = 422.0
@@ -5810,7 +5806,7 @@ offset_bottom = 463.99945
 texture = ExtResource("31_mjrbb")
 stretch_mode = 5
 
-[node name="Emerald3" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Emerald3" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1373798835]
 texture_filter = 1
 offset_left = 963.0
 offset_top = 384.0
@@ -5819,7 +5815,7 @@ offset_bottom = 425.99945
 texture = ExtResource("31_mjrbb")
 stretch_mode = 5
 
-[node name="Emerald4" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Emerald4" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1950518240]
 texture_filter = 1
 offset_left = 950.0
 offset_top = 419.0
@@ -5828,7 +5824,7 @@ offset_bottom = 460.99945
 texture = ExtResource("31_mjrbb")
 stretch_mode = 5
 
-[node name="Emerald5" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Emerald5" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=777368729]
 texture_filter = 1
 offset_left = 932.0
 offset_top = 386.0
@@ -5837,7 +5833,7 @@ offset_bottom = 427.99945
 texture = ExtResource("31_mjrbb")
 stretch_mode = 5
 
-[node name="Emerald6" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Emerald6" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1224250436]
 texture_filter = 1
 offset_left = 918.0
 offset_top = 421.0
@@ -5846,7 +5842,7 @@ offset_bottom = 462.99945
 texture = ExtResource("31_mjrbb")
 stretch_mode = 5
 
-[node name="Lapis1" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Lapis1" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1222031844]
 texture_filter = 1
 offset_left = 844.0
 offset_top = 389.0
@@ -5855,7 +5851,7 @@ offset_bottom = 430.99945
 texture = ExtResource("32_7kfc1")
 stretch_mode = 5
 
-[node name="Lapis2" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Lapis2" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1228371007]
 texture_filter = 1
 offset_left = 743.0
 offset_top = 382.0
@@ -5864,7 +5860,7 @@ offset_bottom = 423.99945
 texture = ExtResource("32_7kfc1")
 stretch_mode = 5
 
-[node name="Lapis3" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Lapis3" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1460923122]
 texture_filter = 1
 offset_left = 771.0
 offset_top = 402.0
@@ -5873,7 +5869,7 @@ offset_bottom = 443.99945
 texture = ExtResource("32_7kfc1")
 stretch_mode = 5
 
-[node name="Lapis4" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Lapis4" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1527426268]
 texture_filter = 1
 offset_left = 810.0
 offset_top = 418.0
@@ -5882,7 +5878,7 @@ offset_bottom = 459.99945
 texture = ExtResource("32_7kfc1")
 stretch_mode = 5
 
-[node name="Lapis5" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Lapis5" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=284923135]
 texture_filter = 1
 offset_left = 866.0
 offset_top = 298.0
@@ -5891,7 +5887,7 @@ offset_bottom = 339.99945
 texture = ExtResource("32_7kfc1")
 stretch_mode = 5
 
-[node name="Lapis6" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Lapis6" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1694559775]
 texture_filter = 1
 offset_left = 786.0
 offset_top = 364.0
@@ -5900,7 +5896,7 @@ offset_bottom = 405.99945
 texture = ExtResource("32_7kfc1")
 stretch_mode = 5
 
-[node name="Lapis7" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Lapis7" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=16609187]
 texture_filter = 1
 offset_left = 810.0
 offset_top = 382.0
@@ -5909,7 +5905,7 @@ offset_bottom = 423.99945
 texture = ExtResource("32_7kfc1")
 stretch_mode = 5
 
-[node name="Diamond1" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Diamond1" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=458799396]
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 662.0
@@ -5919,7 +5915,7 @@ offset_bottom = 328.99945
 texture = ExtResource("33_7kfc1")
 stretch_mode = 5
 
-[node name="Diamond2" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Diamond2" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=797313798]
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 733.0
@@ -5929,7 +5925,7 @@ offset_bottom = 334.99945
 texture = ExtResource("33_7kfc1")
 stretch_mode = 5
 
-[node name="Diamond3" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Diamond3" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=509130248]
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 673.0
@@ -5939,7 +5935,7 @@ offset_bottom = 405.99945
 texture = ExtResource("33_7kfc1")
 stretch_mode = 5
 
-[node name="Diamond4" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Diamond4" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=376275984]
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 708.0
@@ -5949,7 +5945,7 @@ offset_bottom = 363.99945
 texture = ExtResource("33_7kfc1")
 stretch_mode = 5
 
-[node name="Diamond5" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Diamond5" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=67465958]
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 696.0
@@ -5959,7 +5955,7 @@ offset_bottom = 328.99945
 texture = ExtResource("33_7kfc1")
 stretch_mode = 5
 
-[node name="Diamond6" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Diamond6" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1825079426]
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 745.0
@@ -5969,7 +5965,7 @@ offset_bottom = 371.99945
 texture = ExtResource("33_7kfc1")
 stretch_mode = 5
 
-[node name="Diamond7" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Diamond7" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1184883077]
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 712.0
@@ -5979,7 +5975,7 @@ offset_bottom = 398.99945
 texture = ExtResource("33_7kfc1")
 stretch_mode = 5
 
-[node name="Diamond8" type="TextureRect" parent="CanvasLayer/UpgradePart2"]
+[node name="Diamond8" type="TextureRect" parent="CanvasLayer/UpgradePart2" unique_id=1223688115]
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 670.0
@@ -5989,14 +5985,12 @@ offset_bottom = 366.99945
 texture = ExtResource("33_7kfc1")
 stretch_mode = 5
 
-[node name="UpgradePart3" type="Node2D" parent="CanvasLayer"]
+[node name="UpgradePart3" type="Node2D" parent="CanvasLayer" unique_id=1092048348]
 
-[node name="AnimationPlayer3" type="AnimationPlayer" parent="CanvasLayer/UpgradePart3"]
-libraries = {
-&"": SubResource("AnimationLibrary_nr1vm")
-}
+[node name="AnimationPlayer3" type="AnimationPlayer" parent="CanvasLayer/UpgradePart3" unique_id=179322001]
+libraries/ = SubResource("AnimationLibrary_nr1vm")
 
-[node name="Copper1" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Copper1" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=1321911636]
 modulate = Color(1, 1, 1, 0)
 z_index = 3
 texture_filter = 1
@@ -6007,7 +6001,7 @@ offset_bottom = 121.00049
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Copper2" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Copper2" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=54155434]
 modulate = Color(1, 1, 1, 0)
 z_index = 3
 texture_filter = 1
@@ -6018,7 +6012,7 @@ offset_bottom = 119.999664
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Copper3" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Copper3" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=1977615883]
 modulate = Color(1, 1, 1, 0)
 z_index = 3
 texture_filter = 1
@@ -6029,7 +6023,7 @@ offset_bottom = 121.00055
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Copper4" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Copper4" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=915632886]
 modulate = Color(1, 1, 1, 0)
 z_index = 3
 texture_filter = 1
@@ -6040,7 +6034,7 @@ offset_bottom = 120.000916
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Copper5" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Copper5" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=1221008904]
 modulate = Color(1, 1, 1, 0)
 z_index = 3
 texture_filter = 1
@@ -6051,7 +6045,7 @@ offset_bottom = 120.998535
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Copper6" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Copper6" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=314463631]
 modulate = Color(1, 1, 1, 0)
 z_index = 3
 texture_filter = 1
@@ -6062,7 +6056,7 @@ offset_bottom = 120.000626
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Copper7" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Copper7" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=1385213513]
 modulate = Color(1, 1, 1, 0)
 z_index = 3
 texture_filter = 1
@@ -6073,7 +6067,7 @@ offset_bottom = 296.9984
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Copper8" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Copper8" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=1584220552]
 modulate = Color(1, 1, 1, 0)
 z_index = 3
 texture_filter = 1
@@ -6084,7 +6078,7 @@ offset_bottom = 295.99863
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Copper9" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Copper9" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=698874237]
 modulate = Color(1, 1, 1, 0)
 z_index = 3
 texture_filter = 1
@@ -6095,7 +6089,7 @@ offset_bottom = 121.00012
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Copper10" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Copper10" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=1151895948]
 modulate = Color(1, 1, 1, 0)
 z_index = 3
 texture_filter = 1
@@ -6106,7 +6100,7 @@ offset_bottom = 120.00032
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Copper11" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Copper11" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=1585868730]
 modulate = Color(1, 1, 1, 0)
 z_index = 3
 texture_filter = 1
@@ -6117,7 +6111,7 @@ offset_bottom = 449.00134
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Copper12" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Copper12" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=472374397]
 modulate = Color(1, 1, 1, 0)
 z_index = 3
 texture_filter = 1
@@ -6128,7 +6122,7 @@ offset_bottom = 448.0006
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Copper13" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Copper13" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=722254531]
 modulate = Color(1, 1, 1, 0)
 z_index = 3
 texture_filter = 1
@@ -6139,7 +6133,7 @@ offset_bottom = 449.00024
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Copper14" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Copper14" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=893080510]
 modulate = Color(1, 1, 1, 0)
 z_index = 3
 texture_filter = 1
@@ -6150,7 +6144,7 @@ offset_bottom = 447.99976
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Copper15" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Copper15" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=1755424944]
 modulate = Color(1, 1, 1, 0)
 z_index = 3
 texture_filter = 1
@@ -6161,7 +6155,7 @@ offset_bottom = 448.99982
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Copper16" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Copper16" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=823462781]
 modulate = Color(1, 1, 1, 0)
 z_index = 3
 texture_filter = 1
@@ -6172,7 +6166,7 @@ offset_bottom = 448.00012
 texture = ExtResource("17_ikfo1")
 stretch_mode = 5
 
-[node name="Fin1" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Fin1" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=1127337951]
 z_index = 3
 texture_filter = 1
 offset_left = 225.0
@@ -6181,7 +6175,7 @@ offset_right = 313.9998
 offset_bottom = 367.9997
 texture = ExtResource("18_dwom6")
 
-[node name="Fin2" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Fin2" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=269151950]
 z_index = 3
 texture_filter = 1
 offset_left = 393.0
@@ -6190,7 +6184,7 @@ offset_right = 482.00006
 offset_bottom = 206.00027
 texture = ExtResource("18_dwom6")
 
-[node name="Plate1" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Plate1" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=740272849]
 z_index = 3
 texture_filter = 1
 offset_left = 395.0
@@ -6199,7 +6193,7 @@ offset_right = 484.0
 offset_bottom = 381.00003
 texture = ExtResource("34_jne3d")
 
-[node name="Plate2" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Plate2" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=1721563302]
 z_index = 3
 texture_filter = 1
 offset_left = 50.0
@@ -6208,7 +6202,7 @@ offset_right = 138.99945
 offset_bottom = 382.99997
 texture = ExtResource("34_jne3d")
 
-[node name="TopCone" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="TopCone" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=326193394]
 z_index = 3
 texture_filter = 1
 offset_left = 227.0
@@ -6217,7 +6211,7 @@ offset_right = 316.00024
 offset_bottom = 206.99991
 texture = ExtResource("36_i8gw2")
 
-[node name="Engine" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Engine" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=519874214]
 z_index = 3
 texture_filter = 1
 offset_left = 222.0
@@ -6226,7 +6220,7 @@ offset_right = 310.9973
 offset_bottom = 532.00006
 texture = ExtResource("22_15kfc")
 
-[node name="Tank1" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Tank1" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=388340783]
 z_index = 3
 texture_filter = 1
 offset_left = 391.0
@@ -6235,7 +6229,7 @@ offset_right = 479.9999
 offset_bottom = 529.0
 texture = ExtResource("38_liift")
 
-[node name="Tank2" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Tank2" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=1787815770]
 z_index = 3
 texture_filter = 1
 offset_left = 44.0
@@ -6244,7 +6238,7 @@ offset_right = 133.00024
 offset_bottom = 530.99963
 texture = ExtResource("38_liift")
 
-[node name="Rocket" type="TextureRect" parent="CanvasLayer/UpgradePart3"]
+[node name="Rocket" type="TextureRect" parent="CanvasLayer/UpgradePart3" unique_id=519285940]
 z_index = 1
 texture_filter = 1
 offset_left = 165.0
@@ -6254,9 +6248,9 @@ offset_bottom = 406.99957
 texture = ExtResource("40_x6vwi")
 stretch_mode = 5
 
-[node name="Rocketplanet" type="Node2D" parent="CanvasLayer"]
+[node name="Rocketplanet" type="Node2D" parent="CanvasLayer" unique_id=291323808]
 
-[node name="Rocket" type="TextureRect" parent="CanvasLayer/Rocketplanet"]
+[node name="Rocket" type="TextureRect" parent="CanvasLayer/Rocketplanet" unique_id=1031991631]
 z_index = 1
 texture_filter = 1
 offset_left = 47.0
@@ -6266,7 +6260,7 @@ offset_bottom = 169.10446
 texture = ExtResource("41_coeiu")
 stretch_mode = 5
 
-[node name="Rocket2" type="TextureRect" parent="CanvasLayer/Rocketplanet"]
+[node name="Rocket2" type="TextureRect" parent="CanvasLayer/Rocketplanet" unique_id=391668485]
 z_index = 1
 texture_filter = 1
 offset_left = 367.0
@@ -6276,7 +6270,7 @@ offset_bottom = 169.10446
 texture = ExtResource("44_qxc7v")
 stretch_mode = 5
 
-[node name="Rocket3" type="TextureRect" parent="CanvasLayer/Rocketplanet"]
+[node name="Rocket3" type="TextureRect" parent="CanvasLayer/Rocketplanet" unique_id=1280589100]
 z_index = 1
 texture_filter = 1
 offset_left = 47.0
@@ -6286,7 +6280,7 @@ offset_bottom = 464.10446
 texture = ExtResource("45_626aq")
 stretch_mode = 5
 
-[node name="Rocket4" type="TextureRect" parent="CanvasLayer/Rocketplanet"]
+[node name="Rocket4" type="TextureRect" parent="CanvasLayer/Rocketplanet" unique_id=676265135]
 z_index = 1
 texture_filter = 1
 offset_left = 47.0
@@ -6296,7 +6290,7 @@ offset_bottom = 321.10446
 texture = ExtResource("46_jfjt2")
 stretch_mode = 5
 
-[node name="Rocket5" type="TextureRect" parent="CanvasLayer/Rocketplanet"]
+[node name="Rocket5" type="TextureRect" parent="CanvasLayer/Rocketplanet" unique_id=1065103827]
 z_index = 1
 texture_filter = 1
 offset_left = 367.0
@@ -6306,7 +6300,7 @@ offset_bottom = 321.10446
 texture = ExtResource("47_rdgrk")
 stretch_mode = 5
 
-[node name="Rocket6" type="TextureRect" parent="CanvasLayer/Rocketplanet"]
+[node name="Rocket6" type="TextureRect" parent="CanvasLayer/Rocketplanet" unique_id=1167997045]
 z_index = 1
 texture_filter = 1
 offset_left = 367.0
@@ -6316,7 +6310,7 @@ offset_bottom = 465.10446
 texture = ExtResource("48_r4014")
 stretch_mode = 5
 
-[node name="Rocket7" type="TextureRect" parent="CanvasLayer/Rocketplanet"]
+[node name="Rocket7" type="TextureRect" parent="CanvasLayer/Rocketplanet" unique_id=2012487492]
 z_index = 1
 texture_filter = 1
 offset_left = 647.0
@@ -6326,7 +6320,7 @@ offset_bottom = 321.10446
 texture = ExtResource("49_r4014")
 stretch_mode = 5
 
-[node name="Mercury" type="TextureRect" parent="CanvasLayer/Rocketplanet"]
+[node name="Mercury" type="TextureRect" parent="CanvasLayer/Rocketplanet" unique_id=552792830]
 z_index = 1
 texture_filter = 1
 offset_left = 219.0
@@ -6336,7 +6330,7 @@ offset_bottom = 153.10446
 texture = ExtResource("7_0epgs")
 stretch_mode = 5
 
-[node name="Jupiter" type="TextureRect" parent="CanvasLayer/Rocketplanet"]
+[node name="Jupiter" type="TextureRect" parent="CanvasLayer/Rocketplanet" unique_id=882461845]
 z_index = 1
 texture_filter = 1
 offset_left = 539.0
@@ -6346,7 +6340,7 @@ offset_bottom = 161.10446
 texture = ExtResource("8_nlqja")
 stretch_mode = 5
 
-[node name="Mars" type="TextureRect" parent="CanvasLayer/Rocketplanet"]
+[node name="Mars" type="TextureRect" parent="CanvasLayer/Rocketplanet" unique_id=1586424168]
 z_index = 1
 texture_filter = 1
 offset_left = 227.0
@@ -6356,7 +6350,7 @@ offset_bottom = 456.10446
 texture = ExtResource("8_g2equ")
 stretch_mode = 5
 
-[node name="Venus" type="TextureRect" parent="CanvasLayer/Rocketplanet"]
+[node name="Venus" type="TextureRect" parent="CanvasLayer/Rocketplanet" unique_id=2064152959]
 z_index = 1
 texture_filter = 1
 offset_left = 221.0
@@ -6366,7 +6360,7 @@ offset_bottom = 313.10446
 texture = ExtResource("6_nlqja")
 stretch_mode = 5
 
-[node name="Saturn" type="TextureRect" parent="CanvasLayer/Rocketplanet"]
+[node name="Saturn" type="TextureRect" parent="CanvasLayer/Rocketplanet" unique_id=318010893]
 z_index = 1
 texture_filter = 1
 offset_left = 503.0
@@ -6376,7 +6370,7 @@ offset_bottom = 337.10446
 texture = ExtResource("50_txxdm")
 stretch_mode = 5
 
-[node name="Uranus" type="TextureRect" parent="CanvasLayer/Rocketplanet"]
+[node name="Uranus" type="TextureRect" parent="CanvasLayer/Rocketplanet" unique_id=874368290]
 z_index = 1
 texture_filter = 1
 offset_left = 525.99994
@@ -6386,7 +6380,7 @@ offset_bottom = 465.1045
 texture = ExtResource("51_mldml")
 stretch_mode = 5
 
-[node name="Neptune" type="TextureRect" parent="CanvasLayer/Rocketplanet"]
+[node name="Neptune" type="TextureRect" parent="CanvasLayer/Rocketplanet" unique_id=1711009585]
 z_index = 1
 texture_filter = 1
 offset_left = 815.0

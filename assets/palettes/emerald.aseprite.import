@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://blcjd1e5y0r77"
+path="res://.godot/imported/emerald.aseprite-d3e06d9e8690db28cb7d5f23bef10e74.res"
+
+[deps]
+
+source_file="res://assets/palettes/emerald.aseprite"
+dest_files=["res://.godot/imported/emerald.aseprite-d3e06d9e8690db28cb7d5f23bef10e74.res"]
+
+[params]
+
