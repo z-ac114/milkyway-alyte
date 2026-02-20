@@ -21,52 +21,23 @@ var sell_rates := {
 
 
 func _ready():
-	sell_10_rock.pressed.connect(_sell_10_rock)
-	sell_10_copper.pressed.connect(_sell_10_copper)
-	sell_10_iron.pressed.connect(_sell_10_iron)
-	sell_10_gold.pressed.connect(_sell_10_gold)
-	sell_10_zinc.pressed.connect(_sell_10_zinc)
-	sell_10_emerald.pressed.connect(_sell_10_emerald)
-	sell_10_lapis.pressed.connect(_sell_10_lapis)
-	sell_10_diamond.pressed.connect(_sell_10_diamond)
+	sell_10_rock.pressed.connect(func(): _sell_item("rock", 10))
+	sell_10_copper.pressed.connect(func(): _sell_item("copper", 10))
+	sell_10_iron.pressed.connect(func(): _sell_item("iron", 10))
+	sell_10_gold.pressed.connect(func(): _sell_item("gold", 10))
+	sell_10_zinc.pressed.connect(func(): _sell_item("zinc", 10))
+	sell_10_emerald.pressed.connect(func(): _sell_item("emerald", 10))
+	sell_10_lapis.pressed.connect(func(): _sell_item("lapis", 10))
+	sell_10_diamond.pressed.connect(func(): _sell_item("diamond", 10))
 
-
-func _sell_10_rock():
-	if Global.rock > 10:
-		Global.coin += 10 * sell_rates["rock"]
-		Global.rock -= 10
-
-func _sell_10_copper():
-	if Global.copper > 10:
-		Global.coin += 10 * sell_rates["copper"]
-		Global.copper -= 10
-
-func _sell_10_iron():
-	if Global.iron > 10:
-		Global.coin += 10 * sell_rates["iron"]
-		Global.iron -= 10
-
-func _sell_10_gold():
-	if Global.gold > 10:
-		Global.coin += 10 * sell_rates["gold"]
-		Global.gold -= 10
-
-func _sell_10_zinc():
-	if Global.zinc > 10:
-		Global.coin += 10 * sell_rates["zinc"]
-		Global.zinc -= 10
-
-func _sell_10_emerald():
-	if Global.emerald > 10:
-		Global.coin += 10 * sell_rates["emerald"]
-		Global.emerald -= 0
-
-func _sell_10_lapis():
-	if Global.lapis > 10:
-		Global.coin += 10 * sell_rates["lapis"]
-		Global.lapis -= 10
-
-func _sell_10_diamond():
-	if Global.diamond > 10:
-		Global.coin += 10 * sell_rates["diamond"]
-		Global.diamond -= 10
+func _sell_item(item_name: String, amount: int):
+	if Global.get(item_name) >= amount:
+		var earnings = amount * sell_rates[item_name]
+		Global.coin += earnings
+		
+		var new_count = Global.get(item_name) - amount
+		Global.set(item_name, new_count)
+		
+		print("Sold %d %s for %d coins" % [amount, item_name, earnings])
+	else:
+		print("Not enough %s!" % item_name)

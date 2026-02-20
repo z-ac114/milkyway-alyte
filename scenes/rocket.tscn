@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=3 uid="uid://clyvckkgasugt"]
+[gd_scene format=3 uid="uid://clyvckkgasugt"]
 
 [ext_resource type="Script" uid="uid://bo7cmm3c22xll" path="res://scripts/rocket.gd" id="1_8kmw3"]
 [ext_resource type="Theme" uid="uid://c0es2kte6qmmp" path="res://scripts/normal.tres" id="3_agf72"]
@@ -10,6 +10,333 @@
 [ext_resource type="Texture2D" uid="uid://c87jaiganj6cp" path="res://assets/steelengine.png" id="7_t2h4l"]
 [ext_resource type="Texture2D" uid="uid://ctkorshjsddf2" path="res://assets/steelfin.png" id="8_ctxcg"]
 [ext_resource type="Texture2D" uid="uid://cvo2initupppu" path="res://assets/steeltank.png" id="9_fv27l"]
+
+[sub_resource type="Animation" id="Animation_1nvrn"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Fins2:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(60, 182)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Fins2:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("Fins2:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TopCone1:scale")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("TopCone1:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(200, 182)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("TopCone1:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("Fins1:modulate")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/7/type = "value"
+tracks/7/imported = false
+tracks/7/enabled = true
+tracks/7/path = NodePath("Fins1:scale")
+tracks/7/interp = 1
+tracks/7/loop_wrap = true
+tracks/7/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+tracks/8/type = "value"
+tracks/8/imported = false
+tracks/8/enabled = true
+tracks/8/path = NodePath("Fins1:position")
+tracks/8/interp = 1
+tracks/8/loop_wrap = true
+tracks/8/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(330, 182)]
+}
+tracks/9/type = "value"
+tracks/9/imported = false
+tracks/9/enabled = true
+tracks/9/path = NodePath("Plating1:position")
+tracks/9/interp = 1
+tracks/9/loop_wrap = true
+tracks/9/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(60, 332)]
+}
+tracks/10/type = "value"
+tracks/10/imported = false
+tracks/10/enabled = true
+tracks/10/path = NodePath("Plating1:scale")
+tracks/10/interp = 1
+tracks/10/loop_wrap = true
+tracks/10/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+tracks/11/type = "value"
+tracks/11/imported = false
+tracks/11/enabled = true
+tracks/11/path = NodePath("Plating1:modulate")
+tracks/11/interp = 1
+tracks/11/loop_wrap = true
+tracks/11/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/12/type = "value"
+tracks/12/imported = false
+tracks/12/enabled = true
+tracks/12/path = NodePath("Plating2:scale")
+tracks/12/interp = 1
+tracks/12/loop_wrap = true
+tracks/12/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+tracks/13/type = "value"
+tracks/13/imported = false
+tracks/13/enabled = true
+tracks/13/path = NodePath("Plating2:position")
+tracks/13/interp = 1
+tracks/13/loop_wrap = true
+tracks/13/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(330, 332)]
+}
+tracks/14/type = "value"
+tracks/14/imported = false
+tracks/14/enabled = true
+tracks/14/path = NodePath("Plating2:modulate")
+tracks/14/interp = 1
+tracks/14/loop_wrap = true
+tracks/14/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/15/type = "value"
+tracks/15/imported = false
+tracks/15/enabled = true
+tracks/15/path = NodePath("Tank1:position")
+tracks/15/interp = 1
+tracks/15/loop_wrap = true
+tracks/15/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(60, 482)]
+}
+tracks/16/type = "value"
+tracks/16/imported = false
+tracks/16/enabled = true
+tracks/16/path = NodePath("Tank1:scale")
+tracks/16/interp = 1
+tracks/16/loop_wrap = true
+tracks/16/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+tracks/17/type = "value"
+tracks/17/imported = false
+tracks/17/enabled = true
+tracks/17/path = NodePath("Tank1:modulate")
+tracks/17/interp = 1
+tracks/17/loop_wrap = true
+tracks/17/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/18/type = "value"
+tracks/18/imported = false
+tracks/18/enabled = true
+tracks/18/path = NodePath("Engine1:scale")
+tracks/18/interp = 1
+tracks/18/loop_wrap = true
+tracks/18/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+tracks/19/type = "value"
+tracks/19/imported = false
+tracks/19/enabled = true
+tracks/19/path = NodePath("Engine1:position")
+tracks/19/interp = 1
+tracks/19/loop_wrap = true
+tracks/19/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(200, 482)]
+}
+tracks/20/type = "value"
+tracks/20/imported = false
+tracks/20/enabled = true
+tracks/20/path = NodePath("Engine1:modulate")
+tracks/20/interp = 1
+tracks/20/loop_wrap = true
+tracks/20/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/21/type = "value"
+tracks/21/imported = false
+tracks/21/enabled = true
+tracks/21/path = NodePath("Tank2:scale")
+tracks/21/interp = 1
+tracks/21/loop_wrap = true
+tracks/21/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+tracks/22/type = "value"
+tracks/22/imported = false
+tracks/22/enabled = true
+tracks/22/path = NodePath("Tank2:position")
+tracks/22/interp = 1
+tracks/22/loop_wrap = true
+tracks/22/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(330, 482)]
+}
+tracks/23/type = "value"
+tracks/23/imported = false
+tracks/23/enabled = true
+tracks/23/path = NodePath("Tank2:modulate")
+tracks/23/interp = 1
+tracks/23/loop_wrap = true
+tracks/23/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/24/type = "value"
+tracks/24/imported = false
+tracks/24/enabled = true
+tracks/24/path = NodePath("Rocket:modulate")
+tracks/24/interp = 1
+tracks/24/loop_wrap = true
+tracks/24/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/25/type = "value"
+tracks/25/imported = false
+tracks/25/enabled = true
+tracks/25/path = NodePath("Rocket:scale")
+tracks/25/interp = 1
+tracks/25/loop_wrap = true
+tracks/25/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.5, 0.5)]
+}
+tracks/26/type = "value"
+tracks/26/imported = false
+tracks/26/enabled = true
+tracks/26/path = NodePath("Rocket:position")
+tracks/26/interp = 1
+tracks/26/loop_wrap = true
+tracks/26/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(198, 329)]
+}
 
 [sub_resource type="Animation" id="Animation_g6bar"]
 resource_name = "craft_rocket"
@@ -339,343 +666,16 @@ tracks/26/keys = {
 "values": [Vector2(198, 329), Vector2(134, 265)]
 }
 
-[sub_resource type="Animation" id="Animation_1nvrn"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Fins2:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(60, 182)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Fins2:scale")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0.5, 0.5)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("Fins2:modulate")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("TopCone1:scale")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0.5, 0.5)]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("TopCone1:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(200, 182)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("TopCone1:modulate")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/6/type = "value"
-tracks/6/imported = false
-tracks/6/enabled = true
-tracks/6/path = NodePath("Fins1:modulate")
-tracks/6/interp = 1
-tracks/6/loop_wrap = true
-tracks/6/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/7/type = "value"
-tracks/7/imported = false
-tracks/7/enabled = true
-tracks/7/path = NodePath("Fins1:scale")
-tracks/7/interp = 1
-tracks/7/loop_wrap = true
-tracks/7/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0.5, 0.5)]
-}
-tracks/8/type = "value"
-tracks/8/imported = false
-tracks/8/enabled = true
-tracks/8/path = NodePath("Fins1:position")
-tracks/8/interp = 1
-tracks/8/loop_wrap = true
-tracks/8/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(330, 182)]
-}
-tracks/9/type = "value"
-tracks/9/imported = false
-tracks/9/enabled = true
-tracks/9/path = NodePath("Plating1:position")
-tracks/9/interp = 1
-tracks/9/loop_wrap = true
-tracks/9/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(60, 332)]
-}
-tracks/10/type = "value"
-tracks/10/imported = false
-tracks/10/enabled = true
-tracks/10/path = NodePath("Plating1:scale")
-tracks/10/interp = 1
-tracks/10/loop_wrap = true
-tracks/10/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0.5, 0.5)]
-}
-tracks/11/type = "value"
-tracks/11/imported = false
-tracks/11/enabled = true
-tracks/11/path = NodePath("Plating1:modulate")
-tracks/11/interp = 1
-tracks/11/loop_wrap = true
-tracks/11/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/12/type = "value"
-tracks/12/imported = false
-tracks/12/enabled = true
-tracks/12/path = NodePath("Plating2:scale")
-tracks/12/interp = 1
-tracks/12/loop_wrap = true
-tracks/12/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0.5, 0.5)]
-}
-tracks/13/type = "value"
-tracks/13/imported = false
-tracks/13/enabled = true
-tracks/13/path = NodePath("Plating2:position")
-tracks/13/interp = 1
-tracks/13/loop_wrap = true
-tracks/13/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(330, 332)]
-}
-tracks/14/type = "value"
-tracks/14/imported = false
-tracks/14/enabled = true
-tracks/14/path = NodePath("Plating2:modulate")
-tracks/14/interp = 1
-tracks/14/loop_wrap = true
-tracks/14/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/15/type = "value"
-tracks/15/imported = false
-tracks/15/enabled = true
-tracks/15/path = NodePath("Tank1:position")
-tracks/15/interp = 1
-tracks/15/loop_wrap = true
-tracks/15/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(60, 482)]
-}
-tracks/16/type = "value"
-tracks/16/imported = false
-tracks/16/enabled = true
-tracks/16/path = NodePath("Tank1:scale")
-tracks/16/interp = 1
-tracks/16/loop_wrap = true
-tracks/16/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0.5, 0.5)]
-}
-tracks/17/type = "value"
-tracks/17/imported = false
-tracks/17/enabled = true
-tracks/17/path = NodePath("Tank1:modulate")
-tracks/17/interp = 1
-tracks/17/loop_wrap = true
-tracks/17/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/18/type = "value"
-tracks/18/imported = false
-tracks/18/enabled = true
-tracks/18/path = NodePath("Engine1:scale")
-tracks/18/interp = 1
-tracks/18/loop_wrap = true
-tracks/18/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0.5, 0.5)]
-}
-tracks/19/type = "value"
-tracks/19/imported = false
-tracks/19/enabled = true
-tracks/19/path = NodePath("Engine1:position")
-tracks/19/interp = 1
-tracks/19/loop_wrap = true
-tracks/19/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(200, 482)]
-}
-tracks/20/type = "value"
-tracks/20/imported = false
-tracks/20/enabled = true
-tracks/20/path = NodePath("Engine1:modulate")
-tracks/20/interp = 1
-tracks/20/loop_wrap = true
-tracks/20/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/21/type = "value"
-tracks/21/imported = false
-tracks/21/enabled = true
-tracks/21/path = NodePath("Tank2:scale")
-tracks/21/interp = 1
-tracks/21/loop_wrap = true
-tracks/21/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0.5, 0.5)]
-}
-tracks/22/type = "value"
-tracks/22/imported = false
-tracks/22/enabled = true
-tracks/22/path = NodePath("Tank2:position")
-tracks/22/interp = 1
-tracks/22/loop_wrap = true
-tracks/22/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(330, 482)]
-}
-tracks/23/type = "value"
-tracks/23/imported = false
-tracks/23/enabled = true
-tracks/23/path = NodePath("Tank2:modulate")
-tracks/23/interp = 1
-tracks/23/loop_wrap = true
-tracks/23/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 1)]
-}
-tracks/24/type = "value"
-tracks/24/imported = false
-tracks/24/enabled = true
-tracks/24/path = NodePath("Rocket:modulate")
-tracks/24/interp = 1
-tracks/24/loop_wrap = true
-tracks/24/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-tracks/25/type = "value"
-tracks/25/imported = false
-tracks/25/enabled = true
-tracks/25/path = NodePath("Rocket:scale")
-tracks/25/interp = 1
-tracks/25/loop_wrap = true
-tracks/25/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(0.5, 0.5)]
-}
-tracks/26/type = "value"
-tracks/26/imported = false
-tracks/26/enabled = true
-tracks/26/path = NodePath("Rocket:position")
-tracks/26/interp = 1
-tracks/26/loop_wrap = true
-tracks/26/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(198, 329)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_qolsk"]
 _data = {
 &"RESET": SubResource("Animation_1nvrn"),
 &"craft_rocket": SubResource("Animation_g6bar")
 }
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" unique_id=957922962]
 script = ExtResource("1_8kmw3")
 
-[node name="Display1" type="RichTextLabel" parent="."]
+[node name="Display1" type="RichTextLabel" parent="." unique_id=36573553]
 texture_filter = 1
 offset_left = 15.0
 offset_top = 76.0
@@ -687,7 +687,7 @@ autowrap_mode = 2
 horizontal_alignment = 1
 script = ExtResource("4_y2y7n")
 
-[node name="TutorialLabel" type="Label" parent="."]
+[node name="TutorialLabel" type="Label" parent="." unique_id=1366285825]
 texture_filter = 1
 offset_left = 393.0
 offset_top = -3.0
@@ -698,7 +698,7 @@ theme_override_font_sizes/font_size = 40
 text = "Build your own rocket!"
 horizontal_alignment = 1
 
-[node name="BackButton" type="Button" parent="."]
+[node name="BackButton" type="Button" parent="." unique_id=311030863]
 offset_left = 28.0
 offset_top = 595.0
 offset_right = 187.0
@@ -706,9 +706,9 @@ offset_bottom = 639.0
 theme = ExtResource("3_agf72")
 text = "<-- Back"
 
-[node name="CoinDisplay" type="Node2D" parent="."]
+[node name="CoinDisplay" type="Node2D" parent="." unique_id=1130679329]
 
-[node name="TextureRect" type="TextureRect" parent="CoinDisplay"]
+[node name="TextureRect" type="TextureRect" parent="CoinDisplay" unique_id=889808071]
 texture_filter = 1
 offset_left = 4.0
 offset_top = 3.0
@@ -717,7 +717,7 @@ offset_bottom = 43.0
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("6_g6bar")
 
-[node name="CoinLabel" type="Label" parent="CoinDisplay"]
+[node name="CoinLabel" type="Label" parent="CoinDisplay" unique_id=1463443730]
 texture_filter = 1
 offset_left = 67.0
 offset_top = 3.0
@@ -727,7 +727,7 @@ theme = ExtResource("3_agf72")
 theme_override_font_sizes/font_size = 50
 script = ExtResource("7_qolsk")
 
-[node name="CraftButton" type="Button" parent="."]
+[node name="CraftButton" type="Button" parent="." unique_id=1494686010]
 offset_left = 600.0
 offset_top = 595.0
 offset_right = 801.0
@@ -735,7 +735,7 @@ offset_bottom = 639.0
 theme = ExtResource("3_agf72")
 text = "Craft Rocket"
 
-[node name="UpgradePlatingButton" type="Button" parent="."]
+[node name="UpgradePlatingButton" type="Button" parent="." unique_id=2028556916]
 offset_left = 952.0
 offset_top = 152.0
 offset_right = 1138.0
@@ -743,7 +743,7 @@ offset_bottom = 196.0
 theme = ExtResource("3_agf72")
 text = "Upgrade"
 
-[node name="UpgradeEngineButton" type="Button" parent="."]
+[node name="UpgradeEngineButton" type="Button" parent="." unique_id=129190621]
 offset_left = 952.0
 offset_top = 222.0
 offset_right = 1139.0
@@ -751,7 +751,7 @@ offset_bottom = 266.0
 theme = ExtResource("3_agf72")
 text = "Upgrade"
 
-[node name="UpgradeFinsButton" type="Button" parent="."]
+[node name="UpgradeFinsButton" type="Button" parent="." unique_id=1263467150]
 offset_left = 960.0
 offset_top = 301.0
 offset_right = 1132.0
@@ -759,7 +759,7 @@ offset_bottom = 345.0
 theme = ExtResource("3_agf72")
 text = "Upgrade"
 
-[node name="UpgradeTopConeButton" type="Button" parent="."]
+[node name="UpgradeTopConeButton" type="Button" parent="." unique_id=1762981146]
 offset_left = 946.0
 offset_top = 379.0
 offset_right = 1149.0
@@ -767,7 +767,7 @@ offset_bottom = 423.0
 theme = ExtResource("3_agf72")
 text = "Upgrade"
 
-[node name="UpgradeTankButton" type="Button" parent="."]
+[node name="UpgradeTankButton" type="Button" parent="." unique_id=697075703]
 offset_left = 952.0
 offset_top = 445.0
 offset_right = 1144.0
@@ -775,7 +775,7 @@ offset_bottom = 489.0
 theme = ExtResource("3_agf72")
 text = "Upgrade"
 
-[node name="Plating1" type="TextureRect" parent="."]
+[node name="Plating1" type="TextureRect" parent="." unique_id=1444448755]
 texture_filter = 1
 offset_left = 60.0
 offset_top = 332.0
@@ -784,7 +784,7 @@ offset_bottom = 550.00024
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_hhimn")
 
-[node name="Plating2" type="TextureRect" parent="."]
+[node name="Plating2" type="TextureRect" parent="." unique_id=2016289835]
 texture_filter = 1
 offset_left = 330.0
 offset_top = 332.0
@@ -793,7 +793,7 @@ offset_bottom = 550.0004
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("6_hhimn")
 
-[node name="Engine1" type="TextureRect" parent="."]
+[node name="Engine1" type="TextureRect" parent="." unique_id=310514933]
 texture_filter = 1
 offset_left = 200.0
 offset_top = 482.0
@@ -802,7 +802,7 @@ offset_bottom = 700.0001
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_t2h4l")
 
-[node name="Fins1" type="TextureRect" parent="."]
+[node name="Fins1" type="TextureRect" parent="." unique_id=1476674807]
 texture_filter = 1
 offset_left = 330.0
 offset_top = 182.0
@@ -811,7 +811,7 @@ offset_bottom = 399.9994
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("8_ctxcg")
 
-[node name="Fins2" type="TextureRect" parent="."]
+[node name="Fins2" type="TextureRect" parent="." unique_id=1984154982]
 texture_filter = 1
 offset_left = 60.0
 offset_top = 182.0
@@ -820,7 +820,7 @@ offset_bottom = 400.0015
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("8_ctxcg")
 
-[node name="Tank1" type="TextureRect" parent="."]
+[node name="Tank1" type="TextureRect" parent="." unique_id=1850739971]
 texture_filter = 1
 offset_left = 60.0
 offset_top = 482.0
@@ -829,7 +829,7 @@ offset_bottom = 699.9996
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("9_fv27l")
 
-[node name="Tank2" type="TextureRect" parent="."]
+[node name="Tank2" type="TextureRect" parent="." unique_id=933359163]
 texture_filter = 1
 offset_left = 330.0
 offset_top = 482.0
@@ -838,7 +838,7 @@ offset_bottom = 699.9999
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("9_fv27l")
 
-[node name="TopCone1" type="TextureRect" parent="."]
+[node name="TopCone1" type="TextureRect" parent="." unique_id=2034395541]
 texture_filter = 1
 offset_left = 200.0
 offset_top = 182.0
@@ -847,7 +847,7 @@ offset_bottom = 399.99976
 scale = Vector2(0.5, 0.5)
 texture = ExtResource("7_t2h4l")
 
-[node name="Rocket" type="TextureRect" parent="."]
+[node name="Rocket" type="TextureRect" parent="." unique_id=255614394]
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
 offset_left = 198.0
@@ -857,12 +857,10 @@ offset_bottom = 547.0
 scale = Vector2(0.5, 0.5)
 stretch_mode = 5
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_qolsk")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1613168703]
+libraries/ = SubResource("AnimationLibrary_qolsk")
 
-[node name="LaunchButton" type="Button" parent="."]
+[node name="LaunchButton" type="Button" parent="." unique_id=918080774]
 offset_left = 961.0
 offset_top = 598.0
 offset_right = 1140.0
@@ -870,10 +868,10 @@ offset_bottom = 642.0
 theme = ExtResource("3_agf72")
 text = "Launch -->"
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=613988665]
 layer = -1
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=800612393]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -882,7 +880,7 @@ grow_vertical = 2
 texture = ExtResource("7_fa8w1")
 expand_mode = 3
 
-[node name="PlatingLabel" type="Label" parent="."]
+[node name="PlatingLabel" type="Label" parent="." unique_id=174670021]
 offset_left = 499.0
 offset_top = 150.0
 offset_right = 608.0
@@ -890,7 +888,7 @@ offset_bottom = 188.0
 theme = ExtResource("3_agf72")
 text = "Plating"
 
-[node name="PartLabel" type="Label" parent="."]
+[node name="PartLabel" type="Label" parent="." unique_id=1094397701]
 offset_left = 499.0
 offset_top = 85.0
 offset_right = 608.0
@@ -899,7 +897,7 @@ theme = ExtResource("3_agf72")
 text = "Part"
 horizontal_alignment = 1
 
-[node name="CostLabel" type="Label" parent="."]
+[node name="CostLabel" type="Label" parent="." unique_id=2026850544]
 offset_left = 731.0
 offset_top = 85.0
 offset_right = 840.0
@@ -908,7 +906,7 @@ theme = ExtResource("3_agf72")
 text = "Cost"
 horizontal_alignment = 1
 
-[node name="Upgrade!" type="Label" parent="."]
+[node name="Upgrade!" type="Label" parent="." unique_id=1861816384]
 offset_left = 971.0
 offset_top = 85.0
 offset_right = 1116.0
@@ -917,7 +915,7 @@ theme = ExtResource("3_agf72")
 text = "Upgrade!"
 horizontal_alignment = 1
 
-[node name="EngineLabel" type="Label" parent="."]
+[node name="EngineLabel" type="Label" parent="." unique_id=1069113691]
 offset_left = 499.0
 offset_top = 222.0
 offset_right = 610.0
@@ -925,7 +923,7 @@ offset_bottom = 260.0
 theme = ExtResource("3_agf72")
 text = "Engine"
 
-[node name="PlatingCost" type="RichTextLabel" parent="."]
+[node name="PlatingCost" type="RichTextLabel" parent="." unique_id=540671817]
 offset_left = 662.0
 offset_top = 150.0
 offset_right = 936.0
@@ -934,7 +932,7 @@ theme = ExtResource("3_agf72")
 bbcode_enabled = true
 horizontal_alignment = 1
 
-[node name="EngineCost" type="RichTextLabel" parent="."]
+[node name="EngineCost" type="RichTextLabel" parent="." unique_id=1836645310]
 offset_left = 662.0
 offset_top = 222.0
 offset_right = 936.0
@@ -943,7 +941,7 @@ theme = ExtResource("3_agf72")
 bbcode_enabled = true
 horizontal_alignment = 1
 
-[node name="FinsCost" type="RichTextLabel" parent="."]
+[node name="FinsCost" type="RichTextLabel" parent="." unique_id=472345329]
 offset_left = 662.0
 offset_top = 306.0
 offset_right = 936.0
@@ -952,7 +950,7 @@ theme = ExtResource("3_agf72")
 bbcode_enabled = true
 horizontal_alignment = 1
 
-[node name="TankCost" type="RichTextLabel" parent="."]
+[node name="TankCost" type="RichTextLabel" parent="." unique_id=1196794095]
 offset_left = 662.0
 offset_top = 447.0
 offset_right = 936.0
@@ -961,7 +959,7 @@ theme = ExtResource("3_agf72")
 bbcode_enabled = true
 horizontal_alignment = 1
 
-[node name="TopconeCost" type="RichTextLabel" parent="."]
+[node name="TopconeCost" type="RichTextLabel" parent="." unique_id=234973368]
 offset_left = 662.0
 offset_top = 378.0
 offset_right = 936.0
@@ -970,7 +968,7 @@ theme = ExtResource("3_agf72")
 bbcode_enabled = true
 horizontal_alignment = 1
 
-[node name="FinsLabel" type="Label" parent="."]
+[node name="FinsLabel" type="Label" parent="." unique_id=1353957801]
 offset_left = 499.0
 offset_top = 306.0
 offset_right = 608.0
@@ -978,7 +976,7 @@ offset_bottom = 344.0
 theme = ExtResource("3_agf72")
 text = "Fins"
 
-[node name="TopconeLabel" type="Label" parent="."]
+[node name="TopconeLabel" type="Label" parent="." unique_id=1133096685]
 offset_left = 499.0
 offset_top = 382.0
 offset_right = 645.0
@@ -986,7 +984,7 @@ offset_bottom = 420.0
 theme = ExtResource("3_agf72")
 text = "Top Cone"
 
-[node name="TankLabel" type="Label" parent="."]
+[node name="TankLabel" type="Label" parent="." unique_id=1466623294]
 offset_left = 499.0
 offset_top = 447.0
 offset_right = 645.0
