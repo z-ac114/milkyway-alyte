@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://kh5t2f4mntfn"
-path="res://.godot/imported/steelfin.png-c8f76c3a5e4daa6710877b9fa6b5c7c7.ctex"
+uid="uid://b1ynuakjr5k2q"
+path="res://.godot/imported/steeltopcone.png-4ba8e9db742e194b2f46db017d918de2.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/steelfin.png"
-dest_files=["res://.godot/imported/steelfin.png-c8f76c3a5e4daa6710877b9fa6b5c7c7.ctex"]
+source_file="res://assets/steelparts/steeltopcone.png"
+dest_files=["res://.godot/imported/steeltopcone.png-4ba8e9db742e194b2f46db017d918de2.ctex"]
 
 [params]
 

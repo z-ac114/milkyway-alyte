@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://6slnhnhk1h2g"
-path="res://.godot/imported/steelrocket.png-eae32be7c2eb5c4bc9b9cbc390ab0d65.ctex"
+uid="uid://b12qx10tj4dn1"
+path="res://.godot/imported/steelrocket.png-d6c4b4902f67f63759a078c367faaab1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/steelrocket.png"
-dest_files=["res://.godot/imported/steelrocket.png-eae32be7c2eb5c4bc9b9cbc390ab0d65.ctex"]
+source_file="res://assets/steelparts/steelrocket.png"
+dest_files=["res://.godot/imported/steelrocket.png-d6c4b4902f67f63759a078c367faaab1.ctex"]
 
 [params]
 

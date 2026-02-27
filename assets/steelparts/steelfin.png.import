@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cjs1hr4o5nhmw"
-path="res://.godot/imported/steeltank.png-a3daf0af79619aa24653d62ee31a107c.ctex"
+uid="uid://cawq4f0knvwd5"
+path="res://.godot/imported/steelfin.png-00558f8237c1758b6fc0e6e54b3253c9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/steeltank.png"
-dest_files=["res://.godot/imported/steeltank.png-a3daf0af79619aa24653d62ee31a107c.ctex"]
+source_file="res://assets/steelparts/steelfin.png"
+dest_files=["res://.godot/imported/steelfin.png-00558f8237c1758b6fc0e6e54b3253c9.ctex"]
 
 [params]
 

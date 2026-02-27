@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c8mwtfh6oenwi"
-path="res://.godot/imported/steeltopcone.png-0e9fa19ba69e6de30506289f5e39fe18.ctex"
+uid="uid://dqvqgfswb0kaf"
+path="res://.godot/imported/steeltank.png-447ce66738200e654405bc6f6beaca94.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/steeltopcone.png"
-dest_files=["res://.godot/imported/steeltopcone.png-0e9fa19ba69e6de30506289f5e39fe18.ctex"]
+source_file="res://assets/steelparts/steeltank.png"
+dest_files=["res://.godot/imported/steeltank.png-447ce66738200e654405bc6f6beaca94.ctex"]
 
 [params]
 

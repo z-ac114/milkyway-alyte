@@ -33,12 +33,71 @@ var rocket_parts = {
 	"tank": {"costs":[{"copper":32},{"iron":44,"copper":32},{"gold":56,"iron":44},{"zinc":68,"gold":56},{"emerald":80,"zinc":68},{"lapis":92,"emerald":80},{"diamond":104,"lapis":92}]}
 }
 
-var plating_textures = [preload("res://assets/steelplate.png"), preload("res://assets/copperplate.png"), preload("res://assets/ironplate.png"), preload("res://assets/goldplate.png"), preload("res://assets/zincplate.png"), preload("res://assets/emeraldplate.png"), preload("res://assets/lapisplate.png"), preload("res://assets/diamondplate.png")]
-var fins_textures = [preload("res://assets/steelfin.png"), preload("res://assets/copperfin.png"), preload("res://assets/ironfin.png"), preload("res://assets/goldfin.png"), preload("res://assets/zincfin.png"), preload("res://assets/emeraldfin.png"), preload("res://assets/lapisfin.png"), preload("res://assets/diamondfin.png")]
-var engine_textures = [preload("res://assets/steelengine.png"), preload("res://assets/copperengine.png"), preload("res://assets/ironengine.png"), preload("res://assets/goldengine.png"), preload("res://assets/zincengine.png"), preload("res://assets/emeraldengine.png"), preload("res://assets/lapisengine.png"), preload("res://assets/diamondengine.png")]
-var tank_textures = [preload("res://assets/steeltank.png"), preload("res://assets/coppertank.png"), preload("res://assets/irontank.png"), preload("res://assets/goldtank.png"), preload("res://assets/zinctank.png"), preload("res://assets/emeraldtank.png"), preload("res://assets/lapistank.png"), preload("res://assets/diamondtank.png")]
-var top_cone_textures = [preload("res://assets/steeltopcone.png"), preload("res://assets/coppertopcone.png"), preload("res://assets/irontopcone.png"), preload("res://assets/goldtopcone.png"), preload("res://assets/zinctopcone.png"), preload("res://assets/emeraldtopcone.png"), preload("res://assets/lapistopcone.png"), preload("res://assets/diamondtopcone.png")]
-var rocket_textures = [preload("res://assets/steelrocket.png"), preload("res://assets/copperrocket.png"), preload("res://assets/ironrocket.png"), preload("res://assets/goldrocket.png"), preload("res://assets/zincrocket.png"), preload("res://assets/emeraldrocket.png"), preload("res://assets/lapisrocket.png"), preload("res://assets/diamondrocket.png")]
+var plating_textures = [
+	preload("res://assets/steelparts/steelplate.png"),
+	preload("res://assets/copperparts/copperplate.png"),
+	preload("res://assets/ironparts/ironplate.png"),
+	preload("res://assets/goldparts/goldplate.png"),
+	preload("res://assets/zincparts/zincplate.png"),
+	preload("res://assets/emeraldparts/emeraldplate.png"),
+	preload("res://assets/lapisparts/lapisplate.png"),
+	preload("res://assets/diamondparts/diamondplate.png")
+]
+
+var fins_textures = [
+	preload("res://assets/steelparts/steelfin.png"),
+	preload("res://assets/copperparts/copperfin.png"),
+	preload("res://assets/ironparts/ironfin.png"),
+	preload("res://assets/goldparts/goldfin.png"),
+	preload("res://assets/zincparts/zincfin.png"),
+	preload("res://assets/emeraldparts/emeraldfin.png"),
+	preload("res://assets/lapisparts/lapisfin.png"),
+	preload("res://assets/diamondparts/diamondfin.png")
+]
+
+var engine_textures = [
+	preload("res://assets/steelparts/steelengine.png"),
+	preload("res://assets/copperparts/copperengine.png"),
+	preload("res://assets/ironparts/ironengine.png"),
+	preload("res://assets/goldparts/goldengine.png"),
+	preload("res://assets/zincparts/zincengine.png"),
+	preload("res://assets/emeraldparts/emeraldengine.png"),
+	preload("res://assets/lapisparts/lapisengine.png"),
+	preload("res://assets/diamondparts/diamondengine.png")
+]
+
+var tank_textures = [
+	preload("res://assets/steelparts/steeltank.png"),
+	preload("res://assets/copperparts/coppertank.png"),
+	preload("res://assets/ironparts/irontank.png"),
+	preload("res://assets/goldparts/goldtank.png"),
+	preload("res://assets/zincparts/zinctank.png"),
+	preload("res://assets/emeraldparts/emeraldtank.png"),
+	preload("res://assets/lapisparts/lapistank.png"),
+	preload("res://assets/diamondparts/diamondtank.png")
+]
+
+var top_cone_textures = [
+	preload("res://assets/steelparts/steeltopcone.png"),
+	preload("res://assets/copperparts/coppertopcone.png"),
+	preload("res://assets/ironparts/irontopcone.png"),
+	preload("res://assets/goldparts/goldtopcone.png"),
+	preload("res://assets/zincparts/zinctopcone.png"),
+	preload("res://assets/emeraldparts/emeraldtopcone.png"),
+	preload("res://assets/lapisparts/lapistopcone.png"),
+	preload("res://assets/diamondparts/diamondtopcone.png")
+]
+
+var rocket_textures = [
+	preload("res://assets/steelparts/steelrocket.png"),
+	preload("res://assets/copperparts/copperrocket.png"),
+	preload("res://assets/ironparts/ironrocket.png"),
+	preload("res://assets/goldparts/goldrocket.png"),
+	preload("res://assets/zincparts/zincrocket.png"),
+	preload("res://assets/emeraldparts/emeraldrocket.png"),
+	preload("res://assets/lapisparts/lapisrocket.png"),
+	preload("res://assets/diamondparts/diamondrocket.png")
+]
 
 func _ready() -> void:
 	upgrade_plating_button.pressed.connect(_on_upgrade_plating_pressed)
@@ -81,13 +140,13 @@ func update_specific_cost(part_name: String, label_node: RichTextLabel):
 			var icon_path = ""
 			match material:
 				"rock": icon_path = "res://assets/rockk.png"
-				"copper": icon_path = "res://assets/copperingot.png"
-				"iron": icon_path = "res://assets/ironingot.png"
-				"gold": icon_path = "res://assets/goldingot.png"
-				"zinc": icon_path = "res://assets/zincingot.png"
-				"emerald": icon_path = "res://assets/emeraldd.png"
-				"lapis": icon_path = "res://assets/lapislazuli.png"
-				"diamond": icon_path = "res://assets/diamondd.png"
+				"copper": icon_path = "res://assets/copperparts/copperingot.png"
+				"iron": icon_path = "res://assets/ironparts/ironingot.png"
+				"gold": icon_path = "res://assets/goldparts/goldingot.png"
+				"zinc": icon_path = "res://assets/zincparts/zincingot.png"
+				"emerald": icon_path = "res://assets/emeraldparts/emeraldd.png"
+				"lapis": icon_path = "res://assets/lapisparts/lapislazuli.png"
+				"diamond": icon_path = "res://assets/diamondparts/diamondd.png"
 
 			var color_tag = "[color=red]" if Global.get(material) < amount else ""
 			var end_tag = "[/color]" if color_tag != "" else ""
@@ -100,13 +159,34 @@ func upgrade_part(part_name: String):
 	var level = Global.rocket_levels[part_name]
 	var costs = rocket_parts[part_name]["costs"]
 	if level >= costs.size(): return
-
 	var cost = costs[level]
 	if can_afford(cost):
 		deduct_cost(cost)
+		var animation_name = get_upgrade_animation(part_name, level)
 		Global.rocket_levels[part_name] += 1
+		if animation_name != "":
+			print("Playing animation: ", animation_name)
+			animation_player.play(animation_name)
+			await animation_player.animation_finished
+		else:
+			print("No animation for upgrade from level ", level)
+		
 		_update_textures()
 
+func get_upgrade_animation(part_name: String, current_level: int) -> String:
+	match part_name:
+		"fins":
+			match current_level:
+				0:
+					return "steeltocopperfin"
+				1:
+					return "coppertoironfin"
+				2:
+					return "irontogoldfin"
+				_:
+					return ""
+		_:
+			return ""
 func can_afford(cost: Dictionary) -> bool:
 	for material in cost.keys():
 		if Global.get(material) < cost[material]: return false

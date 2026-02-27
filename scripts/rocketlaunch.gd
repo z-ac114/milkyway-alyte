@@ -12,14 +12,14 @@ extends Node2D
 var unlock_screen = preload("res://scenes/unlock_ui.tscn")
 
 var rocket_textures = [
-	preload("res://assets/steelrocket.png"),
-	preload("res://assets/copperrocket.png"),
-	preload("res://assets/ironrocket.png"),
-	preload("res://assets/goldrocket.png"),
-	preload("res://assets/zincrocket.png"),
-	preload("res://assets/emeraldrocket.png"),
-	preload("res://assets/lapisrocket.png"),
-	preload("res://assets/diamondrocket.png")
+	preload("res://assets/steelparts/steelrocket.png"),
+	preload("res://assets/copperparts/copperrocket.png"),
+	preload("res://assets/ironparts/ironrocket.png"),
+	preload("res://assets/goldparts/goldrocket.png"),
+	preload("res://assets/zincparts/zincrocket.png"),
+	preload("res://assets/emeraldparts/emeraldrocket.png"),
+	preload("res://assets/lapisparts/lapisrocket.png"),
+	preload("res://assets/diamondparts/diamondrocket.png")
 ]
 
 var showing_indices = [0, 1, 2]

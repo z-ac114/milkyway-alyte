@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d2qi2axjgqpaq"
-path="res://.godot/imported/steelplate.png-332bee7d3171f389c7707d01ff9ad172.ctex"
+uid="uid://cbf8m1w5ypfad"
+path="res://.godot/imported/steelplate.png-c55ad4abbfe251c7e50fe8f480927b62.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/steelplate.png"
-dest_files=["res://.godot/imported/steelplate.png-332bee7d3171f389c7707d01ff9ad172.ctex"]
+source_file="res://assets/steelparts/steelplate.png"
+dest_files=["res://.godot/imported/steelplate.png-c55ad4abbfe251c7e50fe8f480927b62.ctex"]
 
 [params]
 

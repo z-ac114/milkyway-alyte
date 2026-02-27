@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b6anvo71a4mhd"
-path="res://.godot/imported/steelengine.png-a21f6353c33115324fc8d405ba822a87.ctex"
+uid="uid://c4v0htnlo57cn"
+path="res://.godot/imported/steelengine.png-c3a8f0e1b923fdb7807d392f2b7e6795.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/steelengine.png"
-dest_files=["res://.godot/imported/steelengine.png-a21f6353c33115324fc8d405ba822a87.ctex"]
+source_file="res://assets/steelparts/steelengine.png"
+dest_files=["res://.godot/imported/steelengine.png-c3a8f0e1b923fdb7807d392f2b7e6795.ctex"]
 
 [params]
 

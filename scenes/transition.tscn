@@ -7,7 +7,7 @@
 [ext_resource type="Texture2D" uid="uid://cisndv6t1obs8" path="res://assets/rock.png" id="4_j7crc"]
 [ext_resource type="Texture2D" uid="uid://dhd4jtxdr5hpo" path="res://assets/sprites/kuro/base/idle.png" id="6_6ancn"]
 [ext_resource type="Texture2D" uid="uid://bub705xu15msm" path="res://assets/rocket.png" id="7_lvx3c"]
-[ext_resource type="Texture2D" uid="uid://6slnhnhk1h2g" path="res://assets/steelrocket.png" id="8_ch6ao"]
+[ext_resource type="Texture2D" uid="uid://b12qx10tj4dn1" path="res://assets/steelparts/steelrocket.png" id="8_ch6ao"]
 [ext_resource type="Texture2D" uid="uid://vdr2fjoyk0ce" path="res://assets/copperparts/copperrocket.png" id="9_s64h0"]
 [ext_resource type="Texture2D" uid="uid://swfmidlv2gkg" path="res://assets/ironparts/ironrocket.png" id="10_nepbt"]
 [ext_resource type="Texture2D" uid="uid://sg4iivykx4pc" path="res://assets/goldparts/goldrocket.png" id="11_1bsl1"]
