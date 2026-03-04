@@ -293,6 +293,12 @@ func get_upgrade_animation(part_name: String, current_level: int) -> String:
 					return "lapistodiamondplating"
 				_:
 					return ""
+		"tank":
+			match current_level:
+				0:
+					return "steeltocoppertank"
+				_:
+					return ""
 		_:
 			return ""
 			

@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://chsjwne2mtc2i"
+path="res://.godot/imported/steeltocoppertank.ase-72dac7f680e892e322b6fb8125391edd.res"
+
+[deps]
+
+source_file="res://assets/tankanimations/steeltocoppertank.ase"
+dest_files=["res://.godot/imported/steeltocoppertank.ase-72dac7f680e892e322b6fb8125391edd.res"]
+
+[params]
+
