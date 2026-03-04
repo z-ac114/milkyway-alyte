@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://bv20i2r21mg8l"
+path="res://.godot/imported/coppertoironplating.ase-f5cd5a90cf3a29f6405a7586bb1476b3.res"
+
+[deps]
+
+source_file="res://assets/platinganimations/coppertoironplating.ase"
+dest_files=["res://.godot/imported/coppertoironplating.ase-f5cd5a90cf3a29f6405a7586bb1476b3.res"]
+
+[params]
+

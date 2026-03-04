@@ -25,13 +25,55 @@ extends Node2D
 @onready var animation_player: AnimationPlayer = $AnimationPlayer
 @onready var rocket: TextureRect = $Rocket
 
-var rocket_parts = {
-	"plating": {"costs":[{"copper":10},{"iron":15,"copper":10},{"gold":20,"iron":15},{"zinc":25,"gold":20},{"emerald":30,"zinc":25},{"lapis":35,"emerald":30},{"diamond":40,"lapis":35}]},
-	"engine": {"costs":[{"copper":12},{"iron":18,"copper":12},{"gold":24,"iron":18},{"zinc":30,"gold":24},{"emerald":36,"zinc":30},{"lapis":42,"emerald":36},{"diamond":50,"lapis":42}]},
-	"fins": {"costs":[{"copper":16},{"iron":24,"copper":16},{"gold":32,"iron":24},{"zinc":40,"gold":32},{"emerald":48,"zinc":40},{"lapis":56,"emerald":48},{"diamond":64,"lapis":56}]},
-	"topcone": {"costs":[{"copper":14},{"iron":20,"copper":14},{"gold":26,"iron":20},{"zinc":32,"gold":26},{"emerald":38,"zinc":32},{"lapis":44,"emerald":38},{"diamond":50,"lapis":44}]},
-	"tank": {"costs":[{"copper":32},{"iron":44,"copper":32},{"gold":56,"iron":44},{"zinc":68,"gold":56},{"emerald":80,"zinc":68},{"lapis":92,"emerald":80},{"diamond":104,"lapis":92}]}
+var base_rocket_parts = {
+	"plating": {"costs":[
+		{"copper":10},
+		{"iron":15,"copper":10},
+		{"gold":20,"iron":15},
+		{"zinc":25,"gold":20},
+		{"emerald":30,"zinc":25},
+		{"lapis":35,"emerald":30},
+		{"diamond":40,"lapis":35}
+	]},
+	"engine": {"costs":[
+		{"copper":12},
+		{"iron":18,"copper":12},
+		{"gold":24,"iron":18},
+		{"zinc":30,"gold":24},
+		{"emerald":36,"zinc":30},
+		{"lapis":42,"emerald":36},
+		{"diamond":50,"lapis":42}
+	]},
+	"fins": {"costs":[
+		{"copper":16},
+		{"iron":24,"copper":16},
+		{"gold":32,"iron":24},
+		{"zinc":40,"gold":32},
+		{"emerald":48,"zinc":40},
+		{"lapis":56,"emerald":48},
+		{"diamond":64,"lapis":56}
+	]},
+	"topcone": {"costs":[
+		{"copper":14},
+		{"iron":20,"copper":14},
+		{"gold":26,"iron":20},
+		{"zinc":32,"gold":26},
+		{"emerald":38,"zinc":32},
+		{"lapis":44,"emerald":38},
+		{"diamond":50,"lapis":44}
+	]},
+	"tank": {"costs":[
+		{"copper":32},
+		{"iron":44,"copper":32},
+		{"gold":56,"iron":44},
+		{"zinc":68,"gold":56},
+		{"emerald":80,"zinc":68},
+		{"lapis":92,"emerald":80},
+		{"diamond":104,"lapis":92}
+	]}
 }
+
+var rocket_parts = {}
 
 var plating_textures = [
 	preload("res://assets/steelparts/steelplate.png"),
@@ -100,6 +142,8 @@ var rocket_textures = [
 ]
 
 func _ready() -> void:
+	reset_costs_to_base()
+	
 	upgrade_plating_button.pressed.connect(_on_upgrade_plating_pressed)
 	upgrade_engine_button.pressed.connect(_on_upgrade_engine_pressed)
 	upgrade_fins_button.pressed.connect(_on_upgrade_fins_pressed)
@@ -108,6 +152,42 @@ func _ready() -> void:
 	craft_button.pressed.connect(_on_craft_pressed)
 	_update_textures()
 	rocket.visible = false
+
+func reset_costs_to_base():
+	rocket_parts = {}
+	for part in base_rocket_parts:
+		rocket_parts[part] = {"costs": []}
+		for tier_cost in base_rocket_parts[part]["costs"]:
+			var cost_copy = {}
+			for material in tier_cost:
+				cost_copy[material] = tier_cost[material]
+			rocket_parts[part]["costs"].append(cost_copy)
+
+func calculate_price_multiplier() -> float:
+	var rocket_count = Global.rocket_inventory.size()
+	var base_multiplier = pow(1.2, rocket_count)
+	
+	var has_tier_7 = false
+	for rocket_level in Global.rocket_inventory:
+		if rocket_level == 7:
+			has_tier_7 = true
+			break
+	
+	var tier_7_multiplier = 2.0 if has_tier_7 else 1.0
+	
+	return base_multiplier * tier_7_multiplier
+
+func apply_price_multiplier():
+	var multiplier = calculate_price_multiplier()
+	
+	reset_costs_to_base()
+	
+	for part in rocket_parts:
+		for tier_index in range(rocket_parts[part]["costs"].size()):
+			var tier_cost = rocket_parts[part]["costs"][tier_index]
+			for material in tier_cost.keys():
+				var base_value = base_rocket_parts[part]["costs"][tier_index][material]
+				tier_cost[material] = ceil(base_value * multiplier)
 
 func _update_textures():
 	plating_1.texture = plating_textures[Global.rocket_levels["plating"]]
@@ -134,7 +214,7 @@ func update_specific_cost(part_name: String, label_node: RichTextLabel):
 	
 	if level < costs_list.size():
 		var next_cost = costs_list[level]
-		var cost_string = "Cost: "
+		var cost_string = ""
 		for material in next_cost.keys():
 			var amount = next_cost[material]
 			var icon_path = ""
@@ -150,7 +230,7 @@ func update_specific_cost(part_name: String, label_node: RichTextLabel):
 
 			var color_tag = "[color=red]" if Global.get(material) < amount else ""
 			var end_tag = "[/color]" if color_tag != "" else ""
-			cost_string += "[img=24]%s[/img]%s%s%s%s  " % [icon_path, nbsp, color_tag, str(amount), end_tag]
+			cost_string += "[img=26]%s[/img]%s%s%s%s  " % [icon_path, nbsp, color_tag, str(amount), end_tag]
 		label_node.text = cost_string
 	else:
 		label_node.text = part_name.capitalize() + ": [color=#FFD700]MAX[/color]"
@@ -162,6 +242,7 @@ func upgrade_part(part_name: String):
 	var cost = costs[level]
 	if can_afford(cost):
 		deduct_cost(cost)
+		_update_textures()
 		var animation_name = get_upgrade_animation(part_name, level)
 		Global.rocket_levels[part_name] += 1
 		if animation_name != "":
@@ -183,10 +264,38 @@ func get_upgrade_animation(part_name: String, current_level: int) -> String:
 					return "coppertoironfin"
 				2:
 					return "irontogoldfin"
+				3:
+					return "goldtozincfin"
+				4:
+					return "zinctoemeraldfin"
+				5: 
+					return "emeraldtolapisfin"
+				6:
+					return "lapistodiamondfin"
+				_:
+					return ""
+				
+		"plating":
+			match current_level:
+				0:
+					return "steeltocopperplating"
+				1:
+					return "coppertoironplating"
+				2:
+					return "irontogoldplating"
+				3:
+					return "goldtozincplating"
+				4:
+					return "zinctoemeraldplating"
+				5:
+					return "emeraldtolapisplating"
+				6:
+					return "lapistodiamondplating"
 				_:
 					return ""
 		_:
 			return ""
+			
 func can_afford(cost: Dictionary) -> bool:
 	for material in cost.keys():
 		if Global.get(material) < cost[material]: return false
@@ -216,6 +325,8 @@ func start_crafting_animation(level: int):
 func _finish_crafting():
 	for part_name in rocket_parts.keys():
 		Global.rocket_levels[part_name] = 0
+	
+	apply_price_multiplier()
 	
 	_update_textures()
 	rocket.visible = false
