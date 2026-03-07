@@ -1,0 +1,306 @@
+[gd_scene format=3 uid="uid://dvtn0ac2lh1lk"]
+
+[ext_resource type="Script" uid="uid://8nsy0nn81idf" path="res://scripts/intro.gd" id="1_s2ta7"]
+[ext_resource type="Texture2D" uid="uid://cy7gegncamvl2" path="res://assets/alight.png" id="2_yjqpq"]
+[ext_resource type="Texture2D" uid="uid://8yyw3aq3cnou" path="res://assets/game_studio.png" id="3_4bx60"]
+[ext_resource type="FontFile" uid="uid://dmsa4j1ty7edi" path="res://fonts/BoldsPixels.ttf" id="4_wfs7u"]
+[ext_resource type="Texture2D" uid="uid://qbt7n1krdb3g" path="res://assets/mkw.png" id="5_es01l"]
+[ext_resource type="Texture2D" uid="uid://dfijdwigpwy6g" path="res://assets/logo.png" id="6_es01l"]
+[ext_resource type="Texture2D" uid="uid://bxih8v4ps7r1a" path="res://assets/main.png" id="7_0naf5"]
+
+[sub_resource type="Animation" id="Animation_4bx60"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Logo:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Studio:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Milkyway:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/CTC:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/Label:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 1)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/TextureRect:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 1, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/Label:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [false]
+}
+
+[sub_resource type="Animation" id="Animation_yjqpq"]
+resource_name = "intro"
+length = 21.0
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasLayer/Logo:modulate")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(13.5, 16, 19.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("CanvasLayer/Studio:modulate")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(8.9, 10.75, 13.5),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("CanvasLayer/Milkyway:modulate")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 2.5, 4),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("CanvasLayer/CTC:modulate")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(4.5, 6.5, 8.75),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("CanvasLayer/Label:modulate")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(4.5, 6.5, 8.75),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1), Color(1, 1, 1, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("CanvasLayer/TextureRect:modulate")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(19.5, 21),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("CanvasLayer/Label:visible")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 4.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 1,
+"values": [false, true]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_4bx60"]
+_data = {
+&"RESET": SubResource("Animation_4bx60"),
+&"intro": SubResource("Animation_yjqpq")
+}
+
+[node name="Node2D" type="Node2D" unique_id=1500790565]
+script = ExtResource("1_s2ta7")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=420595434]
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=858209338]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+metadata/_edit_use_anchors_ = true
+
+[node name="Logo" type="Sprite2D" parent="CanvasLayer" unique_id=229552278]
+modulate = Color(1, 1, 1, 0)
+z_index = 2
+texture_filter = 1
+position = Vector2(556, 304)
+scale = Vector2(4.4375, 4.4375)
+texture = ExtResource("2_yjqpq")
+metadata/_aseprite_wizard_interface_config_ = {
+"layer_section": false,
+"pending_changes": {
+"convert_fps_field": 60.0,
+"convert_ms_field": 16.0,
+"convert_to_fps": false,
+"embed_tex": true,
+"i_mode": 0,
+"keep_anim_length": false,
+"layers": [],
+"o_ex_p": "",
+"o_folder": "",
+"o_name": "",
+"only_visible": false,
+"player": "",
+"scale": "1.0",
+"slice": "",
+"source": "",
+"source_uid": -1
+}
+}
+
+[node name="Studio" type="Sprite2D" parent="CanvasLayer" unique_id=811990541]
+modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+position = Vector2(556, 304)
+scale = Vector2(1.1953124, 1.1953124)
+texture = ExtResource("3_4bx60")
+
+[node name="Label" type="Label" parent="CanvasLayer/Studio" unique_id=458676941]
+offset_left = -102.90197
+offset_top = 92.02615
+offset_right = 103.73856
+offset_bottom = 118.79739
+theme_override_fonts/font = ExtResource("4_wfs7u")
+theme_override_font_sizes/font_size = 30
+text = "presents:"
+horizontal_alignment = 1
+
+[node name="Milkyway" type="Sprite2D" parent="CanvasLayer" unique_id=1428873151]
+modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+position = Vector2(556, 304)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("5_es01l")
+
+[node name="Label" type="Label" parent="CanvasLayer/Milkyway" unique_id=1771582506]
+texture_filter = 1
+offset_left = -190.0
+offset_top = 200.0
+offset_right = 186.0
+offset_bottom = 257.0
+theme_override_fonts/font = ExtResource("4_wfs7u")
+theme_override_font_sizes/font_size = 30
+text = "a project submission 
+for the YSWS \"Milkyway\""
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=835798753]
+visible = false
+texture_filter = 1
+offset_left = 467.0
+offset_top = 182.0
+offset_right = 663.0
+offset_bottom = 218.0
+theme_override_fonts/font = ExtResource("4_wfs7u")
+theme_override_font_sizes/font_size = 40
+text = "a sequel to:"
+horizontal_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="CTC" type="Sprite2D" parent="CanvasLayer" unique_id=1608804989]
+modulate = Color(1, 1, 1, 0)
+texture_filter = 1
+position = Vector2(556, 304)
+scale = Vector2(4.43, 4.43)
+texture = ExtResource("6_es01l")
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=871397618]
+modulate = Color(1, 1, 1, 0)
+z_index = 10
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_0naf5")
+expand_mode = 3
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1627251645]
+libraries/ = SubResource("AnimationLibrary_4bx60")
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]

@@ -45,6 +45,7 @@ signal bgm_uranus
 signal bgm_neptune
 signal main_theme
 signal bgm_loop
+signal bgm_intro
 signal advancement_unlocked(title, description)
 
 var rocket_levels = {

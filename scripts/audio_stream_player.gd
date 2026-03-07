@@ -12,7 +12,8 @@ const TRACKS = {
 	"bgm_saturn":  {"path": "res://audio/saturn.mp3",        "offset": 0},
 	"bgm_uranus":  {"path": "res://audio/uranus.mp3",        "offset": 0},
 	"bgm_neptune": {"path": "res://audio/neptune.mp3",       "offset": 0},
-	"bgm_loop":    {"path": "res://audio/looping.mp3",       "offset": 0}
+	"bgm_loop":    {"path": "res://audio/looping.mp3",       "offset": 0},
+	"bgm_intro":   {"path": "res://audio/intro.mp3",         "offset": 0}
 }
 
 var playback_positions: Dictionary = {}

@@ -1,8 +1,8 @@
-[gd_scene load_steps=15 format=3 uid="uid://c6jj2rm808kj3"]
+[gd_scene format=3 uid="uid://c6jj2rm808kj3"]
 
 [ext_resource type="Script" uid="uid://x8rxq3u0py1u" path="res://scripts/test.gd" id="1_errlg"]
 [ext_resource type="Theme" uid="uid://c0es2kte6qmmp" path="res://scripts/normal.tres" id="2_74lek"]
-[ext_resource type="Texture2D" uid="uid://dnqp4dxm31k8i" path="res://assets/sprites/game_studio.png" id="2_iyx0m"]
+[ext_resource type="Texture2D" uid="uid://8yyw3aq3cnou" path="res://assets/game_studio.png" id="3_yk7ts"]
 [ext_resource type="Texture2D" uid="uid://dhd4jtxdr5hpo" path="res://assets/sprites/kuro/base/idle.png" id="5_j5jx5"]
 [ext_resource type="Texture2D" uid="uid://c5lvpi8miefhy" path="res://assets/venus.png" id="5_uacia"]
 [ext_resource type="Texture2D" uid="uid://c5wi0p73vu3qy" path="res://assets/space4.jpg" id="6_lpvoh"]
@@ -40,13 +40,13 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" unique_id=37316333]
 script = ExtResource("1_errlg")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1776607584]
 layer = -1
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=247028231]
 z_index = -100
 anchors_preset = 15
 anchor_right = 1.0
@@ -56,12 +56,12 @@ grow_vertical = 2
 texture = ExtResource("6_lpvoh")
 expand_mode = 1
 
-[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer"]
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer" unique_id=205451289]
 position = Vector2(1089, 589.00006)
 scale = Vector2(0.37890625, 0.37890625)
-texture = ExtResource("2_iyx0m")
+texture = ExtResource("3_yk7ts")
 
-[node name="Label" type="Label" parent="CanvasLayer"]
+[node name="Label" type="Label" parent="CanvasLayer" unique_id=1629806378]
 offset_left = 3.0
 offset_top = 52.0
 offset_right = 777.0
@@ -69,10 +69,10 @@ offset_bottom = 168.0
 theme = ExtResource("2_74lek")
 theme_override_colors/font_color = Color(0.9318973, 0.93189716, 0.93189716, 1)
 theme_override_font_sizes/font_size = 70
-text = "To the moon..?"
+text = "Alight"
 vertical_alignment = 1
 
-[node name="Label2" type="Label" parent="CanvasLayer"]
+[node name="Label2" type="Label" parent="CanvasLayer" unique_id=1034489583]
 offset_left = 12.0
 offset_top = 126.0
 offset_right = 663.0
@@ -80,12 +80,12 @@ offset_bottom = 260.0
 theme = ExtResource("2_74lek")
 theme_override_colors/font_color = Color(0.8745098, 0.8745098, 0.8745098, 1)
 theme_override_font_sizes/font_size = 20
-text = "v.1.0
+text = "v.1.1
 A sequel of Climb the Clouds [2025]
 Kuro is back...?"
 vertical_alignment = 1
 
-[node name="Credits" type="Button" parent="CanvasLayer"]
+[node name="Credits" type="Button" parent="CanvasLayer" unique_id=1685587852]
 offset_left = 29.0
 offset_top = 484.0
 offset_right = 379.0
@@ -95,7 +95,7 @@ theme_override_font_sizes/font_size = 40
 text = "Credits
 "
 
-[node name="QuitGame" type="Button" parent="CanvasLayer"]
+[node name="QuitGame" type="Button" parent="CanvasLayer" unique_id=745780469]
 offset_left = 29.0
 offset_top = 555.0
 offset_right = 379.0
@@ -105,7 +105,7 @@ theme_override_font_sizes/font_size = 40
 text = "Exit Game
 "
 
-[node name="Settings" type="Button" parent="CanvasLayer"]
+[node name="Settings" type="Button" parent="CanvasLayer" unique_id=1345040727]
 offset_left = 29.0
 offset_top = 412.0
 offset_right = 379.0
@@ -115,7 +115,7 @@ theme_override_font_sizes/font_size = 40
 text = "Settings
 "
 
-[node name="Game" type="Button" parent="CanvasLayer"]
+[node name="Game" type="Button" parent="CanvasLayer" unique_id=927132444]
 offset_left = 29.0
 offset_top = 339.0
 offset_right = 379.0
@@ -125,37 +125,37 @@ theme_override_font_sizes/font_size = 40
 text = "Start Game
 "
 
-[node name="Sprite2D4" type="Sprite2D" parent="CanvasLayer"]
+[node name="Sprite2D4" type="Sprite2D" parent="CanvasLayer" unique_id=1064348316]
 texture_filter = 1
 position = Vector2(555, 354)
 scale = Vector2(6.1884003, 6.1884003)
 texture = ExtResource("5_uacia")
 
-[node name="Sprite2D3" type="Sprite2D" parent="CanvasLayer"]
+[node name="Sprite2D3" type="Sprite2D" parent="CanvasLayer" unique_id=803361542]
 texture_filter = 1
 position = Vector2(911, 138)
 scale = Vector2(4.2722125, 4.2722125)
 texture = ExtResource("6_yk7ts")
 
-[node name="Sprite2D6" type="Sprite2D" parent="CanvasLayer"]
+[node name="Sprite2D6" type="Sprite2D" parent="CanvasLayer" unique_id=313619343]
 texture_filter = 1
 position = Vector2(820, 436)
 scale = Vector2(8.811664, 8.811661)
 texture = ExtResource("7_yk7ts")
 
-[node name="Sprite2D5" type="Sprite2D" parent="CanvasLayer"]
+[node name="Sprite2D5" type="Sprite2D" parent="CanvasLayer" unique_id=1762506404]
 texture_filter = 1
 position = Vector2(1025, 300)
 scale = Vector2(7.8223658, 7.822365)
 texture = ExtResource("7_ajshl")
 
-[node name="Sprite2D2" type="Sprite2D" parent="CanvasLayer"]
+[node name="Sprite2D2" type="Sprite2D" parent="CanvasLayer" unique_id=1380806917]
 texture_filter = 1
 position = Vector2(678, 157.99998)
 scale = Vector2(3.7711768, 3.7711766)
 texture = ExtResource("8_ghpyy")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer"]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=589814722]
 texture_filter = 1
 position = Vector2(822, 269)
 scale = Vector2(5.4479165, 5.4479165)
@@ -163,7 +163,7 @@ sprite_frames = SubResource("SpriteFrames_uacia")
 autoplay = "default"
 frame_progress = 0.53343856
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer"]
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="CanvasLayer" unique_id=134260264]
 volume_db = -20.0
 bus = &"Music"
 
