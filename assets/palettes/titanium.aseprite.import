@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://c7wd217d7hi7d"
+path="res://.godot/imported/titanium.aseprite-31e48d4067d67d029bfbe73ad93b4d2c.res"
+
+[deps]
+
+source_file="res://assets/palettes/titanium.aseprite"
+dest_files=["res://.godot/imported/titanium.aseprite-31e48d4067d67d029bfbe73ad93b4d2c.res"]
+
+[params]
+

@@ -1,7 +1,6 @@
 extends Node2D
 @onready var label: Label = $CanvasLayer/Label
 @onready var audio_stream_player: AudioStreamPlayer = $CanvasLayer/AudioStreamPlayer
-
 func _ready() -> void:
 	Global.play_bgm = true
 	
