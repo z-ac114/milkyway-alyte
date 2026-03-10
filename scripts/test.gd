@@ -4,7 +4,6 @@ extends Node2D
 
 func _ready() -> void:
 	Global.play_bgm = true
-	label.text = ("To the moon..?")
 	
 func _on_button_pressed() -> void:
 	Sfxmanager.play_button_click()
