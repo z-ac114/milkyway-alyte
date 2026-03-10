@@ -2,15 +2,23 @@
 
 [ext_resource type="Script" uid="uid://x8rxq3u0py1u" path="res://scripts/test.gd" id="1_errlg"]
 [ext_resource type="Theme" uid="uid://c0es2kte6qmmp" path="res://scripts/normal.tres" id="2_74lek"]
-[ext_resource type="Script" uid="uid://biwkgrjex5sxq" path="res://scenes/planet_1.gd" id="3_at5dv"]
 [ext_resource type="Texture2D" uid="uid://8yyw3aq3cnou" path="res://assets/game_studio.png" id="3_yk7ts"]
 [ext_resource type="Texture2D" uid="uid://bcyaaksr3f30x" path="res://assets/alyte.png" id="5_j5jx5"]
 [ext_resource type="Texture2D" uid="uid://c5lvpi8miefhy" path="res://assets/venus.png" id="5_uacia"]
 [ext_resource type="Texture2D" uid="uid://c5wi0p73vu3qy" path="res://assets/space4.jpg" id="6_lpvoh"]
 [ext_resource type="Texture2D" uid="uid://b18lot253t7t" path="res://assets/mercury.png" id="6_yk7ts"]
+[ext_resource type="Script" uid="uid://dr2eedhumf1lg" path="res://scripts/planet_1.gd" id="7_5jxlq"]
+[ext_resource type="Texture2D" uid="uid://bctijft1myqba" path="res://assets/earth.png" id="7_ajshl"]
 [ext_resource type="Texture2D" uid="uid://d0nev8kdank7t" path="res://assets/sun.png" id="7_yk7ts"]
-[ext_resource type="Script" uid="uid://bspsnubd1gcko" path="res://scenes/pivot.gd" id="8_jcd4p"]
-[ext_resource type="Script" uid="uid://dgvutjnusyhqw" path="res://scenes/planet_2.gd" id="10_yk7ts"]
+[ext_resource type="Texture2D" uid="uid://b6c5b7j3halft" path="res://assets/mars.png" id="8_ghpyy"]
+[ext_resource type="Script" uid="uid://cblhioy4wk87k" path="res://scripts/pivot.gd" id="9_xrtyr"]
+[ext_resource type="Script" uid="uid://bx15fpors3r26" path="res://scripts/planet_2.gd" id="11_daiq8"]
+[ext_resource type="Script" uid="uid://1wupsysot8dj" path="res://scripts/planet_3.gd" id="13_c6rvn"]
+[ext_resource type="Script" uid="uid://brmdolrpofkix" path="res://scripts/planet_4.gd" id="15_n74k2"]
+[ext_resource type="Texture2D" uid="uid://c41sg5rfyxknw" path="res://assets/moon.png" id="16_si7kk"]
+[ext_resource type="Script" uid="uid://c5uay8pyvrrun" path="res://scripts/moon.gd" id="17_pn65j"]
+[ext_resource type="Texture2D" uid="uid://dowhecs3gsd0n" path="res://assets/jupiter.png" id="18_daiq8"]
+[ext_resource type="Script" uid="uid://dm4wtd6laxngd" path="res://scripts/planet_5.gd" id="19_c6rvn"]
 
 [sub_resource type="Animation" id="Animation_jcd4p"]
 resource_name = "spin"
@@ -33,7 +41,6 @@ scale = Vector2(4.2697744, 4.2697744)
 texture = ExtResource("5_j5jx5")
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=247028231]
-visible = false
 z_index = -100
 anchors_preset = 15
 anchor_right = 1.0
@@ -123,24 +130,52 @@ texture_filter = 1
 position = Vector2(350, 254)
 scale = Vector2(2.5, 2.5)
 texture = ExtResource("6_yk7ts")
-script = ExtResource("3_at5dv")
+script = ExtResource("7_5jxlq")
 
 [node name="pivot" type="Sprite2D" parent="CanvasLayer" unique_id=426077086]
 texture_filter = 1
 position = Vector2(350, 304)
 scale = Vector2(5, 5)
 texture = ExtResource("7_yk7ts")
-script = ExtResource("8_jcd4p")
+script = ExtResource("9_xrtyr")
 
 [node name="planet2" type="Sprite2D" parent="CanvasLayer" unique_id=151301480]
 texture_filter = 1
 position = Vector2(350, 184)
 scale = Vector2(3, 3)
 texture = ExtResource("5_uacia")
-script = ExtResource("10_yk7ts")
+script = ExtResource("11_daiq8")
+
+[node name="planet3" type="Sprite2D" parent="CanvasLayer" unique_id=806875660]
+texture_filter = 1
+position = Vector2(350.00003, 120.00001)
+scale = Vector2(3.5, 3.5)
+texture = ExtResource("7_ajshl")
+script = ExtResource("13_c6rvn")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="CanvasLayer" unique_id=1173097085]
 libraries/ = SubResource("AnimationLibrary_uacia")
+
+[node name="planet4" type="Sprite2D" parent="CanvasLayer" unique_id=1635120567]
+texture_filter = 1
+position = Vector2(350.00003, 120.00001)
+scale = Vector2(1.75, 1.75)
+texture = ExtResource("8_ghpyy")
+script = ExtResource("15_n74k2")
+
+[node name="moon" type="Sprite2D" parent="CanvasLayer" unique_id=1988068937]
+texture_filter = 1
+position = Vector2(350.00003, 120.00001)
+scale = Vector2(0.75, 0.75)
+texture = ExtResource("16_si7kk")
+script = ExtResource("17_pn65j")
+
+[node name="planet5" type="Sprite2D" parent="CanvasLayer" unique_id=184665921]
+texture_filter = 1
+position = Vector2(350.00003, 120.00001)
+scale = Vector2(2, 2)
+texture = ExtResource("18_daiq8")
+script = ExtResource("19_c6rvn")
 
 [connection signal="pressed" from="CanvasLayer/Credits" to="." method="_on_credits_pressed"]
 [connection signal="pressed" from="CanvasLayer/QuitGame" to="." method="_on_quit_game_pressed"]
