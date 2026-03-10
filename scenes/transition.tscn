@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bmg74qa4eri06"]
 
-[ext_resource type="Texture2D" uid="uid://bxfqnn7lsd1qj" path="res://assets/Thumbnail.png" id="1_1ap01"]
 [ext_resource type="Script" uid="uid://byxsq57lgdxsq" path="res://scripts/transition.gd" id="1_m7m3o"]
 [ext_resource type="Theme" uid="uid://c0es2kte6qmmp" path="res://scripts/normal.tres" id="2_m7m3o"]
+[ext_resource type="Texture2D" uid="uid://dxv2b8jkmg1ex" path="res://assets/6839781.jpg" id="2_s64h0"]
 [ext_resource type="Script" uid="uid://larxvedrappu" path="res://scripts/rock_2.gd" id="3_xhlym"]
 [ext_resource type="Texture2D" uid="uid://cisndv6t1obs8" path="res://assets/rock.png" id="4_j7crc"]
 [ext_resource type="Texture2D" uid="uid://dhd4jtxdr5hpo" path="res://assets/sprites/kuro/base/idle.png" id="6_6ancn"]
@@ -58,6 +58,81 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="Animation" id="Animation_uw02p"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("TextureRect2:texture")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [ExtResource("7_lvx3c")]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Planet:texture")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [null]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("TextureRect2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(486.3151, 25.892239)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("TextureRect2:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.9651670999999999]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("AnimatedSprite2D:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(363.00006, 137)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("AnimatedSprite2D:rotation")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [0.17453292]
+}
+
 [sub_resource type="Animation" id="Animation_ilq6x"]
 resource_name = "change_planet"
 length = 6.0
@@ -107,7 +182,7 @@ tracks/3/keys = {
 "times": PackedFloat32Array(0, 0.75, 1.5, 2.25, 3, 3.75, 4.5, 5.25, 6),
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
-"values": [0.9651671, 1.0471976, 1.134464, 1.1868238, 1.2391838, 1.3089969, 1.361356816555577, 1.4311699866353502, 1.4660765716752369]
+"values": [0.9651670999999999, 1.0471976, 1.134464, 1.1868238, 1.2391838, 1.3089969, 1.361356816555577, 1.4311699866353502, 1.4660765716752369]
 }
 tracks/4/type = "value"
 tracks/4/imported = false
@@ -134,147 +209,72 @@ tracks/5/keys = {
 "values": [-0.57595867, -0.5235988, -0.44331363, -0.40142572, -0.34906584, -0.27925268, -0.2268928, -0.13962634, -0.10471976]
 }
 
-[sub_resource type="Animation" id="Animation_uw02p"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("TextureRect2:texture")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [ExtResource("7_lvx3c")]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Planet:texture")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 1,
-"values": [null]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("TextureRect2:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(486.3151, 25.892239)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("TextureRect2:rotation")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.9651671]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("AnimatedSprite2D:position")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(363.00006, 137)]
-}
-tracks/5/type = "value"
-tracks/5/imported = false
-tracks/5/enabled = true
-tracks/5/path = NodePath("AnimatedSprite2D:rotation")
-tracks/5/interp = 1
-tracks/5/loop_wrap = true
-tracks/5/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.17453292]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_f50ru"]
 _data = {
 &"RESET": SubResource("Animation_uw02p"),
 &"change_planet": SubResource("Animation_ilq6x")
 }
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" unique_id=618503048]
 script = ExtResource("1_m7m3o")
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="TextureRect" type="TextureRect" parent="." unique_id=307489706]
 offset_right = 1152.0
 offset_bottom = 648.0
-texture = ExtResource("1_1ap01")
+texture = ExtResource("2_s64h0")
 expand_mode = 1
-stretch_mode = 5
+stretch_mode = 6
 
-[node name="Label" type="Label" parent="."]
+[node name="Label" type="Label" parent="." unique_id=1353764316]
 offset_left = 11.0
 offset_top = 448.0
 offset_right = 172.0
 offset_bottom = 484.0
 theme = ExtResource("2_m7m3o")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.7919991, 0.79199916, 0.7919991, 1)
 text = "Loading..."
 
-[node name="Rock2" type="Area2D" parent="."]
+[node name="Rock2" type="Area2D" parent="." unique_id=1098092432]
 position = Vector2(83.00003, 576)
 scale = Vector2(10, 10)
 script = ExtResource("3_xhlym")
 dps = 90
 
-[node name="Sprite2D" type="Sprite2D" parent="Rock2"]
+[node name="Sprite2D" type="Sprite2D" parent="Rock2" unique_id=2133704563]
 texture_filter = 1
 position = Vector2(0.10000992, -5.722046e-06)
 scale = Vector2(0.75, 0.75)
 texture = ExtResource("4_j7crc")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Rock2"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Rock2" unique_id=637604008]
 position = Vector2(0.10000992, -5.722046e-06)
 scale = Vector2(0.75, 0.75)
 shape = SubResource("RectangleShape2D_7fmn4")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1481595248]
 texture_filter = 1
 position = Vector2(363.00006, 137)
 rotation = 0.17453292
 scale = Vector2(7.3229184, 7.3229184)
 sprite_frames = SubResource("SpriteFrames_kejnv")
 autoplay = "default"
+frame = 1
+frame_progress = 0.81293565
 
-[node name="TextureRect2" type="TextureRect" parent="."]
+[node name="TextureRect2" type="TextureRect" parent="." unique_id=530593237]
 texture_filter = 1
 offset_left = 486.3151
 offset_top = 25.892239
-offset_right = 766.3843
+offset_right = 766.38635
 offset_bottom = 343.12405
 rotation = 0.9651671
 texture = ExtResource("7_lvx3c")
 stretch_mode = 5
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
-libraries = {
-&"": SubResource("AnimationLibrary_f50ru")
-}
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1790110772]
+libraries/ = SubResource("AnimationLibrary_f50ru")
 
-[node name="Planet" type="TextureRect" parent="."]
+[node name="Planet" type="TextureRect" parent="." unique_id=192722388]
 texture_filter = 1
 offset_left = 837.0
 offset_top = 184.0
@@ -283,7 +283,7 @@ offset_bottom = 328.0
 scale = Vector2(1.5, 1.5)
 stretch_mode = 5
 
-[node name="Earth" type="TextureRect" parent="."]
+[node name="Earth" type="TextureRect" parent="." unique_id=949203866]
 texture_filter = 1
 offset_left = 124.0
 offset_top = 264.0
@@ -291,7 +291,7 @@ offset_right = 276.0
 offset_bottom = 416.0
 texture = ExtResource("24_ktl7v")
 
-[node name="Earth2" type="TextureRect" parent="."]
+[node name="Earth2" type="TextureRect" parent="." unique_id=719809007]
 texture_filter = 1
 offset_left = 321.0
 offset_top = 533.0
@@ -299,7 +299,7 @@ offset_right = 413.0
 offset_bottom = 625.0
 texture = ExtResource("24_ktl7v")
 
-[node name="TargetPlanet" type="TextureRect" parent="."]
+[node name="TargetPlanet" type="TextureRect" parent="." unique_id=817401777]
 texture_filter = 1
 offset_left = 646.0
 offset_top = 533.0
@@ -308,48 +308,48 @@ offset_bottom = 625.0
 expand_mode = 3
 stretch_mode = 5
 
-[node name="Label2" type="Label" parent="."]
+[node name="Label2" type="Label" parent="." unique_id=2011395067]
 offset_left = 431.0
 offset_top = 554.0
 offset_right = 542.0
 offset_bottom = 602.0
 theme = ExtResource("2_m7m3o")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.7919991, 0.79199916, 0.7919991, 1)
 theme_override_font_sizes/font_size = 40
 text = "-->"
 
-[node name="Label3" type="Label" parent="."]
+[node name="Label3" type="Label" parent="." unique_id=1689899177]
 offset_left = 217.0
 offset_top = 555.0
 offset_right = 305.0
 offset_bottom = 603.0
 theme = ExtResource("2_m7m3o")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.7919991, 0.79199916, 0.7919991, 1)
 theme_override_font_sizes/font_size = 40
 text = "TER"
 
-[node name="TargetPlanetLabel" type="Label" parent="."]
+[node name="TargetPlanetLabel" type="Label" parent="." unique_id=1925175638]
 offset_left = 513.0
 offset_top = 555.0
 offset_right = 601.0
 offset_bottom = 603.0
 theme = ExtResource("2_m7m3o")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.7919991, 0.79199916, 0.7919991, 1)
 theme_override_font_sizes/font_size = 40
 text = "SOL"
 
-[node name="Sprite2D" type="Sprite2D" parent="."]
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1759413297]
 position = Vector2(1071.75, 571.75006)
 scale = Vector2(0.5136718, 0.5136718)
 texture = ExtResource("25_s64h0")
 
-[node name="Label4" type="Label" parent="."]
+[node name="Label4" type="Label" parent="." unique_id=1342105335]
 offset_left = 559.0
 offset_top = 464.0
 offset_right = 1142.0
 offset_bottom = 500.0
 theme = ExtResource("2_m7m3o")
-theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_color = Color(0.7919991, 0.79199916, 0.7919991, 1)
 theme_override_font_sizes/font_size = 20
 text = "(Feature is WIP, currently it does not lead to anywhere)"
 
