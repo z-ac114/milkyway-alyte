@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://clpcr6lkjt2i1"
+path="res://.godot/imported/irontogoldtank.ase-be0461bc92407da22cbee77b315ca38c.res"
+
+[deps]
+
+source_file="res://assets/tankanimations/irontogoldtank.ase"
+dest_files=["res://.godot/imported/irontogoldtank.ase-be0461bc92407da22cbee77b315ca38c.res"]
+
+[params]
+

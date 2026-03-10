@@ -33,7 +33,8 @@ var base_rocket_parts = {
 		{"zinc":25,"gold":20},
 		{"emerald":30,"zinc":25},
 		{"lapis":35,"emerald":30},
-		{"diamond":40,"lapis":35}
+		{"diamond":40,"lapis":35},
+		{"titanium":50,"diamond":60}
 	]},
 	"engine": {"costs":[
 		{"copper":12},
@@ -42,7 +43,8 @@ var base_rocket_parts = {
 		{"zinc":30,"gold":24},
 		{"emerald":36,"zinc":30},
 		{"lapis":42,"emerald":36},
-		{"diamond":50,"lapis":42}
+		{"diamond":50,"lapis":42},
+		{"titanium":70,"diamond":50}
 	]},
 	"fins": {"costs":[
 		{"copper":16},
@@ -51,7 +53,8 @@ var base_rocket_parts = {
 		{"zinc":40,"gold":32},
 		{"emerald":48,"zinc":40},
 		{"lapis":56,"emerald":48},
-		{"diamond":64,"lapis":56}
+		{"diamond":64,"lapis":56},
+		{"titanium":82,"lapis":70}
 	]},
 	"topcone": {"costs":[
 		{"copper":14},
@@ -60,7 +63,8 @@ var base_rocket_parts = {
 		{"zinc":32,"gold":26},
 		{"emerald":38,"zinc":32},
 		{"lapis":44,"emerald":38},
-		{"diamond":50,"lapis":44}
+		{"diamond":50,"lapis":44},
+		{"titanium":60,"lapis":50}
 	]},
 	"tank": {"costs":[
 		{"copper":32},
@@ -69,7 +73,8 @@ var base_rocket_parts = {
 		{"zinc":68,"gold":56},
 		{"emerald":80,"zinc":68},
 		{"lapis":92,"emerald":80},
-		{"diamond":104,"lapis":92}
+		{"diamond":104,"lapis":92},
+		{"titanium":120,"lapis":100}
 	]}
 }
 
@@ -83,7 +88,8 @@ var plating_textures = [
 	preload("res://assets/zincparts/zincplate.png"),
 	preload("res://assets/emeraldparts/emeraldplate.png"),
 	preload("res://assets/lapisparts/lapisplate.png"),
-	preload("res://assets/diamondparts/diamondplate.png")
+	preload("res://assets/diamondparts/diamondplate.png"),
+	preload("res://assets/titaniumparts/titaniumplate.png")
 ]
 
 var fins_textures = [
@@ -94,7 +100,8 @@ var fins_textures = [
 	preload("res://assets/zincparts/zincfin.png"),
 	preload("res://assets/emeraldparts/emeraldfin.png"),
 	preload("res://assets/lapisparts/lapisfin.png"),
-	preload("res://assets/diamondparts/diamondfin.png")
+	preload("res://assets/diamondparts/diamondfin.png"),
+	preload("res://assets/titaniumparts/titaniumfin.png")
 ]
 
 var engine_textures = [
@@ -105,7 +112,8 @@ var engine_textures = [
 	preload("res://assets/zincparts/zincengine.png"),
 	preload("res://assets/emeraldparts/emeraldengine.png"),
 	preload("res://assets/lapisparts/lapisengine.png"),
-	preload("res://assets/diamondparts/diamondengine.png")
+	preload("res://assets/diamondparts/diamondengine.png"),
+	preload("res://assets/titaniumparts/titaniumengine.png")
 ]
 
 var tank_textures = [
@@ -116,7 +124,8 @@ var tank_textures = [
 	preload("res://assets/zincparts/zinctank.png"),
 	preload("res://assets/emeraldparts/emeraldtank.png"),
 	preload("res://assets/lapisparts/lapistank.png"),
-	preload("res://assets/diamondparts/diamondtank.png")
+	preload("res://assets/diamondparts/diamondtank.png"),
+	preload("res://assets/titaniumparts/titaniumtank.png")
 ]
 
 var top_cone_textures = [
@@ -127,7 +136,8 @@ var top_cone_textures = [
 	preload("res://assets/zincparts/zinctopcone.png"),
 	preload("res://assets/emeraldparts/emeraldtopcone.png"),
 	preload("res://assets/lapisparts/lapistopcone.png"),
-	preload("res://assets/diamondparts/diamondtopcone.png")
+	preload("res://assets/diamondparts/diamondtopcone.png"),
+	preload("res://assets/titaniumparts/titaniumtopcone.png")
 ]
 
 var rocket_textures = [
@@ -138,7 +148,8 @@ var rocket_textures = [
 	preload("res://assets/zincparts/zincrocket.png"),
 	preload("res://assets/emeraldparts/emeraldrocket.png"),
 	preload("res://assets/lapisparts/lapisrocket.png"),
-	preload("res://assets/diamondparts/diamondrocket.png")
+	preload("res://assets/diamondparts/diamondrocket.png"),
+	preload("res://assets/titaniumparts/titaniumrocket.png")
 ]
 
 func _ready() -> void:
@@ -167,15 +178,15 @@ func calculate_price_multiplier() -> float:
 	var rocket_count = Global.rocket_inventory.size()
 	var base_multiplier = pow(1.2, rocket_count)
 	
-	var has_tier_7 = false
+	var has_tier_8 = false
 	for rocket_level in Global.rocket_inventory:
-		if rocket_level == 7:
-			has_tier_7 = true
+		if rocket_level == 8:
+			has_tier_8 = true
 			break
 	
-	var tier_7_multiplier = 2.0 if has_tier_7 else 1.0
+	var tier_8_multiplier = 2.0 if has_tier_8 else 1.0
 	
-	return base_multiplier * tier_7_multiplier
+	return base_multiplier * tier_8_multiplier
 
 func apply_price_multiplier():
 	var multiplier = calculate_price_multiplier()
@@ -227,7 +238,7 @@ func update_specific_cost(part_name: String, label_node: RichTextLabel):
 				"emerald": icon_path = "res://assets/emeraldparts/emeraldd.png"
 				"lapis": icon_path = "res://assets/lapisparts/lapislazuli.png"
 				"diamond": icon_path = "res://assets/diamondparts/diamondd.png"
-
+				"titanium": icon_path = "res://assets/titaniumparts/titaniumingot.png"
 			var color_tag = "[color=red]" if Global.get(material) < amount else ""
 			var end_tag = "[/color]" if color_tag != "" else ""
 			cost_string += "[img=26]%s[/img]%s%s%s%s  " % [icon_path, nbsp, color_tag, str(amount), end_tag]

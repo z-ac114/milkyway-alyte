@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dyj7cvhsuq6tn"
-path="res://.godot/imported/Screenshot 2026-01-13 at 9.54.19 PM.png-0a099f17ece6c8b3dcf2cd1b7e09474b.ctex"
+uid="uid://bq8emrslmvciu"
+path="res://.godot/imported/titaniumrocket.png-60d5544e58c1d75b86b4cb22f6377300.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Screenshot 2026-01-13 at 9.54.19 PM.png"
-dest_files=["res://.godot/imported/Screenshot 2026-01-13 at 9.54.19 PM.png-0a099f17ece6c8b3dcf2cd1b7e09474b.ctex"]
+source_file="res://assets/titaniumparts/titaniumrocket.png"
+dest_files=["res://.godot/imported/titaniumrocket.png-60d5544e58c1d75b86b4cb22f6377300.ctex"]
 
 [params]
 

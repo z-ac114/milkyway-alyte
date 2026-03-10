@@ -1,15 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://c1bmk6oyoig5m"]
+[gd_scene format=3 uid="uid://c1bmk6oyoig5m"]
 
 [ext_resource type="Script" uid="uid://bl41wdh8i162m" path="res://scripts/rocketlaunch.gd" id="1_d75br"]
 [ext_resource type="Theme" uid="uid://c0es2kte6qmmp" path="res://scripts/normal.tres" id="1_gxgo8"]
 [ext_resource type="Texture2D" uid="uid://r3a3lvr8h25f" path="res://assets/space3.jpg" id="3_x115k"]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" unique_id=1348720553]
 script = ExtResource("1_d75br")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1733505325]
 
-[node name="MapButton" type="Button" parent="CanvasLayer"]
+[node name="MapButton" type="Button" parent="CanvasLayer" unique_id=1281446367]
 offset_left = 840.0
 offset_top = 5.0
 offset_right = 977.0
@@ -18,7 +18,7 @@ theme = ExtResource("1_gxgo8")
 text = "Map -->
 "
 
-[node name="TutorialLabel" type="Label" parent="CanvasLayer"]
+[node name="TutorialLabel" type="Label" parent="CanvasLayer" unique_id=1691172960]
 texture_filter = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -33,28 +33,28 @@ text = "Launch Your Rockets!"
 horizontal_alignment = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="Slot1" type="TextureRect" parent="CanvasLayer"]
+[node name="Slot1" type="TextureRect" parent="CanvasLayer" unique_id=1394625100]
 texture_filter = 1
 offset_left = 72.0
 offset_top = 100.0
 offset_right = 316.0
 offset_bottom = 498.0
 
-[node name="Slot2" type="TextureRect" parent="CanvasLayer"]
+[node name="Slot2" type="TextureRect" parent="CanvasLayer" unique_id=672863543]
 texture_filter = 1
 offset_left = 472.0
 offset_top = 100.0
 offset_right = 716.0
 offset_bottom = 498.0
 
-[node name="Slot3" type="TextureRect" parent="CanvasLayer"]
+[node name="Slot3" type="TextureRect" parent="CanvasLayer" unique_id=1159492506]
 texture_filter = 1
 offset_left = 872.0
 offset_top = 100.0
 offset_right = 1116.0
 offset_bottom = 498.0
 
-[node name="Launch1" type="Button" parent="CanvasLayer"]
+[node name="Launch1" type="Button" parent="CanvasLayer" unique_id=910674786]
 offset_left = 125.0
 offset_top = 596.0
 offset_right = 260.0
@@ -62,7 +62,7 @@ offset_bottom = 640.0
 theme = ExtResource("1_gxgo8")
 text = "Launch!"
 
-[node name="Launch2" type="Button" parent="CanvasLayer"]
+[node name="Launch2" type="Button" parent="CanvasLayer" unique_id=711593062]
 offset_left = 525.0
 offset_top = 596.0
 offset_right = 660.0
@@ -70,7 +70,7 @@ offset_bottom = 640.0
 theme = ExtResource("1_gxgo8")
 text = "Launch!"
 
-[node name="Launch3" type="Button" parent="CanvasLayer"]
+[node name="Launch3" type="Button" parent="CanvasLayer" unique_id=124364466]
 offset_left = 925.0
 offset_top = 596.0
 offset_right = 1060.0
@@ -78,17 +78,17 @@ offset_bottom = 640.0
 theme = ExtResource("1_gxgo8")
 text = "Launch!"
 
-[node name="BackButton" type="Button" parent="CanvasLayer"]
+[node name="BackButton" type="Button" parent="CanvasLayer" unique_id=1559778001]
 offset_left = 8.0
 offset_right = 145.0
 offset_bottom = 44.0
 theme = ExtResource("1_gxgo8")
 text = "<-- Back"
 
-[node name="CanvasLayer2" type="CanvasLayer" parent="."]
+[node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=576588104]
 layer = -1
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer2"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer2" unique_id=61474643]
 z_index = -100
 anchors_preset = 15
 anchor_right = 1.0

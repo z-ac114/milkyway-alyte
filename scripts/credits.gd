@@ -20,6 +20,7 @@ func _on_awesome_button_pressed() -> void:
 	Global.emerald = 9223372036854775807
 	Global.lapis = 9223372036854775807
 	Global.diamond = 9223372036854775807
-	Global.rocket_inventory = [7,7,7]
+	Global.titanium = 9223372036854775807
+	Global.rocket_inventory = [8,8,8]
 	
 	

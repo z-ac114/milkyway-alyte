@@ -11,6 +11,8 @@ func _process(_delta: float) -> void:
 	line += "[img=20]res://assets/zincparts/zincingot.png[/img]%s%s    " % [nbsp, Global.f_n(Global.zinc)]
 	line += "[img=20]res://assets/emeraldparts/emeraldd.png[/img]%s%s    " % [nbsp, Global.f_n(Global.emerald)]
 	line += "[img=20]res://assets/lapisparts/lapislazuli.png[/img]%s%s    " % [nbsp, Global.f_n(Global.lapis)]
-	line += "[img=20]res://assets/diamondparts/diamondd.png[/img]%s%s" % [nbsp, Global.f_n(Global.diamond)]
+	line += "[img=20]res://assets/diamondparts/diamondd.png[/img]%s%s    " % [nbsp, Global.f_n(Global.diamond)]
+	line += "[img=20]res://assets/titaniumparts/titaniumingot.png[/img]%s%s    " % [nbsp, Global.f_n(Global.titanium)]
+	
 	
 	text = line

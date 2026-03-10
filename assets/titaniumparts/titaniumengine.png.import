@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cgtgumsev08gr"
-path="res://.godot/imported/Screenshot 2026-03-10 at 3.34.19 PM.png-bd27681c0c4b15f68cef418022034238.ctex"
+uid="uid://16nt8158wrtr"
+path="res://.godot/imported/titaniumengine.png-3b3c6c8ab262dcaf0b849547e07a2dbb.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://scenes/Screenshot 2026-03-10 at 3.34.19 PM.png"
-dest_files=["res://.godot/imported/Screenshot 2026-03-10 at 3.34.19 PM.png-bd27681c0c4b15f68cef418022034238.ctex"]
+source_file="res://assets/titaniumparts/titaniumengine.png"
+dest_files=["res://.godot/imported/titaniumengine.png-3b3c6c8ab262dcaf0b849547e07a2dbb.ctex"]
 
 [params]
 

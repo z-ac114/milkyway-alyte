@@ -19,7 +19,8 @@ var rocket_textures = [
 	preload("res://assets/zincparts/zincrocket.png"),
 	preload("res://assets/emeraldparts/emeraldrocket.png"),
 	preload("res://assets/lapisparts/lapisrocket.png"),
-	preload("res://assets/diamondparts/diamondrocket.png")
+	preload("res://assets/diamondparts/diamondrocket.png"),
+	preload("res://assets/titaniumparts/titaniumrocket.png"),
 ]
 
 var showing_indices = [0, 1, 2]
