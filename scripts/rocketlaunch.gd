@@ -3,8 +3,7 @@ extends Node2D
 @onready var slot1: TextureRect = $CanvasLayer/Slot1
 @onready var slot2: TextureRect = $CanvasLayer/Slot2
 @onready var slot3: TextureRect = $CanvasLayer/Slot3
-@onready var back_button: Button = $CanvasLayer/BackButton
-@onready var map_button: Button = $CanvasLayer/MapButton
+@onready var back_button: Button = $CanvasLayer2/BackButton
 @onready var launch_1: Button = $CanvasLayer/Launch1
 @onready var launch_2: Button = $CanvasLayer/Launch2
 @onready var launch_3: Button = $CanvasLayer/Launch3
@@ -97,10 +96,6 @@ func animate_launch(rocket_slot: TextureRect, inventory_index: int):
 	update_slots()
 	_show_unlocks(rocket_level)
 
-func _on_map_button_pressed() -> void:
-	Sfxmanager.play_button_click()
-	get_tree().change_scene_to_file("res://scenes/planetselection.tscn")
-
 
 func _show_unlocks(rocket_level: int):
 	var delay = 0.0
@@ -136,4 +131,4 @@ func _show_unlocks(rocket_level: int):
 
 func _on_back_button_pressed() -> void:
 	Sfxmanager.play_button_click()
-	get_tree().change_scene_to_file("res://scenes/rocket.tscn")
+	get_tree().change_scene_to_file("res://scenes/s1.tscn")

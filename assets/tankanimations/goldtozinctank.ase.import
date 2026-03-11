@@ -1,0 +1,14 @@
+[remap]
+
+importer="aseprite_wizard.plugin.noop"
+type="PackedDataContainer"
+uid="uid://oskmfvj6ifki"
+path="res://.godot/imported/goldtozinctank.ase-4263bf36c6121f33dd2c225ca6435edf.res"
+
+[deps]
+
+source_file="res://assets/tankanimations/goldtozinctank.ase"
+dest_files=["res://.godot/imported/goldtozinctank.ase-4263bf36c6121f33dd2c225ca6435edf.res"]
+
+[params]
+

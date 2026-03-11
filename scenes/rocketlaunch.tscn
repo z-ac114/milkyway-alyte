@@ -9,15 +9,6 @@ script = ExtResource("1_d75br")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1733505325]
 
-[node name="MapButton" type="Button" parent="CanvasLayer" unique_id=1281446367]
-offset_left = 840.0
-offset_top = 5.0
-offset_right = 977.0
-offset_bottom = 49.0
-theme = ExtResource("1_gxgo8")
-text = "Map -->
-"
-
 [node name="TutorialLabel" type="Label" parent="CanvasLayer" unique_id=1691172960]
 texture_filter = 1
 anchors_preset = 5
@@ -78,13 +69,6 @@ offset_bottom = 640.0
 theme = ExtResource("1_gxgo8")
 text = "Launch!"
 
-[node name="BackButton" type="Button" parent="CanvasLayer" unique_id=1559778001]
-offset_left = 8.0
-offset_right = 145.0
-offset_bottom = 44.0
-theme = ExtResource("1_gxgo8")
-text = "<-- Back"
-
 [node name="CanvasLayer2" type="CanvasLayer" parent="." unique_id=576588104]
 layer = -1
 
@@ -98,8 +82,14 @@ grow_vertical = 2
 texture = ExtResource("3_x115k")
 expand_mode = 3
 
-[connection signal="pressed" from="CanvasLayer/MapButton" to="." method="_on_map_button_pressed"]
+[node name="BackButton" type="Button" parent="CanvasLayer2" unique_id=1559778001]
+offset_left = 8.0
+offset_right = 145.0
+offset_bottom = 44.0
+theme = ExtResource("1_gxgo8")
+text = "<-- Back"
+
 [connection signal="pressed" from="CanvasLayer/Launch1" to="." method="_on_launch_1_pressed"]
 [connection signal="pressed" from="CanvasLayer/Launch2" to="." method="_on_launch_2_pressed"]
 [connection signal="pressed" from="CanvasLayer/Launch3" to="." method="_on_launch_3_pressed"]
-[connection signal="pressed" from="CanvasLayer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="CanvasLayer2/BackButton" to="." method="_on_back_button_pressed"]

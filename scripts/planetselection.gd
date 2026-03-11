@@ -21,7 +21,7 @@ func _ready():
 func _on_back_button_pressed() -> void:
 	Sfxmanager.play_button_click()
 	Global.emit_signal("main_theme")
-	get_tree().change_scene_to_file("res://scenes/rocketlaunch.tscn")
+	get_tree().change_scene_to_file("res://scenes/s1.tscn")
 
 func _on_mercury_pressed() -> void:
 	if Global.mercury_unlocked:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=22 format=3 uid="uid://1hpb0hrtgxv"]
+[gd_scene format=3 uid="uid://1hpb0hrtgxv"]
 
 [ext_resource type="Script" uid="uid://bqr37mll4awmt" path="res://scripts/s_1.gd" id="1_q631x"]
 [ext_resource type="Script" uid="uid://3gre0yewmhtr" path="res://scripts/rock.gd" id="2_3c855"]
@@ -14,8 +14,6 @@
 [ext_resource type="Theme" uid="uid://c1x7ysm5oaomy" path="res://scripts/button2.tres" id="9_ss1hi"]
 [ext_resource type="Script" uid="uid://cletjw730xa57" path="res://scripts/autocps.gd" id="9_xysxj"]
 [ext_resource type="Texture2D" uid="uid://dhd4jtxdr5hpo" path="res://assets/sprites/kuro/base/idle.png" id="10_uutvs"]
-[ext_resource type="Script" uid="uid://q18gtl5tpb8f" path="res://scripts/sell_all_buttons.gd" id="13_nalor"]
-[ext_resource type="Script" uid="uid://b2efnvfa7roo8" path="res://scripts/sell_10_buttons.gd" id="14_ok8w5"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_3c855"]
 size = Vector2(14, 14)
@@ -49,13 +47,13 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Node2D" type="Node2D"]
+[node name="Node2D" type="Node2D" unique_id=733188754]
 script = ExtResource("1_q631x")
 
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=985726390]
 layer = -1
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=1966658778]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -64,32 +62,32 @@ grow_vertical = 2
 texture = ExtResource("2_ugv02")
 expand_mode = 3
 
-[node name="Rock" type="Area2D" parent="CanvasLayer"]
-position = Vector2(182.99997, 349.99997)
+[node name="Rock" type="Area2D" parent="CanvasLayer" unique_id=244708364]
+position = Vector2(590, 361)
 scale = Vector2(20, 20)
 script = ExtResource("2_3c855")
 
-[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Rock"]
+[node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/Rock" unique_id=2129172341]
 texture_filter = 1
 texture = ExtResource("3_uutvs")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Rock"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CanvasLayer/Rock" unique_id=1172943017]
 shape = SubResource("RectangleShape2D_3c855")
 
-[node name="TutorialLabel" type="Label" parent="CanvasLayer"]
+[node name="TutorialLabel" type="Label" parent="CanvasLayer" unique_id=634517632]
 texture_filter = 1
-offset_left = 367.0
-offset_top = 73.0
-offset_right = 935.0
-offset_bottom = 121.0
+offset_left = 376.0
+offset_top = 13.0
+offset_right = 944.0
+offset_bottom = 61.0
 theme = ExtResource("3_yyhw1")
 theme_override_font_sizes/font_size = 35
 text = "Click the asteroid to get stone!"
 
-[node name="CoinDisplay" type="Node2D" parent="CanvasLayer"]
+[node name="CoinDisplay" type="Node2D" parent="CanvasLayer" unique_id=1975691050]
 position = Vector2(595, 322)
 
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CoinDisplay"]
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer/CoinDisplay" unique_id=685995413]
 texture_filter = 1
 offset_left = -568.0
 offset_top = -317.0
@@ -98,7 +96,7 @@ offset_bottom = -277.0
 scale = Vector2(1.5, 1.5)
 texture = ExtResource("6_0thrn")
 
-[node name="CoinLabel" type="Label" parent="CanvasLayer/CoinDisplay"]
+[node name="CoinLabel" type="Label" parent="CanvasLayer/CoinDisplay" unique_id=794051674]
 texture_filter = 1
 offset_left = -505.0
 offset_top = -317.0
@@ -108,7 +106,7 @@ theme = ExtResource("3_yyhw1")
 theme_override_font_sizes/font_size = 50
 script = ExtResource("5_gy76w")
 
-[node name="CPSLAbel" type="Label" parent="CanvasLayer"]
+[node name="CPSLAbel" type="Label" parent="CanvasLayer" unique_id=595202392]
 texture_filter = 1
 offset_left = 28.0
 offset_top = 123.0
@@ -117,16 +115,16 @@ offset_bottom = 174.0
 theme = ExtResource("3_yyhw1")
 script = ExtResource("9_q631x")
 
-[node name="AutoCPS" type="Label" parent="CanvasLayer"]
+[node name="AutoCPS" type="Label" parent="CanvasLayer" unique_id=1017621950]
 texture_filter = 1
-offset_left = 575.0
-offset_top = 539.0
-offset_right = 844.0
-offset_bottom = 582.0
+offset_left = 30.0
+offset_top = 167.0
+offset_right = 235.0
+offset_bottom = 203.0
 theme = ExtResource("3_yyhw1")
 script = ExtResource("9_xysxj")
 
-[node name="KuroText" type="Label" parent="CanvasLayer"]
+[node name="KuroText" type="Label" parent="CanvasLayer" unique_id=1867629684]
 texture_filter = 1
 offset_left = 84.0
 offset_top = 601.0
@@ -136,166 +134,74 @@ theme = ExtResource("3_yyhw1")
 theme_override_font_sizes/font_size = 20
 text = "<-- Kuro giving you emotional support"
 
-[node name="TimeLabel" type="Label" parent="CanvasLayer"]
-offset_left = 31.0
+[node name="TimeLabel" type="Label" parent="CanvasLayer" unique_id=1659553481]
+offset_left = 26.0
 offset_top = 71.0
-offset_right = 129.0
+offset_right = 124.0
 offset_bottom = 129.0
 theme = ExtResource("3_yyhw1")
 script = ExtResource("9_ny864")
 
-[node name="Kuro" type="AnimatedSprite2D" parent="CanvasLayer"]
+[node name="Kuro" type="AnimatedSprite2D" parent="CanvasLayer" unique_id=1939554632]
 texture_filter = 1
 position = Vector2(49.000065, 607)
 scale = Vector2(3.645833, 3.645833)
 sprite_frames = SubResource("SpriteFrames_xysxj")
 autoplay = "default"
 
-[node name="AutoClick" type="Button" parent="CanvasLayer"]
-offset_left = 566.0
-offset_top = 472.0
-offset_right = 943.0
-offset_bottom = 521.0
+[node name="AutoClick" type="Button" parent="CanvasLayer" unique_id=1175611440]
+offset_left = 103.0
+offset_top = 326.0
+offset_right = 344.0
+offset_bottom = 375.0
 theme = ExtResource("9_ss1hi")
-text = "Auto Mine (1 click/sec)"
+text = "Auto Click"
 script = ExtResource("8_kky4p")
 
-[node name="GeneralLabel" type="RichTextLabel" parent="CanvasLayer"]
+[node name="GeneralLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=1595331212]
 texture_filter = 1
-offset_left = 375.0
-offset_top = 154.0
-offset_right = 626.0
-offset_bottom = 528.0
+offset_left = 328.0
+offset_top = 77.0
+offset_right = 1128.0
+offset_bottom = 183.0
 theme = ExtResource("3_yyhw1")
 theme_override_font_sizes/bold_italics_font_size = 50
 bbcode_enabled = true
 script = ExtResource("6_gy76w")
 
-[node name="SellAllButtons" type="VBoxContainer" parent="CanvasLayer"]
-offset_left = 724.0
-offset_top = 152.0
-offset_right = 868.0
-offset_bottom = 460.0
-script = ExtResource("13_nalor")
-
-[node name="SellAllRock" type="Button" parent="CanvasLayer/SellAllButtons"]
-layout_mode = 2
+[node name="RocketBuilding" type="Button" parent="CanvasLayer" unique_id=895602722]
+offset_left = 119.0
+offset_top = 423.0
+offset_right = 330.0
+offset_bottom = 467.0
 theme = ExtResource("9_ss1hi")
-theme_override_font_sizes/font_size = 22
-text = "Sell all"
+text = "Workshop"
 
-[node name="SellAllCopper" type="Button" parent="CanvasLayer/SellAllButtons"]
-layout_mode = 2
+[node name="BackButton" type="Button" parent="CanvasLayer" unique_id=2105702452]
+offset_left = 112.0
+offset_top = 244.0
+offset_right = 331.0
+offset_bottom = 288.0
 theme = ExtResource("9_ss1hi")
-theme_override_font_sizes/font_size = 22
-text = "Sell all"
+text = "Main Screen"
 
-[node name="SellAllIron" type="Button" parent="CanvasLayer/SellAllButtons"]
-layout_mode = 2
+[node name="SpaceMap" type="Button" parent="CanvasLayer" unique_id=1181244842]
+offset_left = 773.0
+offset_top = 335.0
+offset_right = 1058.0
+offset_bottom = 379.0
 theme = ExtResource("9_ss1hi")
-theme_override_font_sizes/font_size = 22
-text = "Sell all"
+text = "Space Map"
 
-[node name="SellAllGold" type="Button" parent="CanvasLayer/SellAllButtons"]
-layout_mode = 2
+[node name="RocketSite" type="Button" parent="CanvasLayer" unique_id=986049111]
+offset_left = 773.0
+offset_top = 247.0
+offset_right = 1058.0
+offset_bottom = 291.0
 theme = ExtResource("9_ss1hi")
-theme_override_font_sizes/font_size = 22
-text = "Sell all"
-
-[node name="SellAllZinc" type="Button" parent="CanvasLayer/SellAllButtons"]
-layout_mode = 2
-theme = ExtResource("9_ss1hi")
-theme_override_font_sizes/font_size = 22
-text = "Sell all"
-
-[node name="SellAllEmerald" type="Button" parent="CanvasLayer/SellAllButtons"]
-layout_mode = 2
-theme = ExtResource("9_ss1hi")
-theme_override_font_sizes/font_size = 22
-text = "Sell all"
-
-[node name="SellAllLapis" type="Button" parent="CanvasLayer/SellAllButtons"]
-layout_mode = 2
-theme = ExtResource("9_ss1hi")
-theme_override_font_sizes/font_size = 22
-text = "Sell all"
-
-[node name="SellAllDiamond" type="Button" parent="CanvasLayer/SellAllButtons"]
-layout_mode = 2
-theme = ExtResource("9_ss1hi")
-theme_override_font_sizes/font_size = 22
-text = "Sell all"
-
-[node name="Sell10Buttons" type="VBoxContainer" parent="CanvasLayer"]
-offset_left = 564.0
-offset_top = 152.0
-offset_right = 708.0
-offset_bottom = 460.0
-script = ExtResource("14_ok8w5")
-
-[node name="Sell10Rock" type="Button" parent="CanvasLayer/Sell10Buttons"]
-layout_mode = 2
-theme = ExtResource("9_ss1hi")
-theme_override_font_sizes/font_size = 22
-text = "Sell 10"
-
-[node name="Sell10Copper" type="Button" parent="CanvasLayer/Sell10Buttons"]
-layout_mode = 2
-theme = ExtResource("9_ss1hi")
-theme_override_font_sizes/font_size = 22
-text = "Sell 10"
-
-[node name="Sell10Iron" type="Button" parent="CanvasLayer/Sell10Buttons"]
-layout_mode = 2
-theme = ExtResource("9_ss1hi")
-theme_override_font_sizes/font_size = 22
-text = "Sell 10"
-
-[node name="Sell10Gold" type="Button" parent="CanvasLayer/Sell10Buttons"]
-layout_mode = 2
-theme = ExtResource("9_ss1hi")
-theme_override_font_sizes/font_size = 22
-text = "Sell 10"
-
-[node name="Sell10Zinc" type="Button" parent="CanvasLayer/Sell10Buttons"]
-layout_mode = 2
-theme = ExtResource("9_ss1hi")
-theme_override_font_sizes/font_size = 22
-text = "Sell 10"
-
-[node name="Sell10Emerald" type="Button" parent="CanvasLayer/Sell10Buttons"]
-layout_mode = 2
-theme = ExtResource("9_ss1hi")
-theme_override_font_sizes/font_size = 22
-text = "Sell 10"
-
-[node name="Sell10Lapis" type="Button" parent="CanvasLayer/Sell10Buttons"]
-layout_mode = 2
-theme = ExtResource("9_ss1hi")
-theme_override_font_sizes/font_size = 22
-text = "Sell 10"
-
-[node name="Sell10Diamond" type="Button" parent="CanvasLayer/Sell10Buttons"]
-layout_mode = 2
-theme = ExtResource("9_ss1hi")
-theme_override_font_sizes/font_size = 22
-text = "Sell 10"
-
-[node name="RocketBuilding" type="Button" parent="CanvasLayer"]
-offset_left = 853.0
-offset_top = 583.0
-offset_right = 1138.0
-offset_bottom = 627.0
-theme = ExtResource("9_ss1hi")
-text = "Build A Rocket -->"
-
-[node name="BackButton" type="Button" parent="CanvasLayer"]
-offset_left = 30.0
-offset_top = 514.0
-offset_right = 189.0
-offset_bottom = 558.0
-theme = ExtResource("3_yyhw1")
-text = "<-- Back"
+text = "Rocket Site"
 
 [connection signal="pressed" from="CanvasLayer/RocketBuilding" to="." method="_on_rocket_building_pressed"]
 [connection signal="pressed" from="CanvasLayer/BackButton" to="." method="_on_back_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/SpaceMap" to="." method="_on_space_map_pressed"]
+[connection signal="pressed" from="CanvasLayer/RocketSite" to="." method="_on_rocket_site_pressed"]

@@ -257,7 +257,6 @@ func upgrade_part(part_name: String):
 		var animation_name = get_upgrade_animation(part_name, level)
 		Global.rocket_levels[part_name] += 1
 		if animation_name != "":
-			print("Playing animation: ", animation_name)
 			animation_player.play(animation_name)
 			await animation_player.animation_finished
 		else:
@@ -302,6 +301,8 @@ func get_upgrade_animation(part_name: String, current_level: int) -> String:
 					return "emeraldtolapisplating"
 				6:
 					return "lapistodiamondplating"
+				7:
+					return "diamondtotitaniumplating"
 				_:
 					return ""
 		"tank":

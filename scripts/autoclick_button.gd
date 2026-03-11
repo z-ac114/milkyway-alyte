@@ -31,6 +31,6 @@ func get_upgrade_cost():
 
 func update_text():
 	if Global.button_e == false:
-		text = "Auto Mine (Cost: 10)"
+		text = "Auto Mine - $10" 
 	else:
-		text = "Upgrade (Cost: " + Global.f_n(get_upgrade_cost()) + ")"
+		text = "Upgrade - $" + Global.f_n(get_upgrade_cost())
