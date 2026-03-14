@@ -8,7 +8,6 @@
 [ext_resource type="Script" uid="uid://dg2yw3k74hrpy" path="res://scripts/coin_label.gd" id="5_gy76w"]
 [ext_resource type="Texture2D" uid="uid://corhksc3axq45" path="res://assets/rockcoin.png" id="6_0thrn"]
 [ext_resource type="Script" uid="uid://beky6a75cj5od" path="res://scripts/general_label.gd" id="6_gy76w"]
-[ext_resource type="Script" uid="uid://yh7qb4w1gpbe" path="res://scripts/autoclick_button.gd" id="8_kky4p"]
 [ext_resource type="Script" uid="uid://ky3pqqw5yu7p" path="res://scripts/time_label.gd" id="9_ny864"]
 [ext_resource type="Script" uid="uid://c736wf7yu4jgo" path="res://scripts/cps_label.gd" id="9_q631x"]
 [ext_resource type="Theme" uid="uid://c1x7ysm5oaomy" path="res://scripts/button2.tres" id="9_ss1hi"]
@@ -149,15 +148,6 @@ scale = Vector2(3.645833, 3.645833)
 sprite_frames = SubResource("SpriteFrames_xysxj")
 autoplay = "default"
 
-[node name="AutoClick" type="Button" parent="CanvasLayer" unique_id=1175611440]
-offset_left = 103.0
-offset_top = 326.0
-offset_right = 344.0
-offset_bottom = 375.0
-theme = ExtResource("9_ss1hi")
-text = "Auto Click"
-script = ExtResource("8_kky4p")
-
 [node name="GeneralLabel" type="RichTextLabel" parent="CanvasLayer" unique_id=1595331212]
 texture_filter = 1
 offset_left = 328.0
@@ -171,10 +161,12 @@ script = ExtResource("6_gy76w")
 
 [node name="RocketBuilding" type="Button" parent="CanvasLayer" unique_id=895602722]
 offset_left = 119.0
-offset_top = 423.0
+offset_top = 327.0
 offset_right = 330.0
-offset_bottom = 467.0
+offset_bottom = 371.0
 theme = ExtResource("9_ss1hi")
+theme_override_colors/font_outline_color = Color(0.5803922, 0.8666667, 1, 0.9098039)
+theme_override_constants/outline_size = 4
 text = "Workshop"
 
 [node name="BackButton" type="Button" parent="CanvasLayer" unique_id=2105702452]
@@ -183,6 +175,8 @@ offset_top = 244.0
 offset_right = 331.0
 offset_bottom = 288.0
 theme = ExtResource("9_ss1hi")
+theme_override_colors/font_outline_color = Color(0.5803922, 0.8666667, 1, 0.9098039)
+theme_override_constants/outline_size = 4
 text = "Main Screen"
 
 [node name="SpaceMap" type="Button" parent="CanvasLayer" unique_id=1181244842]
@@ -191,6 +185,8 @@ offset_top = 335.0
 offset_right = 1058.0
 offset_bottom = 379.0
 theme = ExtResource("9_ss1hi")
+theme_override_colors/font_outline_color = Color(0.5803922, 0.8666667, 1, 0.9098039)
+theme_override_constants/outline_size = 4
 text = "Space Map"
 
 [node name="RocketSite" type="Button" parent="CanvasLayer" unique_id=986049111]
@@ -199,6 +195,8 @@ offset_top = 247.0
 offset_right = 1058.0
 offset_bottom = 291.0
 theme = ExtResource("9_ss1hi")
+theme_override_colors/font_outline_color = Color(0.5803922, 0.8666667, 1, 0.9098039)
+theme_override_constants/outline_size = 4
 text = "Rocket Site"
 
 [node name="Market" type="Button" parent="CanvasLayer" unique_id=1556846488]
@@ -207,9 +205,23 @@ offset_top = 423.0
 offset_right = 1058.0
 offset_bottom = 467.0
 theme = ExtResource("9_ss1hi")
+theme_override_colors/font_outline_color = Color(0.5803922, 0.8666667, 1, 0.9098039)
+theme_override_constants/outline_size = 4
 text = "Market (TBC)"
+
+[node name="Laboratory" type="Button" parent="CanvasLayer" unique_id=47765061]
+offset_left = 128.0
+offset_top = 418.0
+offset_right = 324.0
+offset_bottom = 462.0
+theme = ExtResource("9_ss1hi")
+theme_override_colors/font_outline_color = Color(0.5803922, 0.8666667, 1, 0.9098039)
+theme_override_constants/outline_size = 4
+text = "Laboratory"
 
 [connection signal="pressed" from="CanvasLayer/RocketBuilding" to="." method="_on_rocket_building_pressed"]
 [connection signal="pressed" from="CanvasLayer/BackButton" to="." method="_on_back_button_pressed"]
 [connection signal="pressed" from="CanvasLayer/SpaceMap" to="." method="_on_space_map_pressed"]
 [connection signal="pressed" from="CanvasLayer/RocketSite" to="." method="_on_rocket_site_pressed"]
+[connection signal="pressed" from="CanvasLayer/Market" to="." method="_on_market_pressed"]
+[connection signal="pressed" from="CanvasLayer/Laboratory" to="." method="_on_laboratory_pressed"]

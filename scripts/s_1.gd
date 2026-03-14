@@ -22,3 +22,12 @@ func _on_space_map_pressed() -> void:
 func _on_rocket_site_pressed() -> void:
 	Sfxmanager.play_button_click()
 	get_tree().change_scene_to_file("res://scenes/rocketlaunch.tscn")
+
+
+func _on_market_pressed() -> void:
+	pass # Replace with function body.
+
+
+func _on_laboratory_pressed() -> void:
+	Sfxmanager.play_button_click()
+	get_tree().change_scene_to_file("res://scenes/lab.tscn")

@@ -1,0 +1,14 @@
+[gd_scene format=3 uid="uid://bnrvprou08kk2"]
+
+[ext_resource type="Script" uid="uid://bfkr74u4dklsx" path="res://scripts/lab.gd" id="1_bb6uc"]
+
+[node name="TalentTree" type="Control" unique_id=508113829]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_bb6uc")
+
+[node name="PointsLabel" type="Label" parent="." unique_id=830115531]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+text = "0"
