@@ -16,6 +16,8 @@ const DEFAULT_LINE_COLOR = Color("808080")
 var level = 0
 
 func _ready() -> void:
+	update_disabled_panel_visibility()
+	
 	for talent in depends_on:
 		var line: TalentLine = talent_line.duplicate()
 		line.dependent_talent_id = talent.talent_id
@@ -23,17 +25,35 @@ func _ready() -> void:
 		line.add_point(talent.global_position + talent.size / 2)
 		line.visible = true
 		add_child(line)
-		
+
+
+func update_disabled_panel_visibility():
+	var all_dependencies_met = true
+	for talent in depends_on:
+		if talent.level == 0:
+			all_dependencies_met = false
+			break
+	
+	disabled_panel.visible = len(depends_on) > 0 and not all_dependencies_met
 
 
 func set_label():
 	label.text = str(level) + "/" + str(max_level)
-	disabled_panel.visible = level == 0
+	update_disabled_panel_visibility()
+	
 	for talent in get_parent().get_children():
 		if talent is TalentSlot:
 			for line in talent.get_children():
 				if line is TalentLine and line.dependent_talent_id == talent_id:
 					line.default_color = Color.WHITE if level > 0 else DEFAULT_LINE_COLOR
+
+
+func update_dependent_slots():
+	for talent in get_parent().get_children():
+		if talent is TalentSlot and talent != self:
+			if self in talent.depends_on:
+				talent.update_disabled_panel_visibility()
+
 
 func can_be_increased():
 	var result = get_parent().get_points_left() > 0
@@ -42,17 +62,14 @@ func can_be_increased():
 			result = false
 	return result
 
-func can_be_decreased():
-	var has_active_children = false
-	for talent in get_parent().get_children():
-		if talent is TalentSlot and talent.depends_on.has(self) and talent.level > 0:
-			has_active_children = true
-	return level > 1 or not has_active_children
-
 func set_new_level(next_level: int):
+	var old_level = level
 	level = clamp(next_level, 0, max_level)
 	set_label()
 	get_parent().set_points_label()
+	
+	if old_level == 0 and level > 0:
+		update_dependent_slots()
 
 
 func _on_gui_input(event: InputEvent) -> void:
@@ -60,6 +77,4 @@ func _on_gui_input(event: InputEvent) -> void:
 		var next_level = level
 		if event.button_index == MOUSE_BUTTON_LEFT and can_be_increased():
 			next_level += 1
-		elif event.button_index == MOUSE_BUTTON_RIGHT and can_be_decreased():
-			next_level -= 1
 		set_new_level(next_level)

@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://bnrvprou08kk2"]
 
 [ext_resource type="Script" uid="uid://bfkr74u4dklsx" path="res://scripts/lab.gd" id="1_bb6uc"]
+[ext_resource type="PackedScene" uid="uid://c3aal7fkhgq2q" path="res://scenes/talent_slot.tscn" id="2_hem3r"]
+[ext_resource type="Theme" uid="uid://c0es2kte6qmmp" path="res://scripts/normal.tres" id="2_hflkp"]
+[ext_resource type="Texture2D" uid="uid://corhksc3axq45" path="res://assets/rockcoin.png" id="4_f680m"]
 
 [node name="TalentTree" type="Control" unique_id=508113829]
 layout_mode = 3
@@ -8,7 +11,36 @@ anchors_preset = 0
 script = ExtResource("1_bb6uc")
 
 [node name="PointsLabel" type="Label" parent="." unique_id=830115531]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = 1071.0
+offset_top = 1.0
+offset_right = 1151.0
+offset_bottom = 62.0
+grow_horizontal = 0
+theme = ExtResource("2_hflkp")
+theme_override_font_sizes/font_size = 50
 text = "0"
+
+[node name="BetterMining" parent="." unique_id=1008649097 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
+texture_repeat = 1
+layout_mode = 0
+offset_left = 141.0
+offset_top = 248.0
+offset_right = 208.5
+offset_bottom = 319.5
+texture_normal = ExtResource("4_f680m")
+talent_id = "better_mining"
+depends_on = [NodePath("../CopperUpgrade")]
+
+[node name="CopperUpgrade" parent="." unique_id=16336320 instance=ExtResource("2_hem3r")]
+texture_repeat = 1
+layout_mode = 0
+offset_left = 140.0
+offset_top = 61.0
+offset_right = 207.5
+offset_bottom = 132.5
+talent_id = "copper_upgrade"
+max_level = 3
