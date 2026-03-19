@@ -39,7 +39,7 @@ texture_normal = ExtResource("4_gipex")
 talent_id = "titanium"
 tier = 3
 max_level = 5
-depends_on = [NodePath("../GoldUpgrade"), NodePath("../DiamondUpgrade")]
+depends_on = [NodePath("../DiamondUpgrade")]
 
 [node name="BetterMining" parent="." unique_id=1268904137 instance=ExtResource("2_hem3r")]
 texture_repeat = 1
@@ -78,7 +78,7 @@ texture_normal = ExtResource("5_q4uld")
 talent_id = "diamond"
 tier = 3
 max_level = 2
-depends_on = [NodePath("../CopperUpgrade"), NodePath("../IronUpgrade"), NodePath("../GoldUpgrade")]
+depends_on = [NodePath("../CopperUpgrade"), NodePath("../GoldUpgrade")]
 title = "Artificial Diamonds"
 description = "You have mastered the technique of making artificial diamonds. Gives you 1.5x Diamond Production"
 
@@ -93,7 +93,9 @@ texture_normal = ExtResource("7_4kvtl")
 talent_id = "iron"
 tier = 2
 max_level = 3
-depends_on = [NodePath("../BetterMining")]
+depends_on = [NodePath("../CopperUpgrade")]
+title = "The Foundry"
+description = "Better Iron and Steel Production. Gives 1.5x boost on Steel and Iron Production."
 
 [node name="GoldUpgrade" parent="." unique_id=349054577 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
 texture_repeat = 1
@@ -105,4 +107,4 @@ offset_bottom = 341.0
 texture_normal = ExtResource("8_f1r8i")
 talent_id = "gold"
 tier = 2
-depends_on = [NodePath("../BetterMining")]
+depends_on = [NodePath("../CopperUpgrade")]

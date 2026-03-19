@@ -105,7 +105,7 @@ offset_top = 5.0
 offset_right = 346.5
 offset_bottom = 53.0
 theme = ExtResource("2_bpra1")
-theme_override_font_sizes/font_size = 40
+theme_override_font_sizes/font_size = 35
 
 [node name="Description" type="Label" parent="TooltipPanel" unique_id=1219916305]
 z_index = 10
