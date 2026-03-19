@@ -4,6 +4,10 @@
 [ext_resource type="PackedScene" uid="uid://c3aal7fkhgq2q" path="res://scenes/talent_slot.tscn" id="2_hem3r"]
 [ext_resource type="Theme" uid="uid://c0es2kte6qmmp" path="res://scripts/normal.tres" id="2_hflkp"]
 [ext_resource type="Texture2D" uid="uid://corhksc3axq45" path="res://assets/rockcoin.png" id="4_f680m"]
+[ext_resource type="Texture2D" uid="uid://d3l5txfvumuy5" path="res://assets/titaniumparts/titaniumingot.png" id="4_gipex"]
+[ext_resource type="Texture2D" uid="uid://cqc1klmkgxhsy" path="res://assets/diamondparts/diamondd.png" id="5_q4uld"]
+[ext_resource type="Texture2D" uid="uid://ehyxdd242tc1" path="res://assets/ironparts/ironingot.png" id="7_4kvtl"]
+[ext_resource type="Texture2D" uid="uid://cl68u4wk0fspq" path="res://assets/goldparts/goldingot.png" id="8_f1r8i"]
 
 [node name="TalentTree" type="Control" unique_id=508113829]
 layout_mode = 3
@@ -24,23 +28,81 @@ theme = ExtResource("2_hflkp")
 theme_override_font_sizes/font_size = 50
 text = "0"
 
-[node name="BetterMining" parent="." unique_id=1008649097 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
+[node name="Titanium" parent="." unique_id=1008649097 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
 texture_repeat = 1
 layout_mode = 0
-offset_left = 142.0
-offset_top = 207.0
-offset_right = 194.0
-offset_bottom = 259.0
-texture_normal = ExtResource("4_f680m")
-talent_id = "better_mining"
-depends_on = [NodePath("../CopperUpgrade")]
+offset_left = 665.0
+offset_top = 511.0
+offset_right = 717.0
+offset_bottom = 563.0
+texture_normal = ExtResource("4_gipex")
+talent_id = "titanium"
+tier = 3
+max_level = 5
+depends_on = [NodePath("../GoldUpgrade"), NodePath("../DiamondUpgrade")]
 
-[node name="CopperUpgrade" parent="." unique_id=16336320 instance=ExtResource("2_hem3r")]
+[node name="BetterMining" parent="." unique_id=1268904137 instance=ExtResource("2_hem3r")]
 texture_repeat = 1
 layout_mode = 0
-offset_left = 140.0
-offset_top = 61.0
-offset_right = 192.0
-offset_bottom = 113.0
-talent_id = "copper_upgrade"
+offset_left = 496.0
+offset_top = 86.0
+offset_right = 548.0
+offset_bottom = 138.0
+texture_normal = ExtResource("4_f680m")
+talent_id = "basic_upgrade"
+title = "Basic Upgrade"
+description = "Makes you happy"
+
+[node name="CopperUpgrade" parent="." unique_id=16336320 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
+texture_repeat = 1
+layout_mode = 0
+offset_left = 496.0
+offset_top = 289.0
+offset_right = 548.0
+offset_bottom = 341.0
+talent_id = "copper"
+tier = 2
+max_level = 2
+depends_on = [NodePath("../BetterMining")]
+title = "Better Copper"
+description = "You have obtained the technique to make better copper. 1.5x Copper production."
+
+[node name="DiamondUpgrade" parent="." unique_id=971785948 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
+texture_repeat = 1
+layout_mode = 0
+offset_left = 496.0
+offset_top = 511.0
+offset_right = 548.0
+offset_bottom = 563.0
+texture_normal = ExtResource("5_q4uld")
+talent_id = "diamond"
+tier = 3
+max_level = 2
+depends_on = [NodePath("../CopperUpgrade"), NodePath("../IronUpgrade"), NodePath("../GoldUpgrade")]
+title = "Artificial Diamonds"
+description = "You have mastered the technique of making artificial diamonds. Gives you 1.5x Diamond Production"
+
+[node name="IronUpgrade" parent="." unique_id=2004509212 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
+texture_repeat = 1
+layout_mode = 0
+offset_left = 320.0
+offset_top = 289.0
+offset_right = 372.0
+offset_bottom = 341.0
+texture_normal = ExtResource("7_4kvtl")
+talent_id = "iron"
+tier = 2
 max_level = 3
+depends_on = [NodePath("../BetterMining")]
+
+[node name="GoldUpgrade" parent="." unique_id=349054577 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
+texture_repeat = 1
+layout_mode = 0
+offset_left = 667.0
+offset_top = 289.0
+offset_right = 719.0
+offset_bottom = 341.0
+texture_normal = ExtResource("8_f1r8i")
+talent_id = "gold"
+tier = 2
+depends_on = [NodePath("../BetterMining")]

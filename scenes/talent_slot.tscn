@@ -22,11 +22,18 @@ corner_radius_top_right = 4
 corner_radius_bottom_right = 4
 corner_radius_bottom_left = 4
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_x2crk"]
+bg_color = Color(0.3254902, 0.38431373, 0.46666667, 0.7411765)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
 [node name="TalentSlot" type="TextureButton" unique_id=1008649097]
 z_index = 2
 texture_filter = 1
-offset_right = 126.5
-offset_bottom = 126.5
+offset_right = 63.0
+offset_bottom = 63.0
 scale = Vector2(2, 2)
 texture_normal = ExtResource("1_5hrk5")
 stretch_mode = 5
@@ -81,4 +88,45 @@ theme_override_styles/panel = SubResource("StyleBoxFlat_rjh84")
 top_level = true
 script = ExtResource("4_jw6rq")
 
+[node name="TooltipPanel" type="Panel" parent="." unique_id=1362874822]
+z_index = 10
+layout_mode = 0
+offset_left = 71.0
+offset_top = -26.0
+offset_right = 422.0
+offset_bottom = 174.5
+theme_override_styles/panel = SubResource("StyleBoxFlat_x2crk")
+
+[node name="Title" type="Label" parent="TooltipPanel" unique_id=181590836]
+z_index = 10
+layout_mode = 0
+offset_left = 7.0
+offset_top = 5.0
+offset_right = 346.5
+offset_bottom = 53.0
+theme = ExtResource("2_bpra1")
+theme_override_font_sizes/font_size = 40
+
+[node name="Description" type="Label" parent="TooltipPanel" unique_id=1219916305]
+z_index = 10
+layout_mode = 0
+offset_left = 7.5
+offset_top = 51.0
+offset_right = 346.0
+offset_bottom = 161.0
+theme = ExtResource("2_bpra1")
+theme_override_font_sizes/font_size = 20
+autowrap_mode = 3
+
+[node name="LevelInfo" type="Label" parent="TooltipPanel" unique_id=86116727]
+z_index = 10
+layout_mode = 0
+offset_left = 6.5
+offset_top = 165.0
+offset_right = 349.0
+offset_bottom = 195.0
+theme = ExtResource("2_bpra1")
+theme_override_font_sizes/font_size = 20
+
+[connection signal="focus_entered" from="." to="." method="_on_focus_entered"]
 [connection signal="gui_input" from="." to="." method="_on_gui_input"]
