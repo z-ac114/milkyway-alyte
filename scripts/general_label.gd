@@ -12,6 +12,5 @@ func _process(_delta: float) -> void:
 	line += "[img=25]res://assets/lapisparts/lapislazuli.png[/img]%s%s    " % [nbsp, Global.f_n(Global.lapis)]
 	line += "[img=25]res://assets/diamondparts/diamondd.png[/img]%s%s    " % [nbsp, Global.f_n(Global.diamond)]
 	line += "[img=25]res://assets/titaniumparts/titaniumingot.png[/img]%s%s    " % [nbsp, Global.f_n(Global.titanium)]
-	line += "\nMult: "    + str(Global.f_n(Global.rock1mult))
 	
 	text = line

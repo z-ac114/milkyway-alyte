@@ -8,6 +8,11 @@
 [ext_resource type="Texture2D" uid="uid://cqc1klmkgxhsy" path="res://assets/diamondparts/diamondd.png" id="5_q4uld"]
 [ext_resource type="Texture2D" uid="uid://ehyxdd242tc1" path="res://assets/ironparts/ironingot.png" id="7_4kvtl"]
 [ext_resource type="Texture2D" uid="uid://cl68u4wk0fspq" path="res://assets/goldparts/goldingot.png" id="8_f1r8i"]
+[ext_resource type="Texture2D" uid="uid://d0yq0o3wg3pxq" path="res://assets/steelparts/steelingot.png" id="9_f1r8i"]
+[ext_resource type="Texture2D" uid="uid://cesbnqmap5tlq" path="res://assets/ironparts/ironfin.png" id="10_jy24p"]
+[ext_resource type="Texture2D" uid="uid://cawq4f0knvwd5" path="res://assets/steelparts/steelfin.png" id="11_xu7et"]
+[ext_resource type="Texture2D" uid="uid://o5illu6ai7x5" path="res://assets/copperparts/copperfin.png" id="12_q6p6e"]
+[ext_resource type="Texture2D" uid="uid://r3a3lvr8h25f" path="res://assets/space3.jpg" id="13_or42m"]
 
 [node name="TalentTree" type="Control" unique_id=508113829]
 layout_mode = 3
@@ -19,92 +24,209 @@ layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = 1071.0
-offset_top = 1.0
-offset_right = 1151.0
-offset_bottom = 62.0
+offset_left = 1039.0
+offset_top = 202.0
+offset_right = 1140.0
+offset_bottom = 263.0
 grow_horizontal = 0
 theme = ExtResource("2_hflkp")
 theme_override_font_sizes/font_size = 50
 text = "0"
 
-[node name="Titanium" parent="." unique_id=1008649097 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
-texture_repeat = 1
-layout_mode = 0
-offset_left = 665.0
-offset_top = 511.0
-offset_right = 717.0
-offset_bottom = 563.0
-texture_normal = ExtResource("4_gipex")
-talent_id = "titanium"
-tier = 3
-max_level = 5
-depends_on = [NodePath("../DiamondUpgrade")]
-
 [node name="BetterMining" parent="." unique_id=1268904137 instance=ExtResource("2_hem3r")]
 texture_repeat = 1
 layout_mode = 0
-offset_left = 496.0
-offset_top = 86.0
-offset_right = 548.0
-offset_bottom = 138.0
+offset_left = 224.0
+offset_top = 78.0
+offset_right = 302.0
+offset_bottom = 156.0
+scale = Vector2(1, 1)
 texture_normal = ExtResource("4_f680m")
 talent_id = "basic_upgrade"
 title = "Basic Upgrade"
 description = "Makes you happy"
 
-[node name="CopperUpgrade" parent="." unique_id=16336320 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
+[node name="Titanium" parent="." unique_id=1008649097 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
 texture_repeat = 1
 layout_mode = 0
-offset_left = 496.0
-offset_top = 289.0
-offset_right = 548.0
-offset_bottom = 341.0
+offset_left = 511.0
+offset_top = 531.0
+offset_right = 589.0
+offset_bottom = 609.0
+scale = Vector2(1, 1)
+texture_normal = ExtResource("4_gipex")
+talent_id = "titanium"
+max_level = 3
+depends_on = [NodePath("../Diamond")]
+title = "Titanium Tetrachloride"
+description = "More effective Titanium Extraction."
+
+[node name="Diamond" parent="." unique_id=971785948 node_paths=PackedStringArray("depends_on", "hidden_depends_on") instance=ExtResource("2_hem3r")]
+texture_repeat = 1
+layout_mode = 0
+offset_left = 336.0
+offset_top = 531.0
+offset_right = 414.0
+offset_bottom = 609.0
+scale = Vector2(1, 1)
+texture_normal = ExtResource("5_q4uld")
+talent_id = "diamond"
+depends_on = [NodePath("../Gold")]
+hidden_depends_on = [NodePath("../IronFin")]
+title = "Artificial Diamonds"
+description = "You have mastered the technique of making artificial diamonds. Gives you 1.5x Diamond Production"
+
+[node name="Gold" parent="." unique_id=349054577 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
+texture_repeat = 1
+layout_mode = 0
+offset_left = 120.0
+offset_top = 531.0
+offset_right = 198.0
+offset_bottom = 609.0
+scale = Vector2(1, 1)
+texture_normal = ExtResource("8_f1r8i")
+talent_id = "gold"
+depends_on = [NodePath("../Iron"), NodePath("../Copper")]
+title = "Oh Shiny"
+description = "Shiny Gold Ingots....  1.5x Gold Production per level"
+
+[node name="Copper" parent="." unique_id=16336320 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
+texture_repeat = 1
+layout_mode = 0
+offset_left = 120.0
+offset_top = 257.0
+offset_right = 198.0
+offset_bottom = 335.0
+scale = Vector2(1, 1)
 talent_id = "copper"
-tier = 2
-max_level = 2
 depends_on = [NodePath("../BetterMining")]
 title = "Better Copper"
 description = "You have obtained the technique to make better copper. 1.5x Copper production."
 
-[node name="DiamondUpgrade" parent="." unique_id=971785948 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
+[node name="Iron" parent="." unique_id=2004509212 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
 texture_repeat = 1
 layout_mode = 0
-offset_left = 496.0
-offset_top = 511.0
-offset_right = 548.0
-offset_bottom = 563.0
-texture_normal = ExtResource("5_q4uld")
-talent_id = "diamond"
-tier = 3
-max_level = 2
-depends_on = [NodePath("../CopperUpgrade"), NodePath("../GoldUpgrade")]
-title = "Artificial Diamonds"
-description = "You have mastered the technique of making artificial diamonds. Gives you 1.5x Diamond Production"
-
-[node name="IronUpgrade" parent="." unique_id=2004509212 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
-texture_repeat = 1
-layout_mode = 0
-offset_left = 320.0
-offset_top = 289.0
-offset_right = 372.0
-offset_bottom = 341.0
+offset_left = 232.0
+offset_top = 393.0
+offset_right = 310.0
+offset_bottom = 471.0
+scale = Vector2(1, 1)
 texture_normal = ExtResource("7_4kvtl")
 talent_id = "iron"
-tier = 2
 max_level = 3
-depends_on = [NodePath("../CopperUpgrade")]
+depends_on = [NodePath("../Steel")]
 title = "The Foundry"
-description = "Better Iron and Steel Production. Gives 1.5x boost on Steel and Iron Production."
+description = "Better Iron Production. Gives 1.5x boost on Steel and Iron Production."
 
-[node name="GoldUpgrade" parent="." unique_id=349054577 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
+[node name="Steel" parent="." unique_id=1877732162 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
 texture_repeat = 1
 layout_mode = 0
-offset_left = 667.0
-offset_top = 289.0
-offset_right = 719.0
-offset_bottom = 341.0
-texture_normal = ExtResource("8_f1r8i")
-talent_id = "gold"
-tier = 2
-depends_on = [NodePath("../CopperUpgrade")]
+offset_left = 336.0
+offset_top = 193.0
+offset_right = 414.0
+offset_bottom = 271.0
+scale = Vector2(1, 1)
+texture_normal = ExtResource("9_f1r8i")
+talent_id = "steel"
+max_level = 3
+depends_on = [NodePath("../BetterMining")]
+title = "The Foundry (I)"
+description = "Better Steel Production. Gives 1.5x boost on Steel Production."
+
+[node name="Cost" type="RichTextLabel" parent="." unique_id=1288134758]
+layout_mode = 0
+offset_left = 831.0
+offset_top = 121.0
+offset_right = 1130.0
+offset_bottom = 203.0
+theme = ExtResource("2_hflkp")
+bbcode_enabled = true
+text = "cost
+"
+
+[node name="Label" type="Label" parent="." unique_id=531295357]
+layout_mode = 0
+offset_left = 11.0
+offset_top = 12.0
+offset_right = 239.0
+offset_bottom = 107.0
+theme = ExtResource("2_hflkp")
+text = "The Lab "
+
+[node name="IronFin" parent="." unique_id=155926816 node_paths=PackedStringArray("depends_on", "hidden_depends_on") instance=ExtResource("2_hem3r")]
+texture_repeat = 1
+layout_mode = 0
+offset_left = 512.0
+offset_top = 386.0
+offset_right = 590.0
+offset_bottom = 464.0
+scale = Vector2(1, 1)
+texture_normal = ExtResource("10_jy24p")
+talent_id = "iron_fin"
+depends_on = [NodePath("../CopperFin")]
+hidden_depends_on = [NodePath("../Iron")]
+title = "Fin Research (II)"
+description = "Stronger Fins. Rocket payout 1.5x"
+
+[node name="RocketPart" parent="." unique_id=389391313 node_paths=PackedStringArray("depends_on") instance=ExtResource("2_hem3r")]
+texture_repeat = 1
+layout_mode = 0
+offset_left = 512.0
+offset_top = 86.0
+offset_right = 590.0
+offset_bottom = 164.0
+scale = Vector2(1, 1)
+texture_normal = ExtResource("11_xu7et")
+talent_id = "rocket_part"
+depends_on = [NodePath("../BetterMining")]
+title = "Parts Upgrade"
+description = "Some New Parts :)"
+
+[node name="CopperFin" parent="." unique_id=435367744 node_paths=PackedStringArray("depends_on", "hidden_depends_on") instance=ExtResource("2_hem3r")]
+texture_repeat = 1
+layout_mode = 0
+offset_left = 512.0
+offset_top = 249.0
+offset_right = 590.0
+offset_bottom = 327.0
+scale = Vector2(1, 1)
+texture_normal = ExtResource("12_q6p6e")
+talent_id = "copper_fin"
+depends_on = [NodePath("../RocketPart")]
+hidden_depends_on = [NodePath("../Copper")]
+title = "Fin Research (I)"
+description = "Stronger Fins. Rocket payout 1.5x"
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1566517549]
+layer = -1
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=489075437]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("13_or42m")
+expand_mode = 3
+metadata/_edit_use_anchors_ = true
+
+[node name="Button" type="Button" parent="." unique_id=1331586969]
+layout_mode = 0
+offset_left = 784.0
+offset_top = 24.0
+offset_right = 1134.0
+offset_bottom = 90.0
+theme = ExtResource("2_hflkp")
+text = "Buy Research Points"
+
+[node name="Button2" type="Button" parent="." unique_id=997139251]
+layout_mode = 0
+offset_left = 981.0
+offset_top = 585.0
+offset_right = 1134.0
+offset_bottom = 627.0
+theme = ExtResource("2_hflkp")
+text = "Back"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

@@ -16,7 +16,7 @@ corner_radius_bottom_right = 4
 corner_radius_bottom_left = 4
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rjh84"]
-bg_color = Color(0.14509805, 0.14509805, 0.14509805, 0.6156863)
+bg_color = Color(0.20152658, 0.20152658, 0.20152658, 0.6156863)
 corner_radius_top_left = 4
 corner_radius_top_right = 4
 corner_radius_bottom_right = 4
@@ -32,8 +32,8 @@ corner_radius_bottom_left = 8
 [node name="TalentSlot" type="TextureButton" unique_id=1008649097]
 z_index = 2
 texture_filter = 1
-offset_right = 63.0
-offset_bottom = 63.0
+offset_right = 179.5
+offset_bottom = 179.5
 scale = Vector2(2, 2)
 texture_normal = ExtResource("1_5hrk5")
 stretch_mode = 5
@@ -70,7 +70,7 @@ size_flags_vertical = 8
 theme = ExtResource("2_bpra1")
 theme_override_colors/font_outline_color = Color(0.5803922, 0.8666667, 1, 0.9098039)
 theme_override_constants/outline_size = 2
-theme_override_font_sizes/font_size = 12
+theme_override_font_sizes/font_size = 20
 text = "0/3"
 horizontal_alignment = 1
 
@@ -92,9 +92,9 @@ script = ExtResource("4_jw6rq")
 z_index = 10
 layout_mode = 0
 offset_left = 71.0
-offset_top = -26.0
+offset_top = -70.0
 offset_right = 422.0
-offset_bottom = 174.5
+offset_bottom = 130.5
 theme_override_styles/panel = SubResource("StyleBoxFlat_x2crk")
 
 [node name="Title" type="Label" parent="TooltipPanel" unique_id=181590836]
@@ -105,7 +105,7 @@ offset_top = 5.0
 offset_right = 346.5
 offset_bottom = 53.0
 theme = ExtResource("2_bpra1")
-theme_override_font_sizes/font_size = 35
+theme_override_font_sizes/font_size = 30
 
 [node name="Description" type="Label" parent="TooltipPanel" unique_id=1219916305]
 z_index = 10

@@ -34,6 +34,15 @@ var odyssey_played: bool = false
 var tutorial_finished: bool = false
 var funny_button: int = 0
 var scene_from: String
+var rock_mult = 1.0
+var copper_mult = 1.0
+var iron_mult = 1.0
+var gold_mult = 1.0
+var zinc_mult = 1.0
+var emerald_mult = 1.0
+var lapis_mult = 1.0
+var diamond_mult = 1.0
+var research_coins = 0
 signal bgm_galaxy
 signal bgm_odyssey
 signal bgm_earth
@@ -90,55 +99,111 @@ var advancements = {
 
 func _process(delta: float) -> void:
 	check_advancements()
+	
 
 func _rock_1click():
-	match rocktier:
-		"rock":
-			rock += randf_range(0.1,1) * rock1mult
-		"copper":
-			rock += randf_range(1,2) * rock1mult
-			copper += randf_range(0.1,1) * rock1mult * 0.8
-		"iron":
-			rock += randf_range(1,3) * rock1mult
-			copper += randf_range(0.5,2) * rock1mult * 0.6
-			iron += randf_range(0.1,1) * rock1mult * 0.4
-		"gold":
-			rock += randf_range(2,5) * rock1mult
-			copper += randf_range(1,3) * rock1mult * 0.5
-			iron += randf_range(0.5,2) * rock1mult * 0.35
-			gold += randf_range(0.1,1) * rock1mult * 0.25
-		"zinc":
-			rock += randf_range(3,7) * rock1mult
-			copper += randf_range(2,5) * rock1mult * 0.4
-			iron += randf_range(1,3) * rock1mult * 0.3
-			gold += randf_range(0.5,2) * rock1mult * 0.2
-			zinc += randf_range(0.1,1) * rock1mult * 0.15
-		"emerald":
-			rock += randf_range(5,10) * rock1mult
-			copper += randf_range(3,7) * rock1mult * 0.3
-			iron += randf_range(2,5) * rock1mult * 0.25
-			gold += randf_range(1,3) * rock1mult * 0.2
-			zinc += randf_range(0.5,2) * rock1mult * 0.15
-			emerald += randf_range(0.1,1) * rock1mult * 0.1
-		"lapis":
-			rock += randf_range(10,20) * rock1mult
-			copper += randf_range(5,10) * rock1mult * 0.25
-			iron += randf_range(3,7) * rock1mult * 0.2
-			gold += randf_range(2,5) * rock1mult * 0.15
-			zinc += randf_range(1,3) * rock1mult * 0.12
-			emerald += randf_range(0.5,2) * rock1mult * 0.08
-			lapis += randf_range(0.1,1) * rock1mult * 0.05
-		"diamond":
-			rock += randf_range(20,50) * rock1mult
-			copper += randf_range(10,20) * rock1mult * 0.2
-			iron += randf_range(5,10) * rock1mult * 0.15
-			gold += randf_range(3,7) * rock1mult * 0.12
-			zinc += randf_range(2,5) * rock1mult * 0.1
-			emerald += randf_range(1,3) * rock1mult * 0.07
-			lapis += randf_range(0.5,2) * rock1mult * 0.05
-			diamond += randf_range(0.1,1) * rock1mult * 0.03
-		_:
-			rock += randf_range(0.1,1) * rock1mult
+	var tier_config = {
+		"rock": {
+			"base_range": [0.1, 1],
+			"mults": {
+				"rock": rock_mult
+			}
+		},
+		"copper": {
+			"base_range": [1, 2],
+			"mults": {
+				"rock": rock_mult,
+				"copper": copper_mult * 0.8
+			}
+		},
+		"iron": {
+			"base_range": [1, 3],
+			"mults": {
+				"rock": rock_mult,
+				"copper": copper_mult * 0.6,
+				"iron": iron_mult * 0.4
+			}
+		},
+		"gold": {
+			"base_range": [2, 5],
+			"mults": {
+				"rock": rock_mult,
+				"copper": copper_mult * 0.5,
+				"iron": iron_mult * 0.35,
+				"gold": gold_mult * 0.25
+			}
+		},
+		"zinc": {
+			"base_range": [3, 7],
+			"mults": {
+				"rock": rock_mult,
+				"copper": copper_mult * 0.4,
+				"iron": iron_mult * 0.3,
+				"gold": gold_mult * 0.2,
+				"zinc": zinc_mult * 0.15
+			}
+		},
+		"emerald": {
+			"base_range": [5, 10],
+			"mults": {
+				"rock": rock_mult,
+				"copper": copper_mult * 0.3,
+				"iron": iron_mult * 0.25,
+				"gold": gold_mult * 0.2,
+				"zinc": zinc_mult * 0.15,
+				"emerald": emerald_mult * 0.1
+			}
+		},
+		"lapis": {
+			"base_range": [10, 20],
+			"mults": {
+				"rock": rock_mult,
+				"copper": copper_mult * 0.25,
+				"iron": iron_mult * 0.2,
+				"gold": gold_mult * 0.15,
+				"zinc": zinc_mult * 0.12,
+				"emerald": emerald_mult * 0.08,
+				"lapis": lapis_mult * 0.05
+			}
+		},
+		"diamond": {
+			"base_range": [20, 50],
+			"mults": {
+				"rock": rock_mult,
+				"copper": copper_mult * 0.2,
+				"iron": iron_mult * 0.15,
+				"gold": gold_mult * 0.12,
+				"zinc": zinc_mult * 0.1,
+				"emerald": emerald_mult * 0.07,
+				"lapis": lapis_mult * 0.05,
+				"diamond": diamond_mult * 0.03
+			}
+		}
+	}
+	
+	var config = tier_config.get(rocktier, tier_config["rock"])
+	var base_min = config["base_range"][0]
+	var base_max = config["base_range"][1]
+	
+	for mineral in config["mults"]:
+		var amount = randf_range(base_min, base_max) * rock1mult * config["mults"][mineral]
+		match mineral:
+			"rock":
+				rock += amount
+			"copper":
+				copper += amount
+			"iron":
+				iron += amount
+			"gold":
+				gold += amount
+			"zinc":
+				zinc += amount
+			"emerald":
+				emerald += amount
+			"lapis":
+				lapis += amount
+			"diamond":
+				diamond += amount
 
 func f_n(num: float) -> String:
 	if abs(num) >= 1e15:
@@ -181,3 +246,27 @@ func check_advancements():
 			adv["earned"] = true
 			emit_signal("advancement_unlocked", adv["title"], adv["desc"])
 			print("Signal Emitted for: ", adv["title"])
+
+
+var talent_database = {
+	"iron": {
+		"title": "The Foundry (I)",
+		"description": "Increases Iron Production ",
+		"max_level": 2
+	},
+	"ice_bolt": {
+		"title": "Ice Bolt",
+		"description": "Shoots an ice bolt that slows enemies",
+		"max_level": 5
+	},
+	"healing_light": {
+		"title": "Healing Light",
+		"description": "Restores health over time",
+		"max_level": 3
+	}
+}
+
+func get_talent_data(talent_id: String) -> Dictionary:
+	if talent_database.has(talent_id):
+		return talent_database[talent_id]
+	return {}
