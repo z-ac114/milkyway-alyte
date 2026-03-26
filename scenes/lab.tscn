@@ -205,7 +205,6 @@ description = "Stronger Fins. Rocket payout 1.5x"
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1566517549]
 layer = -1
-visible = false
 
 [node name="TextureRect" type="TextureRect" parent="CanvasLayer" unique_id=489075437]
 anchors_preset = 15
