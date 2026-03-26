@@ -42,7 +42,7 @@ var zinc_mult = 1.0
 var emerald_mult = 1.0
 var lapis_mult = 1.0
 var diamond_mult = 1.0
-var research_coins = 0
+var research_coins = 100
 signal bgm_galaxy
 signal bgm_odyssey
 signal bgm_earth

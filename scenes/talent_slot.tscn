@@ -32,12 +32,16 @@ corner_radius_bottom_left = 8
 [node name="TalentSlot" type="TextureButton" unique_id=1008649097]
 z_index = 2
 texture_filter = 1
-offset_right = 179.5
-offset_bottom = 179.5
+offset_right = 113.5
+offset_bottom = 113.5
 scale = Vector2(2, 2)
 texture_normal = ExtResource("1_5hrk5")
 stretch_mode = 5
 script = ExtResource("2_rjh84")
+talent_id = null
+max_level = null
+title = null
+description = null
 
 [node name="Panel" type="Panel" parent="." unique_id=667660696]
 z_index = -1
@@ -70,7 +74,7 @@ size_flags_vertical = 8
 theme = ExtResource("2_bpra1")
 theme_override_colors/font_outline_color = Color(0.5803922, 0.8666667, 1, 0.9098039)
 theme_override_constants/outline_size = 2
-theme_override_font_sizes/font_size = 20
+theme_override_font_sizes/font_size = 10
 text = "0/3"
 horizontal_alignment = 1
 
@@ -89,6 +93,7 @@ top_level = true
 script = ExtResource("4_jw6rq")
 
 [node name="TooltipPanel" type="Panel" parent="." unique_id=1362874822]
+visible = false
 z_index = 10
 layout_mode = 0
 offset_left = 71.0
